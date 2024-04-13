@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/CA/static/css/main.e392d7cc.css",
+    "main.js": "/CA/static/js/main.8608dda7.js",
+    "static/media/service.jpg": "/CA/static/media/service.9778b1507ee8999256bc.jpg",
+    "static/media/AboutUs.png": "/CA/static/media/AboutUs.7c7d8334845d80c6895d.png",
+    "static/media/experience.jpg": "/CA/static/media/experience.c7de1fce2b77f52318e6.jpg",
+    "static/media/CA1.png": "/CA/static/media/CA1.4a548b7070f5b8734346.png",
+    "static/media/timer.jpg": "/CA/static/media/timer.12fbc10ec0a1b8061d2d.jpg",
+    "static/media/human.png": "/CA/static/media/human.a21d98bd8cf9cec320a4.png",
+    "static/media/contact.jpg": "/CA/static/media/contact.fcec1e4cad436d21b346.jpg",
+    "static/media/slide1.webp": "/CA/static/media/slide1.4acd4552a129fc020f4e.webp",
+    "static/media/emergency.jpg": "/CA/static/media/emergency.0875357ba490363c82e7.jpg",
+    "static/media/slide2.webp": "/CA/static/media/slide2.43cbc67fc4b6a4ce6641.webp",
+    "static/media/legal.jpg": "/CA/static/media/legal.d32e1533982beef2434c.jpg",
+    "static/media/slide3.jpg": "/CA/static/media/slide3.731526d110aa2c6182a4.jpg",
+    "static/media/revicons.eot": "/CA/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/CA/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/CA/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/CA/index.html",
+    "main.e392d7cc.css.map": "/CA/static/css/main.e392d7cc.css.map",
+    "main.8608dda7.js.map": "/CA/static/js/main.8608dda7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e392d7cc.css",
+    "static/js/main.8608dda7.js"
+  ]
+}
