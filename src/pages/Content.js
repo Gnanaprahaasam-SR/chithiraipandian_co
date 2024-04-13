@@ -1,6 +1,6 @@
 import EmergencyCase from "../images/emergency.jpg";
 import LegalHelp from "../images/legal.jpg";
-import Clock from "../images/timer.jpg";
+import Clock from "../images/workingHour.jpg";
 import slide1 from "../images/slide1.webp";
 import slide2 from "../images/slide2.webp";
 import slide3 from "../images/slide3.jpg";
@@ -10,8 +10,8 @@ import slide3 from "../images/slide3.jpg";
 const Content = {
     Home:{
         Carousel:{
-            title1:"WE BELIEVE IN GROWING TOGETHER. WE SEE OUR GROWTH AS A REFLECTION OF THE SUCCESS OF OUR CLIENTS",
-            title2:"QUICKER. SMARTER. DIGITALIZED. BETTER",
+            title1:"WE SEE OUR GROWTH AS A REFLECTION OF THE SUCCESS OF OUR CLIENTS",
+            title2:"WE BELIEVE IN GROWING TOGETHER",
             title3:"OUR NAME IS EASY TO REMEMBER AND OUR WORK IS HARD TO FORGET",
             slide1:slide1,
             slide2:slide2,

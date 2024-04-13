@@ -48,21 +48,21 @@ const Home = () => {
         </Carousel>
 
         {/* Legal information */}
-        <div className=" row">
+        <div className=" row legal_information  ">
           <div className="col-12  col-sm-12 col-md-4 text-start align-content-center text-wrap position-relative ">
             <img src={home?.emergencyCase?.image} alt="timer" width="110%" height="100%" className="container-image" />
             <div className="text-content ">
-              <h4>{home?.emergencyCase?.title}</h4>
-              <p> {home?.emergencyCase?.description}</p>
-              <h4>Call Us Now</h4>
-              <p>{home?.emergencyCase?.contanct}</p>
+              <h4 className="legal_title" >{home?.emergencyCase?.title}</h4>
+              <p className="legal_content"> {home?.emergencyCase?.description}</p>
+              <h4 className="legal_title">Call Us Now</h4>
+              <p className="legal_content">{home?.emergencyCase?.contanct}</p>
             </div>
           </div>
           <div className="col-12  col-sm-12  col-md-4 position-relative">
             <img src={home?.legalHelp?.image} alt="timer" width="110%" height="100%" className="container-image" />
             <div className="text-content ">
-              <h4>{home?.legalHelp?.title}</h4>
-              <p>{home?.legalHelp?.description}</p>
+              <h4 className="legal_title">{home?.legalHelp?.title}</h4>
+              <p className="legal_content">{home?.legalHelp?.description}</p>
               <button className="appointment_btn border p-2 text-nowrap ">
                 {home?.legalHelp.button} &rarr;
               </button>
@@ -75,20 +75,20 @@ const Home = () => {
                 <tbody>
                   <tr>
                     <td colSpan="2">
-                      <h4>{home?.workingHour?.title}</h4>
+                      <h4 className="legal_title">{home?.workingHour?.title}</h4>
                     </td>
                   </tr>
-                  <tr>
-                    <td>{home?.workingHour?.weekdays}</td>
-                    <td>{home?.workingHour?.weekdayTiming}</td>
+                  <tr  >
+                    <td className="legal_content">{home?.workingHour?.weekdays}</td>
+                    <td className="legal_content">{home?.workingHour?.weekdayTiming}</td>
                   </tr>
                   <tr>
-                    <td>{home?.workingHour?.weekend}</td>
-                    <td>{home?.workingHour?.weekendTiming}</td>
+                    <td className="legal_content">{home?.workingHour?.weekend}</td>
+                    <td className="legal_content">{home?.workingHour?.weekendTiming}</td>
                   </tr>
                   <tr>
-                    <td>{home?.workingHour?.weekoff}</td>
-                    <td>{home?.workingHour?.weekoffTiming}</td>
+                    <td className="legal_content">{home?.workingHour?.weekoff}</td>
+                    <td className="legal_content">{home?.workingHour?.weekoffTiming}</td>
                   </tr>
                 </tbody>
               </table>
@@ -98,7 +98,10 @@ const Home = () => {
         </div>
 
         {/* Employee carousel */}
-        <Employee />
+        <div className="position-absoulte">
+          <Employee />
+        </div>
+
       </div>
     </div>
   );
