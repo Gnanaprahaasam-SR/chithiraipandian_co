@@ -62,12 +62,12 @@ export default function EMICalculator() {
 
     return (
         <div className='container'>
-            <div className='row border m-5' style={{ backgroundColor: "#F0F0F0", position: "relative", zIndex: "99" }}>
+            <div className='row border m-5' style={{ background: "linear-gradient(rgb(152, 189, 223),rgb(134, 209, 134))", position: "relative", zIndex: "99" }}>
                 <div className='col-12 text-center mb-4' style={{ marginTop: '-20px' }}>
                     <button className='btn btn-primary'>EMI Calculator</button>
                 </div>
                 <div className='calculator '>
-                    <h5 className='text-center py-2'>installment Amount: Rs.{installmentAmount}</h5>
+                    <h5 className='text-center py-2'>Installment Amount: Rs.{installmentAmount}</h5>
                     <form className='px-2'>
                         <div className='col-md-6 offset-lg-3'>
                             <div className='pb-2 d-flex gap-3 align-items-center flex-wrap'>

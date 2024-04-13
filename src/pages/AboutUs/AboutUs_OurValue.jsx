@@ -39,13 +39,11 @@ export default function AboutUs_OurValue() {
                                 onClick={() => handleCardClick(key)}
                                 onMouseLeave={() => handleCardMouseLeave(key)}
                             >
-                                <div className="card-front">
-                                    <div className="card-front-image-three-card" >
-                                        {React.cloneElement(value.icon, { style: { fontSize: '10em' } })}
-
+                                <div className="card-front d-flex flex-column align-items-center">
+                                    <div className="d-flex align-items-center">
+                                        {React.cloneElement(value.icon, { style: { fontSize: '5em' } })}
                                     </div>
-                                    <h5 className="card-title-three-card">{key}</h5>
-
+                                    <h5 className="" style={{ textAlign: 'center' }}>{key}</h5>
                                 </div>
                                 <div className="card-back">
                                     <h5 className="card-title">{key}</h5>
@@ -66,13 +64,13 @@ export default function AboutUs_OurValue() {
                                 onClick={() => handleCardClick(key)}
                                 onMouseLeave={() => handleCardMouseLeave(key)}
                             >
-                                <div className="card-front">
-                                    <div className="card-front-image-two-card" >
-                                        {React.cloneElement(value.icon, { style: { fontSize: '10em' } })}
-
+                                <div className="card-front d-flex flex-column align-items-center">
+                                    <div className="d-flex align-items-center">
+                                        {React.cloneElement(value.icon, { style: { fontSize: '5em' } })}
                                     </div>
-                                    <h5 className="card-title" style={{ textAlign: 'center' }}>{key}</h5>
+                                    <h5 className="" style={{ textAlign: 'center' }}>{key}</h5>
                                 </div>
+
 
                                 <div className="card-back">
                                     <h5 className="card-title">{key}</h5>

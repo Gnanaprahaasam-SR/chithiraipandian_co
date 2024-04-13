@@ -8,13 +8,14 @@ import "../App.css";
 function NavBar() {
   return (
     <Navbar collapseOnSelect expand="lg" className="shadow-sm">
-      <Container >
-        <Navbar.Brand as={Link} to="/">
-          <img src={logo} alt="Company Logo" width={70} />
+      <Container fluid>
+        <Navbar.Brand as={Link} to="/"  >
+          <img src={logo} alt="Company Logo" width={70}  className="d-inline me-3 "/> 
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll" className="justify-content-end">
-          <Nav className="d-flex mx-left my-2 my-lg-0 gap-3" style={{ maxHeight: "100px" }} navbarScroll>
+        <p className="d-flex mt-3">Chithiraipandian&Co </p>
+        <Navbar.Toggle aria-controls="navbarScroll" style={{backgroundColor:"#cf9475", border:"none",outline:"none"}} />
+        <Navbar.Collapse id="navbarScroll" className="justify-content-end" >
+          <Nav className="d-flex mx-left my-2 my-lg-0 gap-2" style={{ maxHeight: "100px" }} navbarScroll>
             <Nav.Link as={Link} to="/" className="menu_link">
               Home
             </Nav.Link>
@@ -29,7 +30,11 @@ function NavBar() {
               ))}
             </NavDropdown>
             <NavDropdown title="Resource" id="navbarScrollingDropdown">
-              <NavDropdown.Item className="menu_link" >Calculator</NavDropdown.Item>
+              <NavDropdown.Item className="menu_link" as={Link} to="/gstcalculator">GST Calculator</NavDropdown.Item>
+              <NavDropdown.Item className="menu_link" as={Link} to="/tdscalculator">TDS Calculator</NavDropdown.Item>
+              <NavDropdown.Item className="menu_link" as={Link} to="/emicalculator">EMI Calculator</NavDropdown.Item>
+              <NavDropdown.Item className="menu_link" as={Link} to="/nsccalculator">NSC Calculator</NavDropdown.Item>
+              <NavDropdown.Item className="menu_link" as={Link} to="/netprofitcalculator">Calculate Net profit </NavDropdown.Item>
               <NavDropdown.Item className="menu_link" >Knowledge Bank</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to="/" className="menu_link">

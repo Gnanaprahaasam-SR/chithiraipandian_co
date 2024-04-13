@@ -107,25 +107,22 @@
   color: var(--secondary-color);
 }
 
+
+/* home */
 .menu_link,
 #navbarScrollingDropdown {
-  color: #cf9475 !important;
+  color: var(--primary-color) !important;
   font-weight: 400 !important;
   font-size: larger !important;
 }
 
 .carousel-image {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   filter: brightness(50%);
 }
 
-@media (min-width: 720px) {
-  .carousel-image {
-    width: 100%;
-    height: 100vh;
-  }
-}
+
 
 .carousel-item-container {
   position: relative;
@@ -137,7 +134,7 @@
   left: 50%;
   transform: translate(-50%, -50%) translateY(-50px);
   /* Initial position */
-  color: white;
+  color: var(--secondary-color);
   padding: 10px;
   text-align: center;
   opacity: 0;
@@ -155,8 +152,10 @@
 
 .carousel-item.active .carousel-item-content .animated-text {
   animation: slideIn 0.5s ease forwards;
+  font-size: 32px;
   /* Apply animation only for the active slide */
 }
+
 
 @keyframes slideIn {
   from {
@@ -182,10 +181,9 @@
   position: absolute;
   top: 50%;
   left: 40%;
-  right: 0%;
-  transform: translate(-35%, -50%);
+  transform: translate(-35%, -50%);  
   text-align: start;
-  color: white;
+  color: var(--secondary-color);
 }
 
 .appointment_btn {
@@ -233,7 +231,7 @@
 .is-flipped {
   transform: rotateY(180deg);
   background-color: var(--primary-color);
-  color: #ffffff;
+  color: var(--secondary-color);
 }
 
 .card-front {
@@ -282,7 +280,7 @@
   padding: 0;
 }
 
-.card-front .card-title {
+.card-front .card-title- {
   margin: 0;
   position: relative;
   left: 19%;
@@ -297,41 +295,7 @@
   margin: 0;
 }
 
-.card-front-image-two-card {
-  text-align: 'center';
-  margin-bottom: '60px';
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  position: relative;
-  backface-visibility: hidden;
-  left: 180px;
-  bottom: 10px;
-  padding: 0;
-}
 
-.card-front-image-three-card {
-  text-align: 'center';
-  margin-bottom: '60px';
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  position: relative;
-  backface-visibility: hidden;
-  left: 100px;
-  bottom: 10px;
-  padding: 0;
-}
-
-.card-front .card-title-three-card {
-  margin: 0;
-  position: relative;
-  left: 7%;
-  transform: translateX(-50%);
-  width: 100%;
-  color: var(--primary-color);
-  top: 90px;
-}
 
 /* Aboutus */
 .aboutus-heading {
@@ -343,7 +307,6 @@
   font-weight: bold;
   color: var(--primary-color);
   top: 50%;
-
 }
 
 .aboutus-title {
@@ -365,31 +328,10 @@
 
 .contact_title {
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 25%;
   color: var(--secondary-color);
   display: block;
-}
-
-@media (max-width: 720px) {
-  .contact_title {
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    color: var(--secondary-color);
-    display: block;
-  }
-}
-
-@media (max-width: 420px) {
-  .contact_title {
-    position: absolute;
-    align-items: center;
-    left: 15%;
-    color: var(--secondary-color);
-    display: block;
-    font-size: 20px;
-  }
 }
 
 .contact_input {
@@ -404,4 +346,66 @@
 
 .contact_input:focus {
   border: 1px solid #c6dadf;
+}
+
+
+
+
+
+@media (max-width: 720px) {
+  /* home carousel */
+  .carousel-image {
+    width: 100%;
+    height: 60vh;
+  }
+
+  /* contact */
+  .contact_title {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    color: var(--secondary-color);
+    display: block;
+    background-color: linear-gradient(rgb(152, 189, 223),rgb(134, 209, 134));
+  }
+}
+
+@media (max-width:450px) {
+
+  /* Home carousel */
+  .carousel-item.active .carousel-item-content .animated-text {
+    font-size: 18px;
+    justify-content: center;
+    
+  }
+
+  /* contact */
+  .contact_title {
+    position: absolute;
+    align-items: center;
+    left: 15%;
+    color: var(--secondary-color);
+    display: block;
+    font-size: 20px;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  h1 {
+      font-size: 24px;
+  }
+
+  .centeredH1 {
+      font-size: 28px;
+  }
+
+  .experience-heading {
+      font-size: 28px;
+  }
+
+  .aboutus-heading{
+      font-size: 28px;
+  }
 }

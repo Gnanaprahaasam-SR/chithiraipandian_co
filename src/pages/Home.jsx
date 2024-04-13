@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Content from "./Content";
-import timer from "../images/timer.jpg";
 import { Carousel } from "react-bootstrap";
 import { Employee } from "./AboutUs/AboutUs_OurTeam";
 
@@ -15,7 +14,7 @@ const Home = () => {
 
 
   return (
-    <div className="home">
+    <div className="home ">
       <div className="home_section_1 overflow-hidden ">
         <Carousel
           indicators={false}
@@ -33,7 +32,7 @@ const Home = () => {
           <Carousel.Item interval={2000}>
             <div className="carousel-item-container">
               <img src={home?.Carousel?.slide2} alt="timer" className="carousel-image" />
-              <div className={`carousel-item-content ${activeIndex === 1 ? "active" : "" }`} >
+              <div className={`carousel-item-content ${activeIndex === 1 ? "active" : ""}`} >
                 <h3 className="animated-text">{home?.Carousel?.title2}</h3>
               </div>
             </div>
@@ -55,8 +54,8 @@ const Home = () => {
             <div className="text-content ">
               <h4>{home?.emergencyCase?.title}</h4>
               <p> {home?.emergencyCase?.description}</p>
-              <h5>Call Us Now</h5>
-              <h5>{home?.emergencyCase?.contanct}</h5>
+              <h4>Call Us Now</h4>
+              <p>{home?.emergencyCase?.contanct}</p>
             </div>
           </div>
           <div className="col-12  col-sm-12  col-md-4 position-relative">
@@ -64,48 +63,42 @@ const Home = () => {
             <div className="text-content ">
               <h4>{home?.legalHelp?.title}</h4>
               <p>{home?.legalHelp?.description}</p>
-              <button className="appointment_btn border p-2 ">
+              <button className="appointment_btn border p-2 text-nowrap ">
                 {home?.legalHelp.button} &rarr;
               </button>
             </div>
           </div>
           <div className="col-12 col-md-4 align-content-center position-relative ">
-            <img src={home?.workingHour?.image} alt="workingHour" className="container-image" />
-            <div className="text-content ">
-              <h4> {home?.workingHour?.title}</h4>
-              <div className="row align-items-center ">
-                <div className="col-6 ">
-                  <p className="float-sm-start">{home?.workingHour?.weekdays}</p>
-                </div>
-                <div className="col-6">
-                  <p className=" float-sm-end">{home?.workingHour?.weekdayTiming}</p>
-                </div>
-              </div>
-              <hr style={{ border: "1px solid white" }} />
-              <div className="row align-items-center ">
-                <div className="col-6">
-                  <p className="float-sm-start">{home?.workingHour?.weekend}</p>
-                </div>
-
-                <div className="col-6">
-                  <p className="float-sm-end">{home?.workingHour?.weekendTiming}</p>
-                </div>
-              </div>
-              <hr style={{ border: "1px solid white" }}  />
-              <div className="row align-items-center">
-                <div className="col-6">
-                  <p className="float-sm-start">{home?.workingHour?.weekoff}</p>
-                </div>
-                <div className="col-6">
-                  <p className="float-sm-end">{home?.workingHour?.weekoffTiming}</p>
-                </div>
-              </div>
+            <img src={home?.workingHour?.image} alt="workingHour" width="110%" height="100%" className="container-image" />
+            <div className="text-content">
+              <table >
+                <tbody>
+                  <tr>
+                    <td colSpan="2">
+                      <h4>{home?.workingHour?.title}</h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>{home?.workingHour?.weekdays}</td>
+                    <td>{home?.workingHour?.weekdayTiming}</td>
+                  </tr>
+                  <tr>
+                    <td>{home?.workingHour?.weekend}</td>
+                    <td>{home?.workingHour?.weekendTiming}</td>
+                  </tr>
+                  <tr>
+                    <td>{home?.workingHour?.weekoff}</td>
+                    <td>{home?.workingHour?.weekoffTiming}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+
           </div>
         </div>
 
         {/* Employee carousel */}
-        <Employee/>
+        <Employee />
       </div>
     </div>
   );
