@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Table } from 'react-bootstrap';
- 
+import "../../App.css";
+
+
 export default function GSTCalculator() {
     const [rows, setRows] = useState([
         { id: 1, typeOfSale: '', rateOfTax: '', taxableAmount: '', igst: '', cgst: '', sgst: '', totalTaxAmount: '', rateOfCess: '', cess: '' },
@@ -94,14 +96,14 @@ export default function GSTCalculator() {
     return (
         <div className='container rounded px-4 mb-4' style={{ borderRadius: "10px" }}>
             <div className='row mt-3' >
-                <div className='col-md-12 border mt-5' style={{ backgroundColor: "#e2e3e5", position: 'relative', zIndex: '99' }}>
+                <div className='col-md-12 border mt-5' style={{background: "linear-gradient(rgb(152, 189, 223),rgb(134, 209, 134))", position: 'relative', zIndex: '99' }}>
                     <div className='text-center mb-4' style={{ marginTop: '-20px' }}>
                         <button className='btn btn-primary' style={{ borderRadius: "10px", top: '50%' }}>GST Calculator</button>
                     </div>
                     <div style={{ position: 'relative' }}>
-                        <Table responsive style={{ minHeight: "-02%", overflowX: 'auto' }}>
-                            <thead>
-                                <tr className='table-secondary'>
+                        <Table responsive style={{ minHeight: "-02%", overflowX: 'auto',}} className='table_background'>
+                            <thead  >
+                                <tr >
                                     <th>Type of sale</th>
                                     <th>Rate of Tax</th>
                                     <th>Taxable Amount</th>
@@ -113,9 +115,9 @@ export default function GSTCalculator() {
                                     <th>CESS</th>
                                 </tr>
                             </thead>
-                            <tbody className='mt-5 my-2' >
+                            <tbody className='mt-5 my-2 table_background' >
                                 {rows.map(row => (
-                                    <tr className='table-secondary' key={row.id}>
+                                    <tr key={row.id}>
                                         <td>
                                             <select  className='form-control' value={row.typeOfSale} onChange={(e) => handleTypeOfSaleChange(row.id, e)}>
                                                 <option >Select Type of Sale</option>
@@ -144,7 +146,7 @@ export default function GSTCalculator() {
                                     </tr>
                                 ))}
                                 {/* Total row */}
-                                <tr className='table-secondary'>
+                                <tr>
                                     <td colSpan={2}></td>
                                     <td> Total Amount: {totalTaxableAmount.toFixed(2)}</td>
                                     <td>Total Tax: {totalTotalTaxAmount.toFixed(2)}</td>

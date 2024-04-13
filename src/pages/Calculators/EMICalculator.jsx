@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Chart } from "react-google-charts";
+import "../../App.css";
 
 export default function EMICalculator() {
     const [installmentType, setinstallmentType] = useState(1);

@@ -3,6 +3,7 @@
 :root {
   --primary-color: #cf9475;
   --secondary-color: #ffffff;
+  --secondary-background-color: #141414;
 }
 
 * {
@@ -322,7 +323,7 @@
 }
 
 /* contact */
-.contact_image {
+.contact_image{
   width: 100%;
 }
 
@@ -348,9 +349,20 @@
   border: 1px solid #c6dadf;
 }
 
+/* footer */
 
+.footer{
+  background-color: var(--secondary-background-color);
+}
 
+.footer h4{
+  color: var(--primary-color);
+}
 
+/* calculator table */
+.table_background{
+  background: linear-gradient(rgb(152, 189, 223),rgb(134, 209, 134)) !important;
+}
 
 @media (max-width: 720px) {
   /* home carousel */

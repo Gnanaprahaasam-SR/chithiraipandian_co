@@ -1,8 +1,8 @@
 {
+  "homepage": "https://gnanaprahaasam-sr.github.io/CA",
   "name": "ca",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://gnanaprahaasam-sr.github.io/Chithiraipandian-co",
+  "private": true,  
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",

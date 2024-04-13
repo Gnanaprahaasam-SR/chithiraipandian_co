@@ -55,7 +55,7 @@ export default function NSCCalculator() {
 
     return (
         <div className='container'>
-            <div className='row border m-5' style={{ backgroundColor: "#F0F0F0", position: "relative", zIndex: "99" }}>
+            <div className='row border m-5' style={{ background: "linear-gradient(rgb(152, 189, 223),rgb(134, 209, 134))", position: "relative", zIndex: "99" }}>
                 <div className='col-12 text-center mb-4' style={{ marginTop: '-20px' }}>
                     <button className='btn btn-primary'>Calculate</button>
                 </div>
@@ -111,7 +111,7 @@ export default function NSCCalculator() {
                         <h4 className=' align-content-center d-inline'>Graph</h4>
                         <input className="form-check-input d-inline float-end" type="checkbox" id="flexSwitchCheckDefault" checked={graph} onChange={handleGraph} />
                     </div>
-                    {graph ? <div>
+                    {graph ? <div className="mb-5">
                         <Chart
                             chartType="ComboChart"
                             width="100%"

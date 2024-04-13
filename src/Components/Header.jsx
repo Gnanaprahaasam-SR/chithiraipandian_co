@@ -10,9 +10,9 @@ function NavBar() {
     <Navbar collapseOnSelect expand="lg" className="shadow-sm">
       <Container fluid>
         <Navbar.Brand as={Link} to="/"  >
-          <img src={logo} alt="Company Logo" width={70}  className="d-inline me-3 "/> 
+          <img src={logo} alt="Company Logo" width={70}  className="d-inline me-2 "/> 
         </Navbar.Brand>
-        <p className="d-flex mt-3">Chithiraipandian&Co </p>
+        <p className="d-flex mt-3 d-none d-sm-block">Chithiraipandian&Co </p>
         <Navbar.Toggle aria-controls="navbarScroll" style={{backgroundColor:"#cf9475", border:"none",outline:"none"}} />
         <Navbar.Collapse id="navbarScroll" className="justify-content-end" >
           <Nav className="d-flex mx-left my-2 my-lg-0 gap-2" style={{ maxHeight: "100px" }} navbarScroll>
@@ -34,6 +34,7 @@ function NavBar() {
               <NavDropdown.Item className="menu_link" as={Link} to="/tdscalculator">TDS Calculator</NavDropdown.Item>
               <NavDropdown.Item className="menu_link" as={Link} to="/emicalculator">EMI Calculator</NavDropdown.Item>
               <NavDropdown.Item className="menu_link" as={Link} to="/nsccalculator">NSC Calculator</NavDropdown.Item>
+              <NavDropdown.Item className="menu_link" as={Link} to="/autoloancalculator">AutoLoan Calculator</NavDropdown.Item>
               <NavDropdown.Item className="menu_link" as={Link} to="/netprofitcalculator">Calculate Net profit </NavDropdown.Item>
               <NavDropdown.Item className="menu_link" >Knowledge Bank</NavDropdown.Item>
             </NavDropdown>

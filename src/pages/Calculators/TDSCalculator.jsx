@@ -17,7 +17,7 @@ export default function TDSCalculator() {
   return (
     <div className='container rounded px-4 mb-5' style={{ borderRadius: "10px" }}>
       <div className='row mt-3'>
-        <div className='col-md-12 border mt-5' style={{ backgroundColor: "#F0F0F0", position: 'relative', zIndex: '99' }}>
+        <div className='col-md-12 border mt-5' style={{ background: "linear-gradient(rgb(152, 189, 223),rgb(134, 209, 134))", position: 'relative', zIndex: '99' }}>
           <div className='text-center mb-4' style={{ marginTop: '-20px' }}>
             <button className='btn btn-primary' style={{ borderRadius: "10px", top: '50%' }}>TDS Calculator</button>
           </div>
@@ -59,7 +59,7 @@ export default function TDSCalculator() {
           <hr className='mt-4' style={{ width: "100%" }} />
 
           {/* Added div for background color */}
-          <div className='row mt-3' style={{ backgroundColor: '#F0F0F0', padding: '10px' }}>
+          <div className='row mt-3' style={{ padding: '10px' }}>
             <div className='col-md-9 d-flex align-items-center'>
               <label className='me-2'>Tax</label>
               <input type='text' className='form-control mx-2' readOnly style={{ width: '100px' }} />

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Table from 'react-bootstrap/Table';
 import { Chart } from "react-google-charts";
-
+import "../../App.css";
 
 const AutoLoanCalculator = () => {
 
@@ -16,20 +16,20 @@ const AutoLoanCalculator = () => {
 
     const data = [
         ["Element", "Density", { role: "style" }],
-        ["Instalment Amount", 789, "#6610f2"], // RGB value
+        ["Instalment Amount", 0, "#6610f2"], // RGB value
         ["Principal", loanAmount, "#6610f2"],
         ["Total Repayment", loanAmount, "#6610f2"]
     ];
 
     return (
         <div className="container-fluid">
-            <div className='row border m-2 mt-5' style={{ backgroundColor: "#F0F0F0", position: "relative", zIndex: "99" }}>
+            <div className='row border m-2 m-5 table_background ' style={{ position: "relative", zIndex: "99" }}>
                 <div className='col-12 text-center mb-4' style={{ marginTop: '-20px' }}>
                     <button className='btn btn-primary'>Auto Loan Calculator</button>
                 </div>
 
-                <Table responsive >
-                    <tbody className="align-itmes-center secondary">
+                <Table responsive="sm md"  className="col-md-10">
+                    <tbody className="align-itmes-center" >
                         <tr>
                             <td colspan="2" className="text-end">Payments are made:</td>
                             <td className="text-center">
