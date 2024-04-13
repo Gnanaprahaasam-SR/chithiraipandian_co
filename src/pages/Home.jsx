@@ -2,17 +2,17 @@ import React, { useState } from "react";
 import Content from "./Content";
 import { Carousel } from "react-bootstrap";
 import { Employee } from "./AboutUs/AboutUs_OurTeam";
-
-
+ 
+ 
 const Home = () => {
   const home = Content.Home;
   const [activeIndex, setActiveIndex] = useState(0);
-
+ 
   const handleSelect = (selectedIndex) => {
     setActiveIndex(selectedIndex);
   };
-
-
+ 
+ 
   return (
     <div className="home ">
       <div className="home_section_1 overflow-hidden ">
@@ -46,7 +46,7 @@ const Home = () => {
             </div>
           </Carousel.Item>
         </Carousel>
-
+ 
         {/* Legal information */}
         <div className=" row legal_information  ">
           <div className="col-12  col-sm-12 col-md-4 text-start align-content-center text-wrap position-relative ">
@@ -93,18 +93,18 @@ const Home = () => {
                 </tbody>
               </table>
             </div>
-
+ 
           </div>
         </div>
-
+ 
         {/* Employee carousel */}
         <div className="position-absoulte">
           <Employee />
         </div>
-
+ 
       </div>
     </div>
   );
 };
-
+ 
 export default Home;

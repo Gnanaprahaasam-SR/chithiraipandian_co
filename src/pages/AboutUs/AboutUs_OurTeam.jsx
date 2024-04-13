@@ -52,7 +52,7 @@ export function Employee() {
       <div className="slider-container">
         <h1 style={{ textAlign: 'center', color: '#CF9475', fontWeight: 'bold' }}>{teamData.title}</h1>
         <Carousel
-          className="mx-3 my-5"
+          className="mx-3 my-5 team-carosal"
           responsive={responsive}
           swipeable={true}
           autoPlay={autoplay}
@@ -61,27 +61,25 @@ export function Employee() {
         >
           {teamData.members.map((member, index) => (
             <div
+              className="shadow team-card d-flex flex-column align-items-center"
               key={index}
-              style={{ height: "50%" }}
               onMouseOver={() => setAutoplay(false)}
               onMouseOut={() => setAutoplay(true)}
               onClick={() => setAutoplay(false)}
             >
-              <img src={member.image} alt="not found" width="50%" />
-              <p >{member.name}</p>
-              <p>{member.designation}</p>
+              <img src={member.image} alt="not found" className="team-member-image" />
+              <p className="team-name">{member.name}</p>
+              <p className="team-designation text-center">{member.designation}</p>
             </div>
           ))}
         </Carousel>
       </div>
     </div>
   )
-
 };
 
 function AboutUs_OurTeam() {
   const teamData = AboutUsData.team;
-
   return (
     <div style={{ overflowX: "hidden" }}>
       <div className="row">

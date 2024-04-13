@@ -26,25 +26,35 @@ function ServicePage() {
             <div>
               <h3 className='serviceDescription'>{filteredService?.description?filteredService.description :""}</h3>
             </div>
-            <ul className="list-unstyled lists">
+           
+            <div className="list-unstyled lists">
+              <div className='row'>
               {filteredService.services && filteredService.services.map((subService, subIndex) => (
-                <li className='box' key={subIndex}>
-                  <span className='number'>{(subIndex + 1).toString().padStart(2, '0')}</span>
-                  <span className='text'>{subService}</span>
-                </li>
+                <div className='col-md-6 col-lg-4' key={subIndex}>
+                  <div className='services-image-container  my-3'>
+                      <img className='services-image' src={filteredService.subImage} alt={filteredService.title} width="100%" />
+                  <span className='services-text'>{subService}</span>
+                  </div>
+                </div>
               ))}
+              </div>
               {filteredService.subServices && Object.entries(filteredService.subServices).map(([category, subs], categoryIndex) => (
                 <React.Fragment key={categoryIndex}>
                   <h3 className='serviceTitle'>{category}</h3>
+                  <div className='row'>
                   {subs.map((subService, subIndex) => (
-                    <li className='box' key={subIndex}>
-                      <span className='number'>{(subIndex + 1).toString().padStart(2, '0')}</span>
-                      <span className='text'>{subService}</span>
-                    </li>
+                    <div className='col-md-6 col-lg-4' key={subIndex}>
+                      <div className='services-image-container my-3'>
+                      <img className='services-image' src={filteredService.subImage} alt={filteredService.title} width="100%" />
+                      <span className='services-text'>{subService}</span>
+                      </div>
+                    </div>
                   ))}
+                  </div>
                 </React.Fragment>
               ))}
-            </ul>
+            </div>
+            
           </div>
         </div>
       </div>

@@ -14,21 +14,22 @@ function ExperiencePage() {
         </div>
       </div>
       <div className='container'>
-        <ul className="list-unstyled" >
+        <div className="row" >
           {areas.map((area, index) => (
-            <li key={index} className=' my-4' >
-              <h2 className='serviceTitle'>{area.title}</h2>
-              <ul className="list-unstyled experience-list" style={{ paddingLeft: 0 }}>
+            <div key={index} className='col-md-4 my-4' >
+              <div className='experience-card shadow'>
+              <h2 className='experience-title'>{area.title}</h2>
+              <div className="row" style={{ paddingLeft: 0 }}>
                 {area.subAreas.map((subArea, subIndex) => (
-                  <li className='box' key={subIndex}>
-                    <span className='number'>{(subIndex + 1).toString().padStart(2, '0')}</span>
-                    <span className='text'>{subArea}</span>
-                  </li>
+                  <div className='col-md-12' key={subIndex}>
+                    <span className='experience-description'>{subArea}</span>
+                  </div>
                 ))}
-              </ul>
-            </li>
+              </div>
+              </div>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );

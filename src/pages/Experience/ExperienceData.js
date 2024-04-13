@@ -13,21 +13,7 @@ const experienceData = {
             "Wind / Solar"
           ]
         },
-        {
-          "title": "Healthcare",
-          "subAreas": [
-            "Hospitals & Clinics",
-            "Voluntary Services"
-          ]
-        },
-        {
-          "title": "Trade / Retail",
-          "subAreas": [
-            "Organised Retail",
-            "Advertising - OOH",
-            "Airport Duty free"
-          ]
-        },
+       
         {
           "title": "Infrastructure",
           "subAreas": [
@@ -59,14 +45,8 @@ const experienceData = {
             "Public Charity"
           ]
         },
-        {
-          "title": "Hospitality & Entertainment",
-          "subAreas": [
-            "Hotels",
-            "Sports associations",
-            "Multiplexes"
-          ]
-        },
+        
+        
         {
           "title": "Education",
           "subAreas": [
@@ -86,6 +66,29 @@ const experienceData = {
             "Credit compliance and monitoring",
             "Stock audits",
             "Special audits"
+          ]
+        },
+        {
+          "title": "Hospitality & Entertainment",
+          "subAreas": [
+            "Hotels",
+            "Sports associations",
+            "Multiplexes"
+          ]
+        },
+        {
+          "title": "Healthcare",
+          "subAreas": [
+            "Hospitals & Clinics",
+            "Voluntary Services"
+          ]
+        },
+        {
+          "title": "Trade / Retail",
+          "subAreas": [
+            "Organised Retail",
+            "Advertising - OOH",
+            "Airport Duty free"
           ]
         },
         {

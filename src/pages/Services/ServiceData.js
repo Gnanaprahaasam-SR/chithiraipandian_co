@@ -1,11 +1,20 @@
 
 import Service from "../../images/service.jpg";
+import Audit_And_Assurenece from "../../images/Audit_And_Assurenece.jpg";
+import Direct_Tax from "../../images/Direct_Tax.jpg";
+import Indirect_Tax from "../../images/Indirect_Tax.jpg";
+import Advisory from "../../images/Advisory.jpg";
+import Secretarial from "../../images/Secretarial.jpg";
+import Bookkeeping from "../../images/Bookkeeping.jpg";
+
+
 
 const servicesData = [
   {
     title: "Audit & Assurance Services",
     imageSrc: Service,
     servicesKey: "auditAndAssuranceServices",
+    subImage:Audit_And_Assurenece,
     services: [
       "Statutory Audit",
       "Tax Audit",
@@ -21,6 +30,7 @@ const servicesData = [
     title: "Direct Tax Services",
     imageSrc: Service,
     servicesKey: "directTaxServices",
+    subImage:Direct_Tax,
     subServices: {
       Domestic: [
         "Filling of Income Tax Returns of Corporate and Non-Corporate Clients",
@@ -41,6 +51,7 @@ const servicesData = [
     title: "Indirect Tax Services",
     imageSrc: Service,
     servicesKey: "indirectTaxServices",
+    subImage:Indirect_Tax,
     subServices: {GST:[
       "Filling of Monthly, Quarterly and Annual Returns under GST",
       "GST Compliances",
@@ -52,6 +63,7 @@ const servicesData = [
     title: "Advisory Services",
     imageSrc: Service,
     servicesKey: "advisoryServices",
+    subImage:Advisory,
     services: [
       "Preparing Business Plan",
       "Budget and Forecast",
@@ -75,6 +87,7 @@ const servicesData = [
     title: "Secretarial",
     imageSrc: Service,
     servicesKey: "secretarial",
+    subImage:Secretarial,
     services: [
       "Formation of Indian Private / Public/ Section & Companies/100% Subsidiary/ Branch Office/ Liaison Office/SPV.",
       "Drafting Memorandum and Article of Association of Company.",
@@ -95,6 +108,7 @@ const servicesData = [
     title: "Bookkeeping Services",
     imageSrc: Service,
     servicesKey: "bookkeepingServices",
+    subImage:Bookkeeping,
     description:"We are providing outsourcing services for domestic as international clients, which includes:",
     services: [
       "In-house accounting, compliant with local accounting acts.",

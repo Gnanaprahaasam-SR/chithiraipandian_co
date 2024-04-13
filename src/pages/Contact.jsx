@@ -4,7 +4,7 @@ const Contact = () => {
     return (
         <div className="contact overflow-hidden">
             <div className="position-relative">
-                <img src={contact} alt="contact"  className="contact_image" />
+                <img src={contact} alt="contact" width="100%" className="contact_image" />
                 <h1 className="contact_title" >CONTACT US</h1>
             </div>
 

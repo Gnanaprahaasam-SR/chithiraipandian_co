@@ -3,10 +3,10 @@ import logo from "../images/CA1.png"
 import { SlSocialInstagram } from "react-icons/sl";
 import { SiFacebook } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa6";
-
+ 
 const Footer = () => {
-
-
+ 
+ 
     return (
         <div className="footer " >
             <div className="container ">
@@ -43,9 +43,9 @@ const Footer = () => {
             <div className="text-white text-center pb-2 text-wrap">
                 Copyright &#169; 2024 chithiraipandian&co.com All rights reserved
             </div>
-
+ 
         </div>
     )
 }
-
+ 
 export default Footer;

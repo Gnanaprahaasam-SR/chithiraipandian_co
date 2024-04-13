@@ -1,9 +1,9 @@
 import EmergencyCase from "../images/emergency.jpg";
-import LegalHelp from "../images/legal.jpg";
-import Clock from "../images/workingHour.jpg";
-import slide1 from "../images/slide1.webp";
+import LegalHelp from "../images/legalcomplain.png";
+import Clock from "../images/workingHour.png";
+import slide1 from "../images/auditing.png";
 import slide2 from "../images/slide2.webp";
-import slide3 from "../images/slide3.jpg";
+import slide3 from "../images/advisor.png";
 
 
 
