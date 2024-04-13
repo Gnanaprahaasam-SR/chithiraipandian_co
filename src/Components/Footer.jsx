@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="row ">
                     <div className="col-12 col-md-4 text-white py-4">
                         <img src={logo} alt="log" width="40%" className="pb-4" />
-                        <h4 style={{ color: "#cf9475" }}>Head Office</h4>
+                        <h4 >Head Office</h4>
                         <p className="text-wrap">No.14/6M, Hospital Road, Sulur,<br /> Coimbatore -641 402. </p>
                     </div>
                     <div className="col-12 col-md-4 text-white py-4">
