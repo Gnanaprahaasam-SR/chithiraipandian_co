@@ -49,8 +49,8 @@ const Home = () => {
 
         {/* Legal information */}
         <div className=" row legal_information  ">
-          <div className="col-12  col-sm-12 col-md-4 text-start align-content-center text-wrap position-relative ">
-            <img src={home?.emergencyCase?.image} alt="timer" width="110%" height="100%" className="container-image" />
+          <div className="col-12  col-sm-12 col-md-4 text-start align-content-center text-wrap p-5 ">
+            {/* <img src={home?.emergencyCase?.image} alt="timer" width="110%" height="100%" className="container-image" /> */}
             <div className="text-content ">
               <h4 className="legal_title" >{home?.emergencyCase?.title}</h4>
               <p className="legal_content"> {home?.emergencyCase?.description}</p>
@@ -58,8 +58,8 @@ const Home = () => {
               <p className="legal_content">{home?.emergencyCase?.contanct}</p>
             </div>
           </div>
-          <div className="col-12  col-sm-12  col-md-4 position-relative">
-            <img src={home?.legalHelp?.image} alt="timer" width="110%" height="100%" className="container-image" />
+          <div className="col-12  col-sm-12  col-md-4 p-5 ">
+            {/* <img src={home?.legalHelp?.image} alt="timer" width="110%" height="100%" className="container-image" /> */}
             <div className="text-content ">
               <h4 className="legal_title">{home?.legalHelp?.title}</h4>
               <p className="legal_content">{home?.legalHelp?.description}</p>
@@ -68,8 +68,8 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className="col-12 col-md-4 align-content-center position-relative ">
-            <img src={home?.workingHour?.image} alt="workingHour" width="110%" height="100%" className="container-image" />
+          <div className="col-12 col-md-4 align-content-center p-5">
+            {/* <img src={home?.workingHour?.image} alt="workingHour" width="110%" height="100%" className="container-image" /> */}
             <div className="text-content">
               <table >
                 <tbody>

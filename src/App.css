@@ -2,8 +2,8 @@
 
 :root {
   --primary-color: #102C57;
-  --primary-lite-color: #DAC0A3;
-  --secondary-color: #EADBC8;
+  --primary-lite-color: #FEBBCC;
+  --secondary-color: #FFEECC;
   --secondary-background-color: #141414;
   --text-color:#353333;
 }
@@ -189,12 +189,13 @@
 }
 
 .text-content {
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  transform: translate(-35%, -50%);  
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 40%; */
+  /* transform: translate(-35%, -50%);   */
+  text-wrap: wrap;
   text-align: start;
-  color: var(--secondary-color);
+  color: var(--secondary-background-color);
 }
 
 .appointment_btn {
@@ -421,13 +422,13 @@
 
 
 .team-carosal{
-  background-color: var(--primary-color);
+  background-color: var(--primary-lite-color);
   border-radius: 20px;
 }
 
 .team-card{
   margin: 20px;
-  background-color: var(--primary-lite-color);
+  background-color: var(--secondary-color);
   padding: 30px;
   border-radius: 20px;
   min-height: 430px;
