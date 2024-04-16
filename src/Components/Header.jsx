@@ -43,6 +43,9 @@ function NavBar() {
               <NavDropdown.Item className="menu_link" as={Link}  onClick={handleChange} to="/effectivecapital">EffectiveCapital</NavDropdown.Item>
               <NavDropdown.Item className="menu_link" as={Link}  onClick={handleChange} to="/netprofitcalculator">Calculate Net profit </NavDropdown.Item>
               <NavDropdown.Item className="menu_link" as={Link}  onClick={handleChange} to="/networthcalculator">Calculate Networth </NavDropdown.Item>
+              <NavDropdown.Item className="menu_link" as={Link}  onClick={handleChange} to="/homeloancalculator">HomeLoan Calculator </NavDropdown.Item>
+              <NavDropdown.Item className="menu_link" as={Link}  onClick={handleChange} to="/installment">Get No.of Installment </NavDropdown.Item>
+              <NavDropdown.Item className="menu_link" as={Link}  onClick={handleChange} to="/HRAcalculator">HRA Calculator </NavDropdown.Item>
               <NavDropdown.Item className="menu_link" >Knowledge Bank</NavDropdown.Item>
             </NavDropdown>
             {/* <Nav.Link as={Link} to="/" className="menu_link">

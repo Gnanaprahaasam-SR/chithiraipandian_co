@@ -19,6 +19,9 @@ import ExperiencePage from './pages/Experience/ExperiencePage';
 import AutoLoanCalculator from './pages/Calculators/AutoLoanCalculator';
 import EffectiveCapital from './pages/Calculators/EffectiveCapital';
 import NetWorthCalculator from './pages/Calculators/NetWorthCalculator';
+import HomeLoanCalculator from './pages/Calculators/HomeLoanCalculator';
+import Installment from './pages/Calculators/GetInstallment';
+import HRA from './pages/Calculators/HRACalculator';
 
 
 function App() {
@@ -42,8 +45,9 @@ function App() {
         <Route path='/networthcalculator' element={<NetWorthCalculator />} />
         <Route path='/service/:serviceKey' element={<ServicePage />} />
         <Route path='/experience' element={<ExperiencePage />} />
-
-
+        <Route path='/homeloancalculator' element={<HomeLoanCalculator/>} />
+        <Route path='/installment' element={<Installment/>} />
+        <Route path='/HRAcalculator' element={<HRA/>}/>
       </Routes>
       <Footer />
     </div>
