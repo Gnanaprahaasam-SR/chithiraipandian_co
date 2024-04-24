@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/chithiraipandian_co/static/css/main.ac1f6eca.css",
+    "main.css": "/chithiraipandian_co/static/css/main.715082c0.css",
     "main.js": "/chithiraipandian_co/static/js/main.51dcced5.js",
     "static/media/Secretarial.jpg": "/chithiraipandian_co/static/media/Secretarial.9eeb59ed69ad2f44e2df.jpg",
     "static/media/service.jpg": "/chithiraipandian_co/static/media/service.9778b1507ee8999256bc.jpg",
@@ -26,11 +26,11 @@
     "static/media/revicons.ttf": "/chithiraipandian_co/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/chithiraipandian_co/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/chithiraipandian_co/index.html",
-    "main.ac1f6eca.css.map": "/chithiraipandian_co/static/css/main.ac1f6eca.css.map",
+    "main.715082c0.css.map": "/chithiraipandian_co/static/css/main.715082c0.css.map",
     "main.51dcced5.js.map": "/chithiraipandian_co/static/js/main.51dcced5.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac1f6eca.css",
+    "static/css/main.715082c0.css",
     "static/js/main.51dcced5.js"
   ]
 }
