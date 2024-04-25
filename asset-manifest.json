@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/chithiraipandian_co/static/css/main.715082c0.css",
-    "main.js": "/chithiraipandian_co/static/js/main.d968fb7d.js",
+    "main.css": "/chithiraipandian_co/static/css/main.ef18f974.css",
+    "main.js": "/chithiraipandian_co/static/js/main.a63ab634.js",
     "static/media/Secretarial.jpg": "/chithiraipandian_co/static/media/Secretarial.9eeb59ed69ad2f44e2df.jpg",
     "static/media/service.jpg": "/chithiraipandian_co/static/media/service.9778b1507ee8999256bc.jpg",
     "static/media/Indirect_Tax.jpg": "/chithiraipandian_co/static/media/Indirect_Tax.d6a769bb38df2a43f5c7.jpg",
@@ -15,6 +15,7 @@
     "static/media/advisor.png": "/chithiraipandian_co/static/media/advisor.8580025458368568c576.png",
     "static/media/workingHour.png": "/chithiraipandian_co/static/media/workingHour.18902172de4b288851b4.png",
     "static/media/legalcomplain.png": "/chithiraipandian_co/static/media/legalcomplain.de878c0c6479dc4edd6d.png",
+    "static/media/nithya.png": "/chithiraipandian_co/static/media/nithya.bbd850b2f84be1785c34.png",
     "static/media/CA1.png": "/chithiraipandian_co/static/media/CA1.4a548b7070f5b8734346.png",
     "static/media/contact.jpg": "/chithiraipandian_co/static/media/contact.fcec1e4cad436d21b346.jpg",
     "static/media/emergency.jpg": "/chithiraipandian_co/static/media/emergency.0875357ba490363c82e7.jpg",
@@ -26,11 +27,11 @@
     "static/media/revicons.ttf": "/chithiraipandian_co/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/chithiraipandian_co/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/chithiraipandian_co/index.html",
-    "main.715082c0.css.map": "/chithiraipandian_co/static/css/main.715082c0.css.map",
-    "main.d968fb7d.js.map": "/chithiraipandian_co/static/js/main.d968fb7d.js.map"
+    "main.ef18f974.css.map": "/chithiraipandian_co/static/css/main.ef18f974.css.map",
+    "main.a63ab634.js.map": "/chithiraipandian_co/static/js/main.a63ab634.js.map"
   },
   "entrypoints": [
-    "static/css/main.715082c0.css",
-    "static/js/main.d968fb7d.js"
+    "static/css/main.ef18f974.css",
+    "static/js/main.a63ab634.js"
   ]
 }
