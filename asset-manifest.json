@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/chithiraipandian_co/static/css/main.6230fbad.css",
-    "main.js": "/chithiraipandian_co/static/js/main.e7fd3dd1.js",
+    "main.css": "/chithiraipandian_co/static/css/main.770edcfd.css",
+    "main.js": "/chithiraipandian_co/static/js/main.3120d6c5.js",
     "static/media/Secretarial.jpg": "/chithiraipandian_co/static/media/Secretarial.9eeb59ed69ad2f44e2df.jpg",
     "static/media/service.jpg": "/chithiraipandian_co/static/media/service.9778b1507ee8999256bc.jpg",
     "static/media/Indirect_Tax.jpg": "/chithiraipandian_co/static/media/Indirect_Tax.d6a769bb38df2a43f5c7.jpg",
@@ -27,11 +27,11 @@
     "static/media/revicons.ttf": "/chithiraipandian_co/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/chithiraipandian_co/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/chithiraipandian_co/index.html",
-    "main.6230fbad.css.map": "/chithiraipandian_co/static/css/main.6230fbad.css.map",
-    "main.e7fd3dd1.js.map": "/chithiraipandian_co/static/js/main.e7fd3dd1.js.map"
+    "main.770edcfd.css.map": "/chithiraipandian_co/static/css/main.770edcfd.css.map",
+    "main.3120d6c5.js.map": "/chithiraipandian_co/static/js/main.3120d6c5.js.map"
   },
   "entrypoints": [
-    "static/css/main.6230fbad.css",
-    "static/js/main.e7fd3dd1.js"
+    "static/css/main.770edcfd.css",
+    "static/js/main.3120d6c5.js"
   ]
 }
