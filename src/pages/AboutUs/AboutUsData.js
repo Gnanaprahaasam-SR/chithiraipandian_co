@@ -2,8 +2,8 @@ import AboutusImage from '../../images/AboutUs.png'
 import { Accessibility, VerifiedUser, TrendingUp, Stars, HowToReg, AccountBalance, Transform, WorkOutline, PeopleAlt } from '@mui/icons-material';
 import CA_T_CHITHIRAI_PANDIAN from '../../images/TeamImage/CA_T_CHITHIRAI_PANDIAN.jpeg'
 import CA_V_MITHRA from '../../images/TeamImage/CA_V_MITHRA.jpeg'
-import CA_SUBA_SHREE_SV from '../../images/TeamImage/CA_SUBA_SHREE_SV.jpeg'
-
+import CA_SUBA_SHREE_SV from '../../images/TeamImage/CA_SUBA_SHREE_SV.jpeg';
+import nithya from "../../images/nithya.png";
 
 
 
@@ -83,7 +83,13 @@ const AboutUsData = {
                 name: "CA SUBA SHREE S V",
                 designation: "HEAD OF INDIRECT TAX, INTERNAL AUDIT AND RISK ADVISORY PRACTICE",
                 image: CA_SUBA_SHREE_SV
-            }
+            },
+            {
+                name: "HR  NITHYA S",
+                designation: "HUMAN RESOURCE TRAINING & DEVELOPMENT",
+                image: nithya
+            },
+            
         ]
     }
 };

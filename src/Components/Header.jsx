@@ -17,7 +17,7 @@ function NavBar() {
         <Navbar.Brand as={Link}  onClick={handleChange} to="/"  >
           <img src={logo} alt="Company Logo" width={70}  className="d-inline me-2 "/>
         </Navbar.Brand>
-        <p className="d-flex mt-3 d-none d-sm-block fs-4 ">Chithiraipandian & Co </p>
+        <h5 className="d-flex mt-3 d-none d-sm-block fs-4 ">Chithiraipandian & Co </h5>
         <Navbar.Toggle aria-controls="navbarScroll" style={{backgroundColor:"#cf9475", border:"none",outline:"none"}} />
         <Navbar.Collapse id="navbarScroll" className="justify-content-end" >
           <Nav className="d-flex mx-left my-2 my-lg-0 gap-2" style={{ maxHeight: "100px" }} navbarScroll>
@@ -38,7 +38,7 @@ function NavBar() {
               <NavDropdown.Item className="menu_link" as={Link}  onClick={handleChange} to="/gstcalculator">GST Calculator</NavDropdown.Item>
               <NavDropdown.Item className="menu_link" as={Link}  onClick={handleChange} to="/tdscalculator">TDS Calculator</NavDropdown.Item>
               <NavDropdown.Item className="menu_link" as={Link}  onClick={handleChange} to="/emicalculator">EMI Calculator</NavDropdown.Item>
-              <NavDropdown.Item className="menu_link" as={Link}  onClick={handleChange} to="/nsccalculator">NSC Calculator</NavDropdown.Item>
+              {/* <NavDropdown.Item className="menu_link" as={Link}  onClick={handleChange} to="/nsccalculator">NSC Calculator</NavDropdown.Item>
               <NavDropdown.Item className="menu_link" as={Link}  onClick={handleChange} to="/autoloancalculator">AutoLoan Calculator</NavDropdown.Item>
               <NavDropdown.Item className="menu_link" as={Link}  onClick={handleChange} to="/effectivecapital">EffectiveCapital</NavDropdown.Item>
               <NavDropdown.Item className="menu_link" as={Link}  onClick={handleChange} to="/netprofitcalculator">Calculate Net profit </NavDropdown.Item>
@@ -46,7 +46,7 @@ function NavBar() {
               <NavDropdown.Item className="menu_link" as={Link}  onClick={handleChange} to="/homeloancalculator">HomeLoan Calculator </NavDropdown.Item>
               <NavDropdown.Item className="menu_link" as={Link}  onClick={handleChange} to="/installment">Get No.of Installment </NavDropdown.Item>
               <NavDropdown.Item className="menu_link" as={Link}  onClick={handleChange} to="/HRAcalculator">HRA Calculator </NavDropdown.Item>
-              <NavDropdown.Item className="menu_link" >Knowledge Bank</NavDropdown.Item>
+              <NavDropdown.Item className="menu_link" as={Link}  onClick={handleChange} to="/incometaxcalculator">Income Tax Calculator</NavDropdown.Item> */}
             </NavDropdown>
             {/* <Nav.Link as={Link} to="/" className="menu_link">
               Career

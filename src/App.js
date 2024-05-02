@@ -22,6 +22,7 @@ import NetWorthCalculator from './pages/Calculators/NetWorthCalculator';
 import HomeLoanCalculator from './pages/Calculators/HomeLoanCalculator';
 import Installment from './pages/Calculators/GetInstallment';
 import HRA from './pages/Calculators/HRACalculator';
+import IncomeTaxCalculator from './pages/Calculators/IncomeTaxCalculator';
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
         <Route path='/homeloancalculator' element={<HomeLoanCalculator/>} />
         <Route path='/installment' element={<Installment/>} />
         <Route path='/HRAcalculator' element={<HRA/>}/>
+        <Route path='/incometaxcalculator' element={<IncomeTaxCalculator/>}/>
       </Routes>
       <Footer />
     </div>
