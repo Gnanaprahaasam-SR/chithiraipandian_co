@@ -50,7 +50,7 @@ export function Employee() {
   return (
     <div className="container p-3">
       <div className="slider-container">
-        <h1 style={{ textAlign: 'center', color: '#CF9475', fontWeight: 'bold' }}>{teamData.title}</h1>
+        <h1 style={{ textAlign: 'center', color: '#C58940', fontWeight: 'bold' }}>{teamData.title}</h1>
         <Carousel
           className="mx-3 my-5 team-carosal"
           responsive={responsive}

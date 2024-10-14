@@ -17,7 +17,7 @@ function NavBar() {
         <Navbar.Brand as={Link}  onClick={handleChange} to="/"  >
           <img src={logo} alt="Company Logo" width={70}  className="d-inline me-2 "/>
         </Navbar.Brand>
-        <h5 className="d-flex mt-3 d-none d-sm-block fs-4 ">Chithiraipandian & Co </h5>
+        <h5 className="d-flex mt-3 d-none d-sm-block fs-4" style={{color:"#116391"}}>Chithiraipandian & Co </h5>
         <Navbar.Toggle aria-controls="navbarScroll" style={{backgroundColor:"#cf9475", border:"none",outline:"none"}} />
         <Navbar.Collapse id="navbarScroll" className="justify-content-end" >
           <Nav className="d-flex mx-left my-2 my-lg-0 gap-2" style={{ maxHeight: "100px" }} navbarScroll>

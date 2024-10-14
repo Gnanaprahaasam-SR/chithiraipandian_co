@@ -23,12 +23,15 @@ import HomeLoanCalculator from './pages/Calculators/HomeLoanCalculator';
 import Installment from './pages/Calculators/GetInstallment';
 import HRA from './pages/Calculators/HRACalculator';
 import IncomeTaxCalculator from './pages/Calculators/IncomeTaxCalculator';
+import Header2 from './Components/Header2';
 
 
 function App() {
   return (
     <div>
-      <NavBar />
+      
+      <Header2/>
+      {/* <NavBar />   */}
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/aboutus/thefirm' element={<AboutUs_TheFirm />} />

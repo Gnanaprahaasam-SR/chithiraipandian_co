@@ -15,15 +15,15 @@ h6 {
 }
 
 :root {
-  --primary-color:#C58940;
-  --primary-lite-color:#FAEAB1;
-  --secondary-color: #E4D4C8;
+  --primary-color: #C58940;
+  --primary-lite-color: #FAEAB1;
+  --secondary-color: #FEFAF6;
   --secondary-background-color: #141414;
-  --text-color:#523A28;
+  --text-color: #523A28;
 }
 
 * {
-  font-family: "Inter",  sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .App {
@@ -63,13 +63,13 @@ h6 {
   gap: 10px;
 }
 
-.experience-title{
+.experience-title {
   color: var(--primary-color);
   font-size: 24px;
   font-weight: bold;
 }
 
-.experience-card{
+.experience-card {
   background-color: var(--primary-lite-color);
   padding: 20px;
   border-radius: 20px;
@@ -78,17 +78,17 @@ h6 {
 
 }
 
-.experience-card:hover{
+.experience-card:hover {
   background-color: var(--primary-color);
 }
 
-.experience-card:hover .experience-title{
+.experience-card:hover .experience-title {
   color: var(--primary-lite-color);
   transition: background-color 0.3s ease;
 
 }
 
-.experience-card:hover .experience-description{
+.experience-card:hover .experience-description {
   color: var(--secondary-color);
   transition: background-color 0.3s ease;
 
@@ -96,9 +96,10 @@ h6 {
 
 
 
-.experience-description{
+.experience-description {
   font-size: 18px;
 }
+
 .serviceTitle {
   color: var(--primary-color);
   font-size: 36px;
@@ -112,25 +113,26 @@ h6 {
 }
 
 
-.services-image-container{
+.services-image-container {
   position: relative;
   border: 5px solid var(--primary-color);
   background-color: var(--primary-color);
   border-radius: 20px 0 20px 0;
 }
-.services-image{
+
+.services-image {
   border-radius: 20px 0 20px 0;
   filter: brightness(30%);
 }
 
-.services-text{
+.services-text {
   position: absolute;
   font-weight: bold;
   font-size: 15px;
   text-align: center;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) ;
+  transform: translate(-50%, -50%);
   color: var(--secondary-color);
 }
 
@@ -203,10 +205,7 @@ h6 {
 }
 
 .text-content {
-  /* position: absolute; */
-  /* top: 50%; */
-  /* left: 40%; */
-  /* transform: translate(-35%, -50%);   */
+
   text-wrap: wrap;
   text-align: start;
   color: var(--secondary-background-color);
@@ -224,12 +223,14 @@ h6 {
 }
 
 .legal_information {
-  height: 40vh;
+  height: auto;
 }
-.legal_title{
+
+.legal_title {
   font-size: 26px;
 }
-.legal_content{
+
+.legal_content {
   font-size: 16px !important;
 }
 
@@ -343,7 +344,7 @@ h6 {
   top: 50%;
 }
 
-.aboutus-card{
+.aboutus-card {
   background: var(--primary-lite-color);
   padding: 20px;
   margin: 20px 10px;
@@ -352,21 +353,22 @@ h6 {
   transition: background-color 0.3s ease;
 }
 
-.aboutus-card:hover{
+.aboutus-card:hover {
   background-image: linear-gradient(to right top, #faeab1, #ecd292, #dfba75, #d2a25a, #c58940);
 }
 
-.aboutus-card:hover .aboutus-description{
+.aboutus-card:hover .aboutus-description {
   color: var(--secondary-background-color);
   transition: background-color 0.3s ease;
 }
 
 
-.aboutus-card:hover .aboutus-button{
+.aboutus-card:hover .aboutus-button {
   color: var(--primary-lite-color);
   transition: background-color 0.3s ease;
 }
-.aboutus-card:hover .aboutus-title{
+
+.aboutus-card:hover .aboutus-title {
   color: var(--primary-lite-color);
   transition: background-color 0.3s ease;
 }
@@ -390,6 +392,7 @@ h6 {
   font-weight: bold;
   color: var(--primary-color);
 }
+
 .contact_image {
   width: 100%;
 }
@@ -416,15 +419,15 @@ h6 {
   border: 1px solid #c6dadf;
 }
 
-.team-name{
+.team-name {
   font-size: 18px;
   font-weight: bold;
-  color:var(--primary-color)
+  color: var(--primary-color)
 }
 
-.team-designation{
+.team-designation {
   font-size: 14px;
-  color:var(--text-color)
+  color: var(--text-color)
 }
 
 .team-member-image {
@@ -435,12 +438,12 @@ h6 {
 }
 
 
-.team-carosal{
+.team-carosal {
   background-color: var(--primary-lite-color);
   border-radius: 20px;
 }
 
-.team-card{
+.team-card {
   margin: 20px;
   background-color: var(--secondary-color);
   padding: 30px;
@@ -449,17 +452,18 @@ h6 {
 }
 
 .middle-card {
-  width: 300px; 
+  width: 300px;
   height: 350px;
 }
 
 
 /* footer */
- 
+
 .footer {
   background-color: var(--secondary-background-color);
 }
-.footer h4 {
+
+.footer h5 {
   color: var(--primary-color);
 }
 
@@ -468,7 +472,140 @@ h6 {
   background: linear-gradient(rgb(152, 189, 223), rgb(134, 209, 134)) !important;
 }
 
+
+/* service cards */
+
+.serviceCard-item {
+  border-radius: 6px;
+  overflow: hidden;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 2;
+}
+
+.serviceCard-item-1 {
+  background: linear-gradient(to top, rgba(72, 172, 238, 0.596) 35%, rgba(190, 233, 247, 0.445) 100%);
+}
+
+.serviceCard-item-2 {
+  background: linear-gradient(to top, rgba(192, 93, 231, 0.596) 35%, rgba(247, 190, 242, 0.445) 100%);
+}
+
+.serviceCard-item-3 {
+  background: linear-gradient(to top, rgb(252, 229, 102) 35%, rgba(245, 238, 176, 0.445) 100%);
+}
+
+.serviceCard-item-4 {
+  background: linear-gradient(to top, rgba(81, 241, 129, 0.596) 35%, rgba(188, 243, 190, 0.445) 100%);
+}
+
+.serviceCard-item-6 {
+  background: linear-gradient(to top, rgba(241, 81, 161, 0.596) 35%, rgba(243, 188, 238, 0.445) 100%);
+}
+
+.serviceCard-item-5 {
+  background: linear-gradient(to top, rgb(244, 248, 17) 35%, rgba(243, 250, 149, 0.616) 100%);
+}
+
+.serviceCard-item-1:hover {
+  background: rgb(170, 204, 216);
+  padding: 5%;
+  align-items: start;
+  height: 100%;
+}
+
+.serviceCard-item-2:hover {
+  background: rgb(220, 174, 241);
+  padding: 5%;
+  align-items: start;
+  height: 100%;
+}
+
+.serviceCard-item-3:hover {
+  background: rgb(250, 230, 118);
+  padding: 5%;
+  align-items: start;
+  height: 100%;
+}
+
+.serviceCard-item-4:hover {
+  background: rgb(172, 243, 172);
+  padding: 5%;
+  align-items: start;
+  height: 100%;
+}
+
+.serviceCard-item-6:hover {
+  background: rgb(241, 174, 174);
+  padding: 5%;
+  align-items: start;
+  height: 100%;
+}
+
+.serviceCard-item-5:hover {
+  background: rgb(253, 250, 47);
+  padding: 5%;
+  align-items: start;
+  height: 100%;
+}
+.serviceCard-item-title {
+  font-size: 24px;
+  text-align: center;
+  text-wrap: wrap;
+}
+
+
+.serviceCard-item .serviceCard-description {
+  display: none;
+  font-size: 14px;
+  text-align: start;
+  transition: opacity 0.3s ease;
+}
+
+.serviceCard-item:hover .serviceCard-description {
+  display: block;
+  color: black;
+}
+
+.serviceCard-button {
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px 20px;
+  background: linear-gradient(to right, black 25%, rgba(73, 73, 73, 0.151) 75%);
+  background-size: 100% 99%;
+  background-position: right bottom;
+  color: var(--white-color);
+  cursor: pointer;
+  transition: background-position 0.5s ease, color 0.5s ease;
+  position: relative;
+  z-index: 1;
+
+}
+
+.serviceCard-item:hover .serviceCard-button {
+  background: linear-gradient(to right, black 100%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  color: white;
+}
+
+.serviceCard-item .serviceCard-icon {
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+}
+
+.serviceCard-item:hover .serviceCard-icon {
+  display: none;
+}
+
+
+
 @media (max-width: 720px) {
+
   /* home carousel */
   .carousel-image {
     width: 100%;
@@ -482,7 +619,7 @@ h6 {
     left: 25%;
     color: var(--secondary-color);
     display: block;
-    background-color: linear-gradient(rgb(152, 189, 223),rgb(134, 209, 134));
+    background-color: linear-gradient(rgb(152, 189, 223), rgb(134, 209, 134));
   }
 }
 
@@ -492,15 +629,19 @@ h6 {
   .carousel-item.active .carousel-item-content .animated-text {
     font-size: 18px;
     justify-content: center;
-    
+
   }
+
   .legal_information {
     height: auto;
+    position: relative;
   }
-  .legal_title{
+
+  .legal_title {
     font-size: 20px;
   }
-  .legal_content{
+
+  .legal_content {
     font-size: 14px !important;
   }
 
@@ -519,18 +660,18 @@ h6 {
 
 @media screen and (max-width: 768px) {
   h1 {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .centeredH1 {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .experience-heading {
-      font-size: 28px;
+    font-size: 28px;
   }
 
-  .aboutus-heading{
-      font-size: 28px;
+  .aboutus-heading {
+    font-size: 28px;
   }
 }

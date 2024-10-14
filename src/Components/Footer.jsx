@@ -13,13 +13,18 @@ const Footer = () => {
     return (
         <div className="footer " >
             <div className="container ">
-                <div className="row ">
-                    <div className="col-12 col-md-4 text-white py-4">
-                        <img src={logo} alt="log" width="40%" className="pb-4" />
-                        <h4 >Head Office</h4>
+                <div className="row d-flex justify-content-between">
+                    <div className="col-12 col-md-5 text-white py-4">
+                        {/* <img src={logo} alt="log" width="30%" className="pb-4" /> */}
+                        <h5 >Head Office</h5>
                         <p className="text-wrap">No.14/6M, Hospital Road, Sulur,<br /> Coimbatore -641 402. </p>
+                        <h5>Contact Us</h5>
+                        <p className="text-white">+91 94425 80495</p>
+                        <p className="text-white">+91 94879 80495</p>
+                        <h5>Mail Us</h5>
+                        <a href="mailto:capandian1971@gmail.com" className="link">capandian1971@gmail.com</a>
                     </div>
-                    <div className="col-12 col-md-4 text-white py-4">
+                    {/* <div className="col-12 col-md-4 text-white py-4">
                         <h4 className="">QUICK LINKS</h4>
                         <Link className="link" onClick={handleChange} to="/">Home</Link>
                         <Link className="link" onClick={handleChange} to="/aboutus/thefirm" >About Us</Link>
@@ -27,15 +32,15 @@ const Footer = () => {
                         <Link className="link" onClick={handleChange} to="" >Career</Link>
                         <Link className="link" onClick={handleChange} to="/experience">Experience</Link>
                         <Link className="link" onClick={handleChange} to="/contact">Contact Us</Link>
-                    </div>
-                    <div className="col-12 col-md-4 py-4">
-                        <h4>Contact Us</h4>
+                    </div> */}
+                    <div className="col-12 col-md-3 py-4">
+                        {/* <h4>Contact Us</h4>
                         <p className="text-white">+91 94425 80495</p>
                         <p className="text-white">+91 94879 80495</p>
                         <h4>Mail Us</h4>
-                        <a href="mailto:capandian1971@gmail.com" className="link">capandian1971@gmail.com</a>
-                        <h4>Follow Us</h4>
-                        <div className="d-flex gap-3">
+                        <a href="mailto:capandian1971@gmail.com" className="link">capandian1971@gmail.com</a> */}
+                        <h5>Follow Us</h5>
+                        <div className="d-flex flex-column gap-3">
                             <SiFacebook color="white" size={20} />
                             <SlSocialInstagram color="white" size={20} />
                             <FaLinkedin color="white" size={20} />

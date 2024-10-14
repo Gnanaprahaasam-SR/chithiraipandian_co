@@ -2,6 +2,65 @@ import React, { useState } from "react";
 import Content from "./Content";
 import { Carousel } from "react-bootstrap";
 import { Employee } from "./AboutUs/AboutUs_OurTeam";
+import { FaArrowRight } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import audit from "../images/audit.png";
+import bookkeeper from "../images/bookkeeper.png";
+import discussion from "../images/discussion.png";
+import indirect from "../images/indirect.png";
+import receptionist from "../images/receptionist.png";
+import taxes from "../images/taxes.png";
+import { CiCircleCheck } from "react-icons/ci";
+
+const cardItems = [
+  {
+    id: 1,
+    icon: audit,
+    title: "Audit & Assurance Services",
+    description: ["Bank Audit", "Internal Audit", "Stock Audit", "Tax Audit",],
+    link: "/service/auditAndAssuranceServices"
+  },
+  {
+    id: 2,
+    icon: taxes,
+    title: "Direct Tax Services",
+    description: ["Domestic", "International"],
+    link: "/service/directTaxServices"
+
+  },
+  {
+    id: 3,
+    icon: indirect,
+    title: "Indirect Tax Services",
+    description: ["GST Compliances", "GST Audit", "Filling of GST Returns and refund"],
+    link: "/service/indirectTaxServices"
+
+  },
+  {
+    id: 4,
+    icon: discussion,
+    title: "Advisory Services",
+    description: ["GST Compliances", "GST Audit", "Filling of GST Returns and refund"],
+    link: "/service/advisoryServices"
+
+  },
+  {
+    id: 5,
+    icon: receptionist,
+    title: "Secretarial",
+    description: ["GST Compliances", "GST Audit", "Filling of GST Returns and refund"],
+    link: "/service/secretarial"
+
+  },
+  {
+    id: 6,
+    icon: bookkeeper,
+    title: "Bookkeeping Services",
+    description: ["GST Compliances", "GST Audit", "Filling of GST Returns and refund"],
+    link: "/service/bookkeepingServices"
+
+  }
+];
 
 
 const Home = () => {
@@ -12,7 +71,7 @@ const Home = () => {
     setActiveIndex(selectedIndex);
   };
 
- 
+
   return (
     <div className="home ">
       <div className="home_section_1 overflow-hidden ">
@@ -58,7 +117,7 @@ const Home = () => {
               <p className="legal_content">{home?.emergencyCase?.contanct}</p>
             </div>
           </div>
-          <div className="col-12  col-sm-12  col-md-4 p-5 ">
+          <div className="col-12  col-sm-12  col-md-4 p-5 align-content-center">
             {/* <img src={home?.legalHelp?.image} alt="timer" width="110%" height="100%" className="container-image" /> */}
             <div className="text-content ">
               <h4 className="legal_title">{home?.legalHelp?.title}</h4>
@@ -97,8 +156,36 @@ const Home = () => {
           </div>
         </div>
 
+        <div className="bg-white p-3 container">
+          <div className="row">
+            {cardItems.map((item, index) => (
+              <div key={index} className="col-md-4 col-sm-6 col-12 g-4">
+                <div className={`serviceCard-item serviceCard-item-${index + 1} shadow`}>
+                  <span className="serviceCard-icon px-2">
+                    <img src={item.icon} alt="" width={80} />
+                  </span>
+                  <b className="serviceCard-item-title px-2">{item.title}</b>
+                  <div className="serviceCard-description px-2">
+                    {item.description.map((item, index) =>
+                      <div key={index} className="d-flex gap-2">
+                        <CiCircleCheck size={20} className="text-white" />
+                        <p className="text-wrap">{item}</p>
+                      </div>
+                    )}
+                  </div>
+                  <Link to={item.link} className="text-decoration-none">
+                    <button className="serviceCard-button ">
+                      <FaArrowRight fontSize={23} className="me-3" />  learn More
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Employee carousel */}
-        <div className="position-absoulte">
+        <div className="position-relative">
           <Employee />
         </div>
 
