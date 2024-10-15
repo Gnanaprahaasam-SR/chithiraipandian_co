@@ -32,7 +32,7 @@ const Header2 = () => {
                 {/* Navigation menu */}
                 <div className={`nav_menu ${isMenuVisible ? 'show-menu' : ''}`}>
                     {/* Home link */}
-                    <NavLink to="/" className="nav_link" onClick={toggleMenu}>
+                    <NavLink to="/" className="nav_link"  onClick={handleDropdownItemClick}>
                         <div>Home</div>
                     </NavLink>
                     
@@ -87,10 +87,10 @@ const Header2 = () => {
                     </div>
 
                     {/* Experience and Contact Us */}
-                    <NavLink to="/" className="nav_link" onClick={toggleMenu}>
+                    <NavLink to="/experience" className="nav_link"  onClick={handleDropdownItemClick}>
                         <div>Experience</div>
                     </NavLink>
-                    <NavLink to="/" className="nav_link" onClick={toggleMenu}>
+                    <NavLink to="/contact" className="nav_link"  onClick={handleDropdownItemClick}>
                         <div>Contact Us</div>
                     </NavLink>
                 </div>

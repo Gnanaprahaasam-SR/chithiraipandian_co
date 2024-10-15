@@ -43,6 +43,13 @@ a,
     cursor: pointer;
     text-decoration: none;
     display: inline-flex;
+    padding: 5px;
+}
+
+.nav_link:hover, 
+.dropdown_link:hover{
+    background-color:  var(--black-color);
+    border-radius: 8px;
 }
 
 .nav_link:hover .dropdown_arrow {
@@ -70,12 +77,6 @@ a,
 }
 
 
-.nav_link:hover, 
-.dropdown_link:hover{
-    background-color:  var(--black-color);
-    padding: 5px;
-    border-radius: 8px;
-}
 
 
 /* Dropdown functionality for larger screens */

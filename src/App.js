@@ -30,8 +30,8 @@ function App() {
   return (
     <div>
       
-      <Header2/>
-      {/* <NavBar />   */}
+      {/* <Header2/> */}
+      <NavBar />  
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/aboutus/thefirm' element={<AboutUs_TheFirm />} />

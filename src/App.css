@@ -11,15 +11,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Marcellus", serif;
+  font-family: "EB Garamond", serif;
 }
 
 :root {
-  --primary-color: #C58940;
-  --primary-lite-color: #FAEAB1;
-  --secondary-color: #FEFAF6;
-  --secondary-background-color: #141414;
-  --text-color: #523A28;
+  --primary-green:#3e7104;
+  --primary-blue: #083D5F;
+  --primary-text: #141414;
+  --background-color: #ffffff;
+  --footer-background: linear-gradient(to top, rgba(72, 172, 238, 0.596) 35%, rgba(190, 233, 247, 0.445) 100%)
+  
 }
 
 * {
@@ -139,9 +140,19 @@ h6 {
 /* home */
 .menu_link,
 #navbarScrollingDropdown {
-  color: var(--primary-color) !important;
-  font-weight: 400 !important;
-  font-size: larger !important;
+  color: var(--primary-blue) !important;
+  font-weight: 400 ;
+}
+
+.menu_link:hover,
+#navbarScrollingDropdown:hover,
+.nav-link.active,  .dropdown-toggle .nav-link:active {
+  color: var(--primary-green) !important ;
+}
+
+.dropdown-item.active{
+  background: transparent !important;
+  color: var(--primary-green) !important ;
 }
 
 .carousel-image {
@@ -205,29 +216,32 @@ h6 {
 }
 
 .text-content {
-
   text-wrap: wrap;
-  text-align: start;
-  color: var(--secondary-background-color);
+  text-align: start; 
 }
 
 .appointment_btn {
-  color: var(--primary-color) !important;
-  background-color: var(--secondary-color) !important;
+  color: var(--primary-green);
+  border-radius: 5px;
+  border: 1px solid var(--primary-green) !important;
+  background-color: white;
+  outline: none;
+  padding: 2%;
 }
 
 .appointment_btn:hover {
-  background-color: var(--primary-color) !important;
-  color: var(--secondary-color) !important;
-  border-color: var(--primary-color) !important;
+  background-color: var(--primary-green) !important;
+  color: white;
 }
 
 .legal_information {
   height: auto;
+  background: linear-gradient(to top, rgba(146, 204, 243, 0.596) 35%, rgba(190, 233, 247, 0.445) 100%);
 }
 
 .legal_title {
   font-size: 26px;
+  color: var(--primary-green);
 }
 
 .legal_content {
@@ -460,11 +474,15 @@ h6 {
 /* footer */
 
 .footer {
-  background-color: var(--secondary-background-color);
+  background: var(--footer-background) ;
+  font-size: 14px;
+  color: var(--primary-text);
 }
-
-.footer h5 {
-  color: var(--primary-color);
+.footer_icon{
+  color: var(--primary-blue);
+}
+.footer h6 {
+  color: var(--primary-green);
 }
 
 /* calculator table */
@@ -484,11 +502,12 @@ h6 {
   justify-content: space-evenly;
   align-items: center;
   z-index: 2;
+  padding: 4%;
 }
 
-.serviceCard-item-1 {
+/* .serviceCard-item-1 {
   background: linear-gradient(to top, rgba(72, 172, 238, 0.596) 35%, rgba(190, 233, 247, 0.445) 100%);
-}
+} */
 
 .serviceCard-item-2 {
   background: linear-gradient(to top, rgba(192, 93, 231, 0.596) 35%, rgba(247, 190, 242, 0.445) 100%);
@@ -555,6 +574,8 @@ h6 {
   font-size: 24px;
   text-align: center;
   text-wrap: wrap;
+  color: var(--primary-green);
+  font-family: "EB Garamond", serif;
 }
 
 
@@ -567,7 +588,8 @@ h6 {
 
 .serviceCard-item:hover .serviceCard-description {
   display: block;
-  color: black;
+  color: var(--primary-text);
+  transition: display 1s ease, color 0.5s ease;
 }
 
 .serviceCard-button {
@@ -582,10 +604,14 @@ h6 {
   transition: background-position 0.5s ease, color 0.5s ease;
   position: relative;
   z-index: 1;
-
+  display: none;
 }
 
 .serviceCard-item:hover .serviceCard-button {
+  display: flex;
+}
+
+.serviceCard-button:hover  {
   background: linear-gradient(to right, black 100%);
   background-size: 200% 100%;
   background-position: left bottom;
@@ -675,3 +701,56 @@ h6 {
     font-size: 28px;
   }
 }
+
+
+.hero-section .title,
+.about-us .title{
+  color: var(--primary-blue);
+}
+
+.hero-section .typing {
+  color: var(--primary-green);
+}
+
+.hero-section .our-service,
+.about-us .readmore{
+  color: white;
+  border-radius: 50px;
+  border: 2px solid var(--primary-green) ;
+  background-color: var(--primary-green);
+  outline: none;
+  padding: 5px 2%;
+}
+
+.hero-section .our-service:hover,
+.about-us .readmore:hover{
+  color: var(--primary-green);
+  border-radius: 50px;
+  border: 2px solid var(--primary-green) ;
+  background-color: white;
+  outline: none;
+  padding: 5px 2%;
+}
+
+.hero-section .talk-button{
+  color:white;
+  border-radius: 50px;
+  border: 2px solid var(--primary-blue) ;
+  background-color: var(--primary-blue);
+  outline: none;
+  padding: 5px 2%;
+}
+
+.hero-section .talk-button:hover{
+  color:white;
+  border-radius: 50px;
+  border: 2px solid var(--primary-green);
+  background-color: var(--primary-green);
+  outline: none;
+  padding: 5px 2%;
+}
+
+.home .about-us{
+  background-color: rgb(241, 241, 241)
+}
+
