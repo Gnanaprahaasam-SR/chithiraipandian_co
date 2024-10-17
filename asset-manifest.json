@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/chithiraipandian_co/static/css/main.855d0b07.css",
-    "main.js": "/chithiraipandian_co/static/js/main.b061b00a.js",
+    "main.css": "/chithiraipandian_co/static/css/main.5f8bf566.css",
+    "main.js": "/chithiraipandian_co/static/js/main.002c1aaf.js",
     "static/media/Secretarial.jpg": "/chithiraipandian_co/static/media/Secretarial.9eeb59ed69ad2f44e2df.jpg",
     "static/media/service.jpg": "/chithiraipandian_co/static/media/service.9778b1507ee8999256bc.jpg",
     "static/media/indomay19.jpg": "/chithiraipandian_co/static/media/indomay19.9924d11c468d43330d3a.jpg",
@@ -17,29 +17,33 @@
     "static/media/workingHour.png": "/chithiraipandian_co/static/media/workingHour.18902172de4b288851b4.png",
     "static/media/legalcomplain.png": "/chithiraipandian_co/static/media/legalcomplain.de878c0c6479dc4edd6d.png",
     "static/media/nithya.png": "/chithiraipandian_co/static/media/nithya.bbd850b2f84be1785c34.png",
+    "static/media/Discusion.png": "/chithiraipandian_co/static/media/Discusion.bf0eab170676a9ae6fe7.png",
+    "static/media/Bookkeeping.png": "/chithiraipandian_co/static/media/Bookkeeping.5f6a24e034d13f6e8350.png",
     "static/media/CA1.png": "/chithiraipandian_co/static/media/CA1.4a548b7070f5b8734346.png",
+    "static/media/DirectTax.png": "/chithiraipandian_co/static/media/DirectTax.6cc5b17b8a70ae049e6e.png",
+    "static/media/IndirectTax.png": "/chithiraipandian_co/static/media/IndirectTax.34808fc4106bdf64ac1d.png",
     "static/media/Audit&Assurance.png": "/chithiraipandian_co/static/media/Audit&Assurance.3ac55860d747c3aae720.png",
-    "static/media/taxes.png": "/chithiraipandian_co/static/media/taxes.c1ee77f84e17853d4eef.png",
-    "static/media/bookkeeper.png": "/chithiraipandian_co/static/media/bookkeeper.5d5d0984c8a92bd5c6e2.png",
-    "static/media/indirect.png": "/chithiraipandian_co/static/media/indirect.75cff4cbe79a883d1764.png",
+    "static/media/Secretarial.png": "/chithiraipandian_co/static/media/Secretarial.24a8d6129cba73d1b3f2.png",
     "static/media/contact.jpg": "/chithiraipandian_co/static/media/contact.fcec1e4cad436d21b346.jpg",
     "static/media/emergency.jpg": "/chithiraipandian_co/static/media/emergency.0875357ba490363c82e7.jpg",
-    "static/media/discussion.png": "/chithiraipandian_co/static/media/discussion.aaee08fd2438d7a38ec3.png",
     "static/media/slide2.webp": "/chithiraipandian_co/static/media/slide2.43cbc67fc4b6a4ce6641.webp",
     "static/media/CA_T_CHITHIRAI_PANDIAN.jpeg": "/chithiraipandian_co/static/media/CA_T_CHITHIRAI_PANDIAN.e9b73699a6e687a05307.jpeg",
-    "static/media/receptionist.png": "/chithiraipandian_co/static/media/receptionist.135ee92d8dca390f8d05.png",
     "static/media/CA_SUBA_SHREE_SV.jpeg": "/chithiraipandian_co/static/media/CA_SUBA_SHREE_SV.8aec575f460252abff1b.jpeg",
     "static/media/CALogo1.png": "/chithiraipandian_co/static/media/CALogo1.186783019855bd97fdc4.png",
     "static/media/CA_V_MITHRA.jpeg": "/chithiraipandian_co/static/media/CA_V_MITHRA.f038b6b163390107e70c.jpeg",
     "static/media/revicons.eot": "/chithiraipandian_co/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/chithiraipandian_co/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/chithiraipandian_co/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/slick.svg": "/chithiraipandian_co/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/chithiraipandian_co/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/chithiraipandian_co/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/chithiraipandian_co/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/chithiraipandian_co/index.html",
-    "main.855d0b07.css.map": "/chithiraipandian_co/static/css/main.855d0b07.css.map",
-    "main.b061b00a.js.map": "/chithiraipandian_co/static/js/main.b061b00a.js.map"
+    "main.5f8bf566.css.map": "/chithiraipandian_co/static/css/main.5f8bf566.css.map",
+    "main.002c1aaf.js.map": "/chithiraipandian_co/static/js/main.002c1aaf.js.map"
   },
   "entrypoints": [
-    "static/css/main.855d0b07.css",
-    "static/js/main.b061b00a.js"
+    "static/css/main.5f8bf566.css",
+    "static/js/main.002c1aaf.js"
   ]
 }
