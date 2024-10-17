@@ -47,7 +47,7 @@ function App() {
         <Route path='/autoloancalculator' element={<AutoLoanCalculator />} />
         <Route path='/effectivecapital' element={<EffectiveCapital />} />
         <Route path='/networthcalculator' element={<NetWorthCalculator />} />
-        <Route path='/service/:serviceKey' element={<ServicePage />} />
+        <Route path='/service' element={<ServicePage />} />
         <Route path='/experience' element={<ExperiencePage />} />
         <Route path='/homeloancalculator' element={<HomeLoanCalculator/>} />
         <Route path='/installment' element={<Installment/>} />

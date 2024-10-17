@@ -15,12 +15,11 @@ h6 {
 }
 
 :root {
-  --primary-green:#3e7104;
+  --primary-green: #3e7104;
   --primary-blue: #083D5F;
   --primary-text: #141414;
   --background-color: #ffffff;
-  --footer-background: linear-gradient(to top, rgba(72, 172, 238, 0.596) 35%, rgba(190, 233, 247, 0.445) 100%)
-  
+ 
 }
 
 * {
@@ -101,58 +100,28 @@ h6 {
   font-size: 18px;
 }
 
-.serviceTitle {
-  color: var(--primary-color);
-  font-size: 36px;
-  font-weight: bold;
-}
-
-.serviceDescription {
-  margin: 10px 0 20px 0;
-  color: var(--primary-color);
-  font-size: 24px;
-}
-
-
-.services-image-container {
-  position: relative;
-  border: 5px solid var(--primary-color);
-  background-color: var(--primary-color);
-  border-radius: 20px 0 20px 0;
-}
-
-.services-image {
-  border-radius: 20px 0 20px 0;
-  filter: brightness(30%);
-}
-
-.services-text {
-  position: absolute;
-  font-weight: bold;
-  font-size: 15px;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--secondary-color);
-}
 
 /* home */
 .menu_link,
 #navbarScrollingDropdown {
   color: var(--primary-blue) !important;
-  font-weight: 400 ;
+  font-weight: 400;
 }
 
 .menu_link:hover,
 #navbarScrollingDropdown:hover,
-.nav-link.active,  .dropdown-toggle .nav-link:active {
-  color: var(--primary-green) !important ;
+.nav-link.active,
+.dropdown-toggle .nav-link:active {
+  color: var(--primary-green) !important;
 }
 
-.dropdown-item.active{
+.dropdown-item.active {
   background: transparent !important;
-  color: var(--primary-green) !important ;
+  color: var(--primary-green) !important;
+}
+
+.dropdown-item:focus {
+  background-color: rgb(243, 241, 241) !important;
 }
 
 .carousel-image {
@@ -217,7 +186,7 @@ h6 {
 
 .text-content {
   text-wrap: wrap;
-  text-align: start; 
+  text-align: start;
 }
 
 .appointment_btn {
@@ -472,16 +441,61 @@ h6 {
 
 
 /* footer */
-
 .footer {
-  background: var(--footer-background) ;
-  font-size: 14px;
-  color: var(--primary-text);
+  background-color: rgb(241, 241, 241);
 }
-.footer_icon{
+
+.footer .info-box {
+  border: 5px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer_icon {
   color: var(--primary-blue);
 }
+
 .footer h6 {
+  color: var(--primary-green);
+}
+
+.footer .info-title {
+  font-size: 46px;
+  font-weight: 600;
+  font-family: "EB Garamond", serif;
+}
+
+.footer .info-subTitle {
+  font-size: 600;
+}
+
+.footer-form {
+  background: transparent;
+  padding: 5%;
+}
+
+.footer-input {
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin-bottom: 3%;
+  border-radius: 5px;
+  background: white;
+}
+
+.footer-btn {
+  color: var(--primary-green);
+  border-radius: 50px;
+  border: 2px solid var(--primary-green);
+  outline: none;
+  padding: 5px 15px;
+  font-weight: 600;
+  float: right;
+}
+
+.footer-icon {
   color: var(--primary-green);
 }
 
@@ -496,7 +510,7 @@ h6 {
 .serviceCard-item {
   border-radius: 6px;
   overflow: hidden;
-  min-height: 300px;
+  min-height: 380px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -505,79 +519,24 @@ h6 {
   padding: 4%;
 }
 
-/* .serviceCard-item-1 {
-  background: linear-gradient(to top, rgba(72, 172, 238, 0.596) 35%, rgba(190, 233, 247, 0.445) 100%);
-} */
-
-.serviceCard-item-2 {
-  background: linear-gradient(to top, rgba(192, 93, 231, 0.596) 35%, rgba(247, 190, 242, 0.445) 100%);
-}
-
-.serviceCard-item-3 {
-  background: linear-gradient(to top, rgb(252, 229, 102) 35%, rgba(245, 238, 176, 0.445) 100%);
-}
-
-.serviceCard-item-4 {
-  background: linear-gradient(to top, rgba(81, 241, 129, 0.596) 35%, rgba(188, 243, 190, 0.445) 100%);
-}
-
-.serviceCard-item-6 {
-  background: linear-gradient(to top, rgba(241, 81, 161, 0.596) 35%, rgba(243, 188, 238, 0.445) 100%);
-}
-
-.serviceCard-item-5 {
-  background: linear-gradient(to top, rgb(244, 248, 17) 35%, rgba(243, 250, 149, 0.616) 100%);
-}
-
-.serviceCard-item-1:hover {
-  background: rgb(170, 204, 216);
+.serviceCard-item:hover {
   padding: 5%;
-  align-items: start;
   height: 100%;
 }
 
-.serviceCard-item-2:hover {
-  background: rgb(220, 174, 241);
-  padding: 5%;
-  align-items: start;
-  height: 100%;
-}
-
-.serviceCard-item-3:hover {
-  background: rgb(250, 230, 118);
-  padding: 5%;
-  align-items: start;
-  height: 100%;
-}
-
-.serviceCard-item-4:hover {
-  background: rgb(172, 243, 172);
-  padding: 5%;
-  align-items: start;
-  height: 100%;
-}
-
-.serviceCard-item-6:hover {
-  background: rgb(241, 174, 174);
-  padding: 5%;
-  align-items: start;
-  height: 100%;
-}
-
-.serviceCard-item-5:hover {
-  background: rgb(253, 250, 47);
-  padding: 5%;
-  align-items: start;
-  height: 100%;
-}
 .serviceCard-item-title {
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   text-wrap: wrap;
-  color: var(--primary-green);
+  color: var(--primary-blue);
   font-family: "EB Garamond", serif;
 }
 
+.serviceCard-item:hover .serviceCard-item-title {
+  color: var(--primary-green);
+  font-size: 22px;
+  align-items: start;
+}
 
 .serviceCard-item .serviceCard-description {
   display: none;
@@ -590,13 +549,14 @@ h6 {
   display: block;
   color: var(--primary-text);
   transition: display 1s ease, color 0.5s ease;
+  align-items: start;
 }
 
 .serviceCard-button {
   border: none;
   padding: 5px 20px;
   border-radius: 5px 20px;
-  background: linear-gradient(to right, black 25%, rgba(73, 73, 73, 0.151) 75%);
+  background: linear-gradient(to right, rgb(47, 50, 248) 25%, rgba(139, 168, 221, 0.351) 75%);
   background-size: 100% 99%;
   background-position: right bottom;
   color: var(--white-color);
@@ -609,10 +569,11 @@ h6 {
 
 .serviceCard-item:hover .serviceCard-button {
   display: flex;
+  justify-content: end;
+  align-items: end;
 }
 
-.serviceCard-button:hover  {
-  background: linear-gradient(to right, black 100%);
+.serviceCard-button:hover {
   background-size: 200% 100%;
   background-position: left bottom;
   color: white;
@@ -703,54 +664,104 @@ h6 {
 }
 
 
-.hero-section .title,
-.about-us .title{
+.main-title {
   color: var(--primary-blue);
+  font-weight: 600;
 }
 
 .hero-section .typing {
   color: var(--primary-green);
+  font-weight: 600;
 }
 
 .hero-section .our-service,
-.about-us .readmore{
+.about-us .readmore {
   color: white;
-  border-radius: 50px;
-  border: 2px solid var(--primary-green) ;
-  background-color: var(--primary-green);
-  outline: none;
-  padding: 5px 2%;
-}
-
-.hero-section .our-service:hover,
-.about-us .readmore:hover{
-  color: var(--primary-green);
-  border-radius: 50px;
-  border: 2px solid var(--primary-green) ;
-  background-color: white;
-  outline: none;
-  padding: 5px 2%;
-}
-
-.hero-section .talk-button{
-  color:white;
-  border-radius: 50px;
-  border: 2px solid var(--primary-blue) ;
-  background-color: var(--primary-blue);
-  outline: none;
-  padding: 5px 2%;
-}
-
-.hero-section .talk-button:hover{
-  color:white;
   border-radius: 50px;
   border: 2px solid var(--primary-green);
   background-color: var(--primary-green);
   outline: none;
-  padding: 5px 2%;
+  padding: 5px 15px;
 }
 
-.home .about-us{
-  background-color: rgb(241, 241, 241)
+.hero-section .our-service:hover,
+.about-us .readmore:hover {
+  color: var(--primary-green);
+  border-radius: 50px;
+  border: 2px solid var(--primary-green);
+  background-color: rgb(238, 247, 200);
+  outline: none;
 }
 
+.hero-section .talk-button:hover {
+  color: white;
+  border-radius: 50px;
+  border: 2px solid var(--primary-blue);
+  background-color: var(--primary-blue);
+  outline: none;
+}
+
+.hero-section .talk-button {
+  color: var(--primary-blue);
+  border-radius: 50px;
+  border: 2px solid var(--primary-blue);
+  background-color: white;
+  outline: none;
+  padding: 5px 15px;
+  font-weight: 600;
+}
+
+.home .about-us,
+.home .our-team{
+  background-color: rgb(241, 241, 241);
+}
+
+.about-us .profile {
+  height: 60vh;
+}
+
+
+.our-team .background-layer {
+  background: var(--primary-blue);
+  height: 100%;
+}
+
+.our-team .team-carosal {
+  position: relative;
+  padding-left: 8%;
+  padding-bottom: 5%;
+}
+
+.our-team .slider-image {
+  width: 100%;
+  height: 100vh;
+}
+
+.our-team ul {
+  list-style: none;
+}
+
+.testimonial-card{
+  background:rgba(122, 236, 193, 0.433) ;
+  border: 1px solid transparent;
+  border-radius: 20px ;
+  width: 75%;
+}
+
+.testimonial-author{
+  position: relative;
+  float: inline-end;
+  color: var(--primary-green);
+  font-weight: 600;
+  font-style: italic;
+  font-family: "EB Garamond", serif;
+}
+
+.list-icon {
+  color: var(--primary-green);
+  margin-right: 1%;
+}
+
+.list-title{
+  color: var(--primary-blue);
+}
