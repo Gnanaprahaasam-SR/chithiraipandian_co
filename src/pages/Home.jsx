@@ -5,15 +5,20 @@ import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import audit from "../images/Audit&Assurance.png";
 import bookkeeper from "../images/Bookkeeping.png";
-import discussion from "../images/Discusion.png";
+import Advisory from "../images/Advisory.png";
 import indirect from "../images/IndirectTax.png";
 import Secretarial from "../images/Secretarial.png";
-import DirectTax from "../images/DirectTax.png";
+import DirectTax from "../images/DirectTax2.png";
 import { CiCircleCheck } from "react-icons/ci";
 // import { PiCloudSlash } from "react-icons/pi";
-import chithirapandian from "../images/TeamImage/CA_T_CHITHIRAI_PANDIAN.jpeg";
-import suba from "../images/TeamImage/CA_SUBA_SHREE_SV.jpeg";
-import Mithra from "../images/TeamImage/CA_V_MITHRA.jpeg";
+import chithirapandian from "../images/TeamImage/CA-6.png";
+import Team from "../images/TeamImage/CA-13.png";
+import Team2 from "../images/TeamImage/CA-11.png";
+import Team3 from "../images/TeamImage/CA-17.png";
+import Team4 from "../images/TeamImage/CA-18.png";
+import Team5 from "../images/TeamImage/CA-14.png";
+import Team6 from "../images/TeamImage/CA-10.png";
+import Team7 from "../images/TeamImage/CA-8.png";
 import { IoArrowRedo } from "react-icons/io5";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
@@ -21,21 +26,21 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
+const TeamImage = [Team, Team2, Team3, Team4, Team5, Team6, Team7];
 const cardItems = [
   {
     id: 1,
     icon: audit,
     title: "Audit & Assurance Services",
     description: ["Bank Audit", "Internal Audit", "Stock Audit", "Tax Audit",],
-    link: "/service/auditAndAssuranceServices"
+    link: "/service"
   },
   {
     id: 2,
     icon: DirectTax,
     title: "Direct Tax Services",
     description: ["Domestic", "International"],
-    link: "/service/directTaxServices"
+    link: "/service"
 
   },
   {
@@ -43,15 +48,15 @@ const cardItems = [
     icon: indirect,
     title: "Indirect Tax Services",
     description: ["GST Compliances", "GST Audit", "GST Returns and refund"],
-    link: "/service/indirectTaxServices"
+    link: "/service"
 
   },
   {
     id: 4,
-    icon: discussion,
+    icon: Advisory,
     title: "Advisory Services",
     description: ["Preparing Business Plan", "Corporate Restructing", "Budget and Forecas", "Share Valuation"],
-    link: "/service/advisoryServices"
+    link: "/service"
 
   },
   {
@@ -59,7 +64,7 @@ const cardItems = [
     icon: Secretarial,
     title: "Secretarial",
     description: ["Drafting of LLP Agreement", "Retruns of ROC & LLP", "Modification in LLP", "Conversion of firm into LLP and Vice Versa"],
-    link: "/service/secretarial"
+    link: "/service"
 
   },
   {
@@ -67,7 +72,7 @@ const cardItems = [
     icon: bookkeeper,
     title: "Bookkeeping Services",
     description: ["Accounting supervision", "Management reports", "Statutory returns", "Preparation of MIS reports"],
-    link: "/service/bookkeepingServices"
+    link: "/service"
 
   }
 ];
@@ -198,12 +203,12 @@ const TeamData = () => {
         <div>
           <img src={chithirapandian} alt="chithirapandian" className="slider-image" />
         </div>
-        <div>
-          <img src={suba} alt="suba" className="slider-image" />
-        </div>
-        <div>
-          <img src={Mithra} alt="mithra" className="slider-image" />
-        </div>
+
+        {TeamImage.map((item, index) => (
+          <div key={index}>
+            <img src={item} alt="Team" className="slider-image" />
+          </div>
+        ))}
       </Slider>
     </div>
   )
@@ -217,7 +222,6 @@ const testimonials = [
 
 const Home = () => {
   const home = Content.Home;
-  const [activeIndex, setActiveIndex] = useState(0);
 
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -226,9 +230,10 @@ const Home = () => {
     setIsExpanded(!isExpanded);
   };
 
-  const handleSelect = (selectedIndex) => {
-    setActiveIndex(selectedIndex);
-  };
+  const handleChange = () => {
+    window.scroll(0, 0);
+  }
+
 
   const testimonialSetting = {
     dots: false,
@@ -242,42 +247,10 @@ const Home = () => {
   };
 
   return (
-    <div className="home  overflow-hidden ">
-      {/* <div className="home_section_1">
-        <Carousel
-          indicators={false}
-          activeIndex={activeIndex}
-          onSelect={handleSelect}
-        >
-          <Carousel.Item interval={2000}>
-            <div className="carousel-item-container">
-              <img src={home?.Carousel?.slide1} alt="timer" className="carousel-image" />
-              <div className={`carousel-item-content ${activeIndex === 0 ? "active" : ""}`} >
-                <h3 className="animated-text">{home?.Carousel?.title1}</h3>
-              </div>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item interval={2000}>
-            <div className="carousel-item-container">
-              <img src={home?.Carousel?.slide2} alt="timer" className="carousel-image" />
-              <div className={`carousel-item-content ${activeIndex === 1 ? "active" : ""}`} >
-                <h3 className="animated-text">{home?.Carousel?.title2}</h3>
-              </div>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item interval={2000}>
-            <div className="carousel-item-container">
-              <img src={home?.Carousel?.slide3} alt="timer" className="carousel-image" />
-              <div className={`carousel-item-content ${activeIndex === 2 ? "active" : ""}`} >
-                <h3 className="animated-text">{home?.Carousel?.title3}</h3>
-              </div>
-            </div>
-          </Carousel.Item>
-        </Carousel>
-      </div> */}
+    <div className="home container-fluid overflow-hidden ">
+
       <div className="row container-fluid hero-section d-flex  g-2">
         <div className="col-md-6 col-12 p-5">
-
           <div className="pb-2">
             <h2 className="d-inline main-title">Manage Your </h2>
             <TextTypingAnimation
@@ -295,12 +268,16 @@ const Home = () => {
           </div>
 
           <div className="d-flex  justify-content-center gap-5">
-            <button className="our-service" >
-              Our Services
-            </button>
-            <button className="talk-button" >
-              Let's Talk
-            </button>
+            <Link to="/service" onClick={handleChange} className="text-decoration-none">
+              <button className="our-service" >
+                Our Services
+              </button>
+            </Link>
+            <Link to="/contact" onClick={handleChange} className="text-decoration-none">
+              <button className="talk-button" >
+                Let's Talk
+              </button>
+            </Link>
           </div>
         </div>
         <div className="col-md-6 col-12 " >
@@ -356,26 +333,32 @@ const Home = () => {
 
         </div>
       </div> */}
-      <h4 className=" main-title text-center pb-3">ABOUT US</h4>
-      <div className="row about-us py-5">
 
-        <div className="col-md-6 col-12 px-5 ">
+      {/* About us */}
+      <h3 className=" main-title text-center pb-3">About Us</h3>
+      <div className="row about-us py-5 d-flex flex-sm-row-reverse justify-content-center align-items-center">
+        <div className="col-md-6 col-12 px-5 d-flex justify-content-center pb-3">
+          <img src={chithirapandian} alt="chithirapandian" width="90%" />
+        </div>
+        <div className="col-md-6 col-12 px-5  pb-3">
+          <p style={{ textAlign: "justify" }}> He has over 20 years of extensive experience in accountancy, auditing, and both domestic and international taxation. Throughout his career, he has earned a strong reputation as an advisor in these fields, including expertise in international taxation. He played a key role in transforming the firm's approach from traditional methods to more technology-driven practices. Under his leadership, the firm's services have expanded to include Knowledge Process Outsourcing (KPO) for clients both in India and abroad. Additionally, he has broadened the firm’s service portfolio from traditional auditing and taxation to a wide range of consultancy services. He has also developed expertise in indirect taxes like VAT, excise, and service tax, and is now exploring the area of GST. </p>
+          <br />
 
-          <p style={{ textAlign: "justify" }}> With over 20 years of experience in accountancy, auditing, and taxation, he has earned a reputation as a trusted advisor in both domestic and international taxation. He has been instrumental in modernizing the firm, expanding its services to include Knowledge Process Outsourcing for clients in India and abroad. His expertise covers indirect taxation, such as VAT, Excise, Service Tax, and the evolving GST landscape. Additionally, he has contributed to the firm's growth by diversifying its consultancy services and specializes in Company Law and LLP matters.{isExpanded ? (<span> Beyond his professional work, he actively engages in community service and has delivered lectures on various professional topics.</span>) : ".."} </p>
+          {isExpanded ? (<span> Beyond his tax and auditing work, he has gained experience in company law matters and Limited Liability Partnerships (LLP).He has delivered several lectures on various professional topics at different forums and has held leadership roles at the Lions Club in Sulur, Coimbatore.
+          </span>) : ""}
+
           <div className="d-flex justify-content-end">
             <button onClick={toggleReadMore} className="readmore">
               {isExpanded ? 'Show Less' : 'Read More'}
             </button>
           </div>
         </div>
-        <div className="col-md-6 col-12 px-5 d-flex justify-content-center align-items-center">
-          <img src={chithirapandian} alt="chithirapandian" height={350} />
-        </div>
+
       </div>
 
       {/* Our Services */}
       <div className="bg-white p-3 container our-service">
-        <h3 className=" main-title text-center">Our services</h3>
+        <h3 className=" main-title text-center">Our Services</h3>
         <div className="row">
           {cardItems.map((item, index) => (
             <div key={index} className="col-md-4 col-sm-6 col-12 g-4">
@@ -392,7 +375,7 @@ const Home = () => {
                     </div>
                   )}
                 </div>
-                <Link to={item.link} className="text-decoration-none">
+                <Link to={item.link} onClick={handleChange} className="text-decoration-none">
                   <button className="serviceCard-button ">
                     <FaArrowRight fontSize={23} className="me-3" />  Learn More
                   </button>
@@ -449,7 +432,7 @@ const Home = () => {
         </Slider>
       </div>
 
-    </div>
+    </div >
   );
 };
 

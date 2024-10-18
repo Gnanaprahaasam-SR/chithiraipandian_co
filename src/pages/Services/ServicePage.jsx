@@ -1,12 +1,12 @@
 import React from 'react';
-import Service from "../../images/service.jpg";
-import { IoArrowRedo } from "react-icons/io5";
+// import Service from "../../images/service.jpg";
+// import { IoArrowRedo } from "react-icons/io5";
 import Audit from "../../images/Audit&Assurance.png";
 import Bookkeeper from "../../images/Bookkeeping.png";
 import Advisory from "../../images/Advisory.png";
 import Indirect from "../../images/IndirectTax.png";
 import Secretarial from "../../images/Secretarial.png";
-import DirectTax from "../../images/DirectTax.png";
+import DirectTax from "../../images/DirectTax2.png";
 
 // const ServicePage = () => {
 //   return (
@@ -345,18 +345,21 @@ const ServicePage = () => {
   return (
     <section className='overflow-hidden'>
       <div className='audit-assurance'>
-        <div className='row d-flex align-items-center justify-content-center'>
+        <div className='row d-flex flex-sm-row-reverse align-items-center justify-content-center'>
+          <div className='col-md-6 col-12 p-4 d-flex justify-content-center'>
+            <img src={Audit} alt="Audit_Assurance" width="80%" />
+          </div>
           <div className='col-md-6 col-12 p-5'>
             <h2 className='main-title text-center pb-3'>Audit &  Assurance Service</h2>
             <div className='' style={{ textAlign: "justify" }}>Our Audit & Assurance services provide comprehensive financial oversight to strengthen stakeholder confidence and ensure regulatory compliance. We offer a wide range of services, including Statutory Audits for legal and regulatory compliance, Tax Audits to verify adherence to tax laws, Internal Audits to assess internal controls and risk management, and Due Diligence Audits to evaluate financial health in business transactions. Additionally, we conduct Stock Audits to verify inventory accuracy, Bank Audits for financial compliance in banking, specialized audits for insurance companies, and Management Audits to assess organizational effectiveness. Our services enhance transparency, mitigate risks, and improve operational efficiency across industries.
             </div>
           </div>
-          <div className='col-md-6 col-12 p-4 d-flex justify-content-center'>
-            <img src={Audit} alt="Audit_Assurance" width="80%" />
-          </div>
+
         </div>
       </div>
       <hr className='mx-5' />
+
+      {/* directTax */}
       <div className='directTax'>
         <div className='row d-flex align-items-center justify-content-center'>
           <div className='col-md-6 col-12 p-4  d-flex justify-content-center'>
@@ -369,20 +372,25 @@ const ServicePage = () => {
         </div>
       </div>
       <hr className='mx-5' />
+
+      {/* indirectTax */}
       <div className='indirectTax'>
-        <div className='row d-flex align-items-center justify-content-center'>
+        <div className='row d-flex flex-sm-row-reverse align-items-center justify-content-center'>
+          <div className='col-md-6 col-12 p-4 d-flex justify-content-center'>
+            <img src={Indirect} alt="IndirectTax" width="80%" />
+          </div>
           <div className='col-md-6 col-12 p-5'>
             <h2 className='main-title text-center pb-3'>Indirect Tax Service</h2>
             <div style={{ textAlign: "justify" }}>
               Our indirect tax services offer comprehensive support to help clients ensure compliance and optimize their tax strategies across various indirect tax regimes. We provide GST compliance assistance, including registration and filing of returns, along with GST audits to ensure adherence to regulations. Our services also cover VAT compliance in applicable regions, excise duty filings, and customs duty support, including import-export documentation and duty exemptions. We assist with service tax compliance, address legacy issues, and offer strategic indirect tax advisory to optimize tax structures. Additionally, we provide expert representation before regulatory authorities in disputes and appeals and help businesses claim refunds for GST, VAT, and other indirect taxes. Our services are designed to simplify tax compliance, reduce risk, and enhance tax efficiency for businesses.
             </div>
           </div>
-          <div className='col-md-6 col-12 p-4'>
-            <img src={Indirect} alt="IndirectTax"  width="80%" />
-          </div>
+
         </div>
       </div>
       <hr className='mx-5' />
+
+      {/* advisory */}
       <div className='advisory'>
         <div className='row d-flex align-items-center justify-content-center'>
           <div className='col-md-6 col-12 p-4  d-flex justify-content-center'>
@@ -397,24 +405,29 @@ const ServicePage = () => {
         </div>
       </div>
       <hr className='mx-5' />
+
+      {/* secretarial */}
       <div className='secretarial'>
-        <div className='row d-flex align-items-center justify-content-center'>
+        <div className='row d-flex flex-sm-row-reverse align-items-center justify-content-center'>
+          <div className='col-md-6 col-12 p-4 d-flex justify-content-center'>
+            <img src={Secretarial} alt="Secretarial" width="80%" />
+          </div>
           <div className='col-md-6 col-12 p-5'>
             <h2 className='main-title text-center pb-3'>Secretarial </h2>
             <div style={{ textAlign: "justify" }}>
               Our company law services provide comprehensive support for corporate legal compliance and structuring, assisting clients with company formation for various entities, including Indian Private, Public, Section 8 Companies, 100% Subsidiaries, Branch Offices, Liaison Offices, and Special Purpose Vehicles (SPVs). We offer expert drafting of Memorandum and Articles of Association, facilitate company conversions between Private, Public, and LLP structures, handle ROC filings, assist with annual return filing in XBRL, guide firm-to-company conversions, and provide consultation on share buyback transactions. Our services ensure businesses comply with corporate laws and are structured for growth and legal protection. Additionally, our Limited Liability Partnership (LLP) services cover seamless LLP formation, drafting of LLP agreements, firm-to-LLP conversions, modifications within LLPs, annual return filings, and guidance on partner exits. These services ensure clients meet their legal obligations while maintaining flexibility in managing their partnership structures.
             </div>
           </div>
-          <div className='col-md-6 col-12 p-4 d-flex justify-content-center'>
-            <img src={Secretarial} alt="Secretarial"  width="80%" />
-          </div>
+
         </div>
       </div>
       <hr className='mx-5' />
+
+      {/* bookkeeper */}
       <div className='bookkeeper'>
         <div className='row d-flex align-items-center justify-content-center'>
           <div className='col-md-6 col-12 p-4 d-flex justify-content-center'>
-            <img src={Bookkeeper} alt="Bookkeeper"  width="80%" />
+            <img src={Bookkeeper} alt="Bookkeeper" width="80%" />
           </div>
           <div className='col-md-6 col-12 p-5'>
             <h2 className='main-title text-center pb-3'>Bookkeeping Service </h2>
