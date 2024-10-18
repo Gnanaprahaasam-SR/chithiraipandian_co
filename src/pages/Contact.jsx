@@ -5,10 +5,10 @@ const Contact = () => {
         <div className="contact overflow-hidden">
             <div className="position-relative">
                 <img src={contact} alt="contact" width="100%" className="contact_image" />
-                <h1 className="contact_title" >CONTACT US</h1>
+                <h1 className="contact_title text-white" >CONTACT US</h1>
             </div>
 
-            <div className="container py-4 ">
+            {/* <div className="container py-4 ">
                 <div className="row gy-3">
                     <div className="col-xs-12 col-sm-12 col-md-7">
                         <div className="d-flex align-items-center ">
@@ -34,7 +34,7 @@ const Contact = () => {
                         </form>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
         </div>
     )

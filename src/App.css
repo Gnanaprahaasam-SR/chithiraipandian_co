@@ -19,7 +19,7 @@ h6 {
   --primary-blue: #083D5F;
   --primary-text: #141414;
   --background-color: #ffffff;
- 
+
 }
 
 * {
@@ -317,14 +317,15 @@ h6 {
 
 /* Aboutus */
 .aboutus-heading {
-  position: absolute;
-  left: 35%;
-  transform: translate(-50%, -50%);
+  font-weight: 600;
+  color: var(--primary-green);
   text-align: center;
-  font-size: 65px;
-  font-weight: bold;
-  color: var(--primary-color);
+  position: absolute;
   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10%;
+  font-size: 60px;
 }
 
 .aboutus-card {
@@ -645,24 +646,6 @@ h6 {
 }
 
 
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 24px;
-  }
-
-  .centeredH1 {
-    font-size: 28px;
-  }
-
-  .experience-heading {
-    font-size: 28px;
-  }
-
-  .aboutus-heading {
-    font-size: 28px;
-  }
-}
-
 
 .main-title {
   color: var(--primary-blue);
@@ -712,7 +695,7 @@ h6 {
 }
 
 .home .about-us,
-.home .our-team{
+.home .our-team {
   background-color: rgb(241, 241, 241);
 }
 
@@ -728,8 +711,8 @@ h6 {
 
 .our-team .team-carosal {
   position: relative;
-  padding-left: 8%;
-  padding-bottom: 5%;
+  padding-left: 4%;
+  padding-bottom: 3%;
 }
 
 .our-team .slider-image {
@@ -741,14 +724,18 @@ h6 {
   list-style: none;
 }
 
-.testimonial-card{
-  background:rgba(122, 236, 193, 0.433) ;
+
+
+/* testimonial */
+
+.testimonial-card {
+  background: rgba(122, 236, 193, 0.433);
   border: 1px solid transparent;
-  border-radius: 20px ;
+  border-radius: 20px;
   width: 75%;
 }
 
-.testimonial-author{
+.testimonial-author {
   position: relative;
   float: inline-end;
   color: var(--primary-green);
@@ -762,6 +749,7 @@ h6 {
   margin-right: 1%;
 }
 
-.list-title{
+.list-title {
   color: var(--primary-blue);
 }
+

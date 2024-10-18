@@ -3,7 +3,7 @@ import Service from "../../images/service.jpg";
 import { IoArrowRedo } from "react-icons/io5";
 import Audit from "../../images/Audit&Assurance.png";
 import Bookkeeper from "../../images/Bookkeeping.png";
-import Advisory from "../../images/Discusion.png";
+import Advisory from "../../images/Advisory.png";
 import Indirect from "../../images/IndirectTax.png";
 import Secretarial from "../../images/Secretarial.png";
 import DirectTax from "../../images/DirectTax.png";
@@ -347,23 +347,23 @@ const ServicePage = () => {
       <div className='audit-assurance'>
         <div className='row d-flex align-items-center justify-content-center'>
           <div className='col-md-6 col-12 p-5'>
-            <h3 className='main-title text-center'>Audi &  Assurance Service</h3>
+            <h2 className='main-title text-center pb-3'>Audit &  Assurance Service</h2>
             <div className='' style={{ textAlign: "justify" }}>Our Audit & Assurance services provide comprehensive financial oversight to strengthen stakeholder confidence and ensure regulatory compliance. We offer a wide range of services, including Statutory Audits for legal and regulatory compliance, Tax Audits to verify adherence to tax laws, Internal Audits to assess internal controls and risk management, and Due Diligence Audits to evaluate financial health in business transactions. Additionally, we conduct Stock Audits to verify inventory accuracy, Bank Audits for financial compliance in banking, specialized audits for insurance companies, and Management Audits to assess organizational effectiveness. Our services enhance transparency, mitigate risks, and improve operational efficiency across industries.
             </div>
           </div>
-          <div className='col-md-6 col-12 p-4'>
-            <img src={Audit} alt="Audit_Assurance" width="100%" />
+          <div className='col-md-6 col-12 p-4 d-flex justify-content-center'>
+            <img src={Audit} alt="Audit_Assurance" width="80%" />
           </div>
         </div>
       </div>
       <hr className='mx-5' />
       <div className='directTax'>
         <div className='row d-flex align-items-center justify-content-center'>
-          <div className='col-md-6 col-12 p-4'>
-            <img src={DirectTax} alt="DirectTax" width="100%" />
+          <div className='col-md-6 col-12 p-4  d-flex justify-content-center'>
+            <img src={DirectTax} alt="DirectTax" width="80%" />
           </div>
           <div className='col-md-6 col-12 p-5'>
-            <h3 className='main-title text-center'>Direct Tax Service</h3>
+            <h2 className='main-title text-center pb-3'>Direct Tax Service</h2>
             <div style={{ textAlign: "justify" }}>Our direct tax services are tailored to meet the diverse tax needs of both corporate and non-corporate clients, ensuring compliance and optimal tax strategies. We provide domestic tax services, including the filing of income tax returns, handling tax compliance through income tax assessments and appeals, and representing clients at the Income Tax Appellate Tribunal. We also manage TDS returns, address TDS and income tax matters, ensure Dividend Distribution Tax (DDT) compliance, and offer accurate AMT/MAT calculations. For transfer pricing, we ensure thorough documentation and adherence to regulations. In international tax, we offer transfer pricing audits and expert representation before authorities. Our services help clients navigate complex tax regulations, optimize tax positions, and ensure full legal compliance.</div>
           </div>
         </div>
@@ -372,24 +372,24 @@ const ServicePage = () => {
       <div className='indirectTax'>
         <div className='row d-flex align-items-center justify-content-center'>
           <div className='col-md-6 col-12 p-5'>
-            <h3 className='main-title text-center'>Indirect Tax Service</h3>
+            <h2 className='main-title text-center pb-3'>Indirect Tax Service</h2>
             <div style={{ textAlign: "justify" }}>
               Our indirect tax services offer comprehensive support to help clients ensure compliance and optimize their tax strategies across various indirect tax regimes. We provide GST compliance assistance, including registration and filing of returns, along with GST audits to ensure adherence to regulations. Our services also cover VAT compliance in applicable regions, excise duty filings, and customs duty support, including import-export documentation and duty exemptions. We assist with service tax compliance, address legacy issues, and offer strategic indirect tax advisory to optimize tax structures. Additionally, we provide expert representation before regulatory authorities in disputes and appeals and help businesses claim refunds for GST, VAT, and other indirect taxes. Our services are designed to simplify tax compliance, reduce risk, and enhance tax efficiency for businesses.
             </div>
           </div>
           <div className='col-md-6 col-12 p-4'>
-            <img src={Indirect} alt="IndirectTax"  width="100%" />
+            <img src={Indirect} alt="IndirectTax"  width="80%" />
           </div>
         </div>
       </div>
       <hr className='mx-5' />
       <div className='advisory'>
         <div className='row d-flex align-items-center justify-content-center'>
-          <div className='col-md-6 col-12 p-4'>
-            <img src={Advisory} alt="Advisory" className='serviceImg' width="100%" />
+          <div className='col-md-6 col-12 p-4  d-flex justify-content-center'>
+            <img src={Advisory} alt="Advisory" className='serviceImg' width="80%" />
           </div>
           <div className='col-md-6 col-12 p-5'>
-            <h3 className='main-title text-center'>Advisory Service</h3>
+            <h2 className='main-title text-center pb-3'>Advisory Service</h2>
             <div style={{ textAlign: "justify" }}>
               Our comprehensive advisory services are tailored to help businesses and individuals navigate financial and strategic challenges with expert guidance in areas such as business planning, share valuation, budgeting, and forecasting. We provide corporate restructuring advice, conduct feasibility studies, and offer consultation on public issues and private equity matters. Additionally, we assist with project reports, bank liaison, term loan, and working capital arrangements. Our services extend to personal financial planning, wills and partnership deeds, and designing or reviewing accounting manuals. We also provide certification services, advise on accounting standards and IFRS, and offer tax advisory across Income Tax, VAT, GST, and international taxation. For foreign clients, we specialize in business setup and structuring, and we provide expert consultation on company law matters. These services are designed to help clients make informed decisions, enhance financial performance, and ensure regulatory compliance.
             </div>
@@ -400,24 +400,24 @@ const ServicePage = () => {
       <div className='secretarial'>
         <div className='row d-flex align-items-center justify-content-center'>
           <div className='col-md-6 col-12 p-5'>
-            <h3 className='main-title text-center'>Secretarial </h3>
+            <h2 className='main-title text-center pb-3'>Secretarial </h2>
             <div style={{ textAlign: "justify" }}>
               Our company law services provide comprehensive support for corporate legal compliance and structuring, assisting clients with company formation for various entities, including Indian Private, Public, Section 8 Companies, 100% Subsidiaries, Branch Offices, Liaison Offices, and Special Purpose Vehicles (SPVs). We offer expert drafting of Memorandum and Articles of Association, facilitate company conversions between Private, Public, and LLP structures, handle ROC filings, assist with annual return filing in XBRL, guide firm-to-company conversions, and provide consultation on share buyback transactions. Our services ensure businesses comply with corporate laws and are structured for growth and legal protection. Additionally, our Limited Liability Partnership (LLP) services cover seamless LLP formation, drafting of LLP agreements, firm-to-LLP conversions, modifications within LLPs, annual return filings, and guidance on partner exits. These services ensure clients meet their legal obligations while maintaining flexibility in managing their partnership structures.
             </div>
           </div>
-          <div className='col-md-6 col-12 p-4'>
-            <img src={Secretarial} alt="Secretarial"  width="100%" />
+          <div className='col-md-6 col-12 p-4 d-flex justify-content-center'>
+            <img src={Secretarial} alt="Secretarial"  width="80%" />
           </div>
         </div>
       </div>
       <hr className='mx-5' />
       <div className='bookkeeper'>
         <div className='row d-flex align-items-center justify-content-center'>
-          <div className='col-md-6 col-12 p-4'>
-            <img src={Bookkeeper} alt="Bookkeeper"  width="100%" />
+          <div className='col-md-6 col-12 p-4 d-flex justify-content-center'>
+            <img src={Bookkeeper} alt="Bookkeeper"  width="80%" />
           </div>
           <div className='col-md-6 col-12 p-5'>
-            <h3 className='main-title text-center'>Bookkeeping Service </h3>
+            <h2 className='main-title text-center pb-3'>Bookkeeping Service </h2>
             <div style={{ textAlign: "justify" }}>
               We offer comprehensive bookkeeping outsourcing services tailored for both domestic and international clients, providing in-house accounting solutions that comply with local regulations. Our services include the preparation of financial statements in line with local accounting standards, delivering insightful management reports, and ensuring timely filing of statutory returns. We also offer accounting supervision, thorough reviews of accounting records for past periods, and tax accounting and compliance services covering income tax, indirect taxes, and other obligations. Additionally, we prepare Management Information System (MIS) reports to provide valuable insights into business performance. Our services are designed to enhance operational efficiency, ensure regulatory compliance, and support informed decision-making.
             </div>

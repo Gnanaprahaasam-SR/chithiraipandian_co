@@ -13,32 +13,58 @@ export default function AboutUs_OurValue() {
     };
 
     return (
-        <div style={{ overflowX: 'hidden' }}>
-            <div className='row'>
-                <div className='position-relative'>
-                    <img src={ourValueData.image} alt='not found' width="100%" />
-                    <h2 className='aboutus-heading'>{ourValueData.title}</h2>
+
+        <div className='overflow-hidden'>
+            <div className='position-relative pb-3' >
+                <img src={ourValueData.image} alt="ourValueData" width="100%" style={{ maxHeight: "600px" }} />
+                <h1 className=' aboutus-heading pb-3'>{ourValueData.title}</h1>
+            </div>
+            <div className='row d-flex justify-content-center align-items-center'>
+                <div className='col-md-6 px-md-4 px-2 d-flex justify-content-center'>
+                    <img src={ourValueData.categories[0].image} alt="title" width="70%" />
+                </div>
+                <div className='col-md-6 px-5'>
+                    <h3 className='main-title text-center pb-3'>{ourValueData.categories[0].title}</h3>
+                    <p style={{ textAlign: 'justify' }}>{ourValueData.categories[0].description}</p>
                 </div>
             </div>
-            <div className='container mt-4'>
-                <div className='row d-flex justify-content-center'>
-                    {ourValueData.categories.map(category => (
-                        <div className=' col-md-4' key={category.title}>
-                            <div className='aboutus-card'>
-                                <h3 className='aboutus-title'>{category.icon}</h3>
-                                <h3 className='aboutus-title'>{category.title}</h3>
-                                <p className='aboutus-description'>
-                                    {expandedSections[category.title] ? category.content : `${category.content.substring(0, 100)}...`}
-                                    <br />
-                                    <button className='aboutus-button' onClick={() => toggleExpand(category.title)}>
-                                        {expandedSections[category.title] ? 'Read Less' : 'Read More'}
-                                    </button>
-                                </p>
-                            </div>
-                        </div>
-                    ))}
+            <div className='row d-flex justify-content-center align-items-center'>
+                <div className='col-md-6 px-5'>
+                    <h3 className='main-title text-center pb-3'>{ourValueData.categories[1].title}</h3>
+                    <p style={{ textAlign: 'justify' }}>{ourValueData.categories[1].description}</p>
+                </div>
+                <div className='col-md-6 px-md-4 px-2 d-flex justify-content-center'>
+                    <img src={ourValueData.categories[1].image} alt="title" width="80%" />
+                </div>
+            </div>
+            <div className='row d-flex justify-content-center align-items-center'>
+                <div className='col-md-6 px-md-4 px-2 d-flex justify-content-center'>
+                    <img src={ourValueData.categories[2].image} alt="title" width="70%" />
+                </div>
+                <div className='col-md-6 px-5'>
+                    <h3 className='main-title text-center pb-3'>{ourValueData.categories[2].title}</h3>
+                    <p style={{ textAlign: 'justify' }}>{ourValueData.categories[2].description}</p>
+                </div>
+            </div>
+            <div className='row d-flex justify-content-center align-items-center'>
+                <div className='col-md-6 px-5'>
+                    <h3 className='main-title text-center pb-3'>{ourValueData.categories[3].title}</h3>
+                    <p style={{ textAlign: 'justify' }}>{ourValueData.categories[3].description}</p>
+                </div>
+                <div className='col-md-6 px-md-4 px-2 d-flex justify-content-center'>
+                    <img src={ourValueData.categories[3].image} alt="title" width="80%" />
+                </div>
+            </div>
+            <div className='row d-flex justify-content-center align-items-center'>
+                <div className='col-md-6 px-md-4 px-2 d-flex justify-content-center'>
+                    <img src={ourValueData.categories[4].image} alt="title" width="80%" />
+                </div>
+                <div className='col-md-6 px-5'>
+                    <h3 className='main-title text-center pb-3'>{ourValueData.categories[4].title}</h3>
+                    <p style={{ textAlign: 'justify' }}>{ourValueData.categories[4].description}</p>
                 </div>
             </div>
         </div>
+
     );
 }

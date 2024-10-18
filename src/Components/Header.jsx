@@ -56,7 +56,7 @@ function NavBar() {
               Career
             </Nav.Link> */}
             <Nav.Link as={NavLink} exact onClick={handleChange} to="/experience" className="menu_link" >
-              Experience
+              Areas of Expertise
             </Nav.Link>
             <Nav.Link as={NavLink} exact onClick={handleChange} to="/contact" className=" menu_link" >
               Contact Us

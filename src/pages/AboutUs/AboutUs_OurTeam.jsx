@@ -50,7 +50,6 @@ export function Employee() {
   return (
     <div className="container p-3">
       <div className="slider-container">
-        <h1 style={{ textAlign: 'center', color: '#C58940', fontWeight: 'bold' }}>{teamData.title}</h1>
         <Carousel
           className="mx-3 my-5 team-carosal"
           responsive={responsive}
@@ -84,7 +83,7 @@ function AboutUs_OurTeam() {
     <div style={{ overflowX: "hidden" }}>
       <div className="row">
         <div className="position-relative">
-          <img src={teamData.image} alt="not found" style={{ maxWidth: "100%" }} />
+          <img src={teamData.image} alt="not found"  width="100%" style={{ maxHeight: "600px" }} />
           <h2 className="aboutus-heading">{teamData.title}</h2>
         </div>
       </div>
