@@ -28,14 +28,15 @@ const ExperiencePage = () => {
       <hr className="mx-5" />
 
       {/* Infrastructure */}
-      <div className="row d-flex justify-content-center align-items-center">
+      <div className="row d-flex flex-sm-row-reverse align-items-center justify-content-center">
+        <div className="col-md-6 col-12 px-3 px-md-4 d-flex justify-content-center">
+          <img src={Infrastructure} alt="infrastructure" width="80%" />
+        </div>
         <div className=" col-md-6 col-12 px-5 ">
           <h3 className='main-title text-center pb-3'>Infrastructure</h3>
           <p style={{ textAlign: "justify" }}>We offer accounting services to clients in various infrastructure sectors, including EPC (Engineering, Procurement, and Construction), housing, commercial real estate development and operation, PPP (Public-Private Partnership) annuity and tollways, Metro MRT projects, and airport cargo handling. Our expertise supports the financial management of these diverse infrastructure projects, ensuring accurate and efficient accounting solutions.</p>
         </div>
-        <div className="col-md-6 col-12 px-3 px-md-4 d-flex justify-content-center">
-          <img src={Infrastructure} alt="infrastructure" width="80%" />
-        </div>
+
       </div>
       <hr className="mx-5" />
 
@@ -52,14 +53,15 @@ const ExperiencePage = () => {
       <hr className="mx-5" />
 
       {/* Not for Profit Entities */}
-      <div className="row d-flex justify-content-center align-items-center">
+      <div className="row d-flex flex-sm-row-reverse align-items-center justify-content-center">
+        <div className="col-md-6 col-12 px-3 px-md-4 d-flex justify-content-center">
+          <img src={ProfitEntities} alt="ProfitEntities" width="70%" />
+        </div>
         <div className=" col-md-6 col-12 px-5 ">
           <h3 className='main-title text-center pb-3'>Not for Profit Entities</h3>
           <p style={{ textAlign: "justify" }}>We offer accounting services to not-for-profit entities, including those focused on Corporate Social Responsibility (CSR), employee welfare programs, and public charities. Our specialized expertise ensures accurate financial management and compliance tailored to the unique needs of these organizations.</p>
         </div>
-        <div className="col-md-6 col-12 px-3 px-md-4 d-flex justify-content-center">
-          <img src={ProfitEntities} alt="ProfitEntities" width="75%" />
-        </div>
+
       </div>
       <hr className="mx-5" />
 
@@ -76,14 +78,15 @@ const ExperiencePage = () => {
       <hr className="mx-5" />
 
       {/* Banking, Finance and Insurance Sectors */}
-      <div className="row d-flex justify-content-center align-items-center">
+      <div className="row d-flex flex-sm-row-reverse align-items-center justify-content-center">
+        <div className="col-md-6 col-12 px-3 px-md-4 d-flex justify-content-center">
+          <img src={BankingFinance} alt="BankingFinace" width="80%" />
+        </div>
         <div className=" col-md-6 col-12 px-5 ">
           <h3 className='main-title text-center pb-3'>Banking, Finance and Insurance Sectors</h3>
           <p style={{ textAlign: "justify" }}>We offer accounting services to clients in the banking, finance, and insurance sectors, providing comprehensive audit solutions. Our services include statutory audits, internal audits, concurrent audits, revenue audits, credit compliance and monitoring, stock audits, and special audits. We ensure thorough financial oversight and regulatory compliance tailored to the specific needs of these industries.</p>
         </div>
-        <div className="col-md-6 col-12 px-3 px-md-4 d-flex justify-content-center">
-          <img src={BankingFinance} alt="BankingFinace" width="80%" />
-        </div>
+
       </div>
       <hr className="mx-5" />
 
@@ -100,19 +103,20 @@ const ExperiencePage = () => {
       <hr className="mx-5" />
 
       {/* Healthcare */}
-      <div className="row d-flex justify-content-center align-items-center">
+      <div className="row d-flex flex-sm-row-reverse align-items-center justify-content-center">
+        <div className="col-md-6 col-12 px-3 px-md-4 d-flex justify-content-center">
+          <img src={Healthcare} alt="Healthcare" width="75%" />
+        </div>
         <div className=" col-md-6 col-12 px-5 ">
           <h3 className='main-title text-center pb-3'>Healthcare</h3>
           <p style={{ textAlign: "justify" }}>We offer accounting services to clients in the healthcare sector, including hospitals, clinics, and voluntary service organizations. Our specialized financial management solutions ensure efficient accounting practices and compliance, tailored to the unique needs of healthcare providers and nonprofit health services.</p>
         </div>
-        <div className="col-md-6 col-12 px-3 px-md-4 d-flex justify-content-center">
-          <img src={Healthcare} alt="Healthcare" width="75%" />
-        </div>
-      </div>
-       <hr className="mx-5" />
 
-       {/*Trade / Retail */}
-       <div className="row d-flex justify-content-center align-items-center">
+      </div>
+      <hr className="mx-5" />
+
+      {/*Trade / Retail */}
+      <div className="row d-flex justify-content-center align-items-center">
         <div className="col-md-6 col-12 px-3 px-md-4 d-flex justify-content-center">
           <img src={TradeRetail} alt="Trade&Retail" width="70%" />
         </div>
@@ -124,14 +128,15 @@ const ExperiencePage = () => {
       <hr className="mx-5" />
 
       {/* Manufacturing */}
-      <div className="row d-flex justify-content-center align-items-center">
+      <div className="row d-flex flex-sm-row-reverse align-items-center justify-content-center">
+        <div className="col-md-6 col-12 px-3 px-md-4 d-flex justify-content-center">
+          <img src={manufacturing} alt="manufacturing" width="80%" />
+        </div>
         <div className=" col-md-6 col-12 px-5 ">
           <h3 className='main-title text-center pb-3'>Manufacturing</h3>
           <p style={{ textAlign: "justify" }}>We offer accounting services to clients in the manufacturing sector, covering a wide range of industries including fertilizers and chemicals, agri-chemicals, agri-automation, seeds, cement, textiles, sugar, solvent extraction, bio-organic products, pharmaceuticals, life sciences, engineering and capital goods, as well as oil and gas. Our specialized financial management solutions are tailored to meet the unique needs and compliance requirements of these diverse manufacturing operations.</p>
         </div>
-        <div className="col-md-6 col-12 px-3 px-md-4 d-flex justify-content-center">
-          <img src={manufacturing} alt="manufacturing" width="80%" />
-        </div>
+
       </div>
     </div>
   )

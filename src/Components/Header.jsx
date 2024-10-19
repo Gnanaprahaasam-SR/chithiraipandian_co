@@ -28,7 +28,6 @@ function NavBar() {
             <NavDropdown title="About Us" id="navbarScrollingDropdown">
               <NavDropdown.Item className="menu_link" as={NavLink} onClick={handleChange} to="/aboutus/thefirm" >The Firm</NavDropdown.Item>
               <NavDropdown.Item className="menu_link" as={NavLink} onClick={handleChange} to="/aboutus/ourvalue" >Our Value</NavDropdown.Item>
-              <NavDropdown.Item className="menu_link" as={NavLink} onClick={handleChange} to="/aboutus/ourteam" >Our Team</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={NavLink} exact onClick={handleChange} to="/service" className="menu_link" >
               Services

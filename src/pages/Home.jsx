@@ -70,7 +70,7 @@ const cardItems = [
   {
     id: 6,
     icon: bookkeeper,
-    title: "Bookkeeping Services",
+    title: "Book keeping Services",
     description: ["Accounting supervision", "Management reports", "Statutory returns", "Preparation of MIS reports"],
     link: "/service"
 
@@ -156,9 +156,10 @@ const CustomLeftArrow = ({ onClick }) => {
         cursor: 'pointer',
         padding: '5px',
         background: " rgba(122, 236, 193, 0.733)",
+        color: "black"
       }}
     >
-      <IoIosArrowBack size={24} className="text-white" />
+      <IoIosArrowBack size={24} className="" />
     </button>
   );
 };
@@ -179,7 +180,7 @@ const CustomRightArrow = ({ onClick }) => {
         background: " rgba(122, 236, 193, 0.733)",
       }}
     >
-      <IoIosArrowForward size={24} className="text-white" />
+      <IoIosArrowForward size={24} className="" />
     </button>
   );
 };
@@ -255,7 +256,7 @@ const Home = () => {
             <h2 className="d-inline main-title">Manage Your </h2>
             <TextTypingAnimation
               className="d-inline typing"
-              texts={["Accounting Standards", "Balance Sheet", "Bookkeeping", "Ledger", "Income Statement", "Taxation"]}
+              texts={["Accounting Standards", "Balance Sheet", "Book keeping", "Ledger", "Income Statement", "Taxation"]}
             /> <br />
             <h2 className="main-title">In a Right Way.</h2>
           </div>
@@ -281,58 +282,10 @@ const Home = () => {
           </div>
         </div>
         <div className="col-md-6 col-12  d-flex justify-content-center " >
-          <img src={require("../images/indomay19.jpg")} alt="hero section" width="80%"  /> 
+          <img src={require("../images/indomay19.jpg")} alt="hero section" width="80%" />
         </div>
       </div>
 
-      {/* Legal information */}
-      {/* <div className=" row legal_information  ">
-        <div className="col-12  col-sm-12 col-md-4 text-start align-content-center text-wrap p-5 ">
-          <div className="text-content ">
-            <h4 className="legal_title" >{home?.emergencyCase?.title}</h4>
-            <p className="legal_content"> {home?.emergencyCase?.description}</p>
-            <h4 className="legal_title">Call Us Now</h4>
-            <p className="legal_content">{home?.emergencyCase?.contanct}</p>
-          </div>
-        </div>
-        <div className="col-12  col-sm-12  col-md-4 p-5 align-content-center">
-         
-          <div className="text-content ">
-            <h4 className="legal_title">{home?.legalHelp?.title}</h4>
-            <p className="legal_content">{home?.legalHelp?.description}</p>
-            <button className="appointment_btn ">
-              {home?.legalHelp.button} &rarr;
-            </button>
-          </div>
-        </div>
-        <div className="col-12 col-md-4 align-content-center p-5">
-          
-          <div className="text-content">
-            <table >
-              <tbody>
-                <tr>
-                  <td colSpan="2">
-                    <h4 className="legal_title">{home?.workingHour?.title}</h4>
-                  </td>
-                </tr>
-                <tr  >
-                  <td className="legal_content">{home?.workingHour?.weekdays}</td>
-                  <td className="legal_content">{home?.workingHour?.weekdayTiming}</td>
-                </tr>
-                <tr>
-                  <td className="legal_content">{home?.workingHour?.weekend}</td>
-                  <td className="legal_content">{home?.workingHour?.weekendTiming}</td>
-                </tr>
-                <tr>
-                  <td className="legal_content">{home?.workingHour?.weekoff}</td>
-                  <td className="legal_content">{home?.workingHour?.weekoffTiming}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-        </div>
-      </div> */}
 
       {/* About us */}
       <h3 className=" main-title text-center pb-3">About Us</h3>
@@ -404,11 +357,11 @@ const Home = () => {
           </div>
           <div className="py-3">
             <ul>
-              <p> <IoArrowRedo /> <b>Chartered Accountants:</b> Providing expert advice on financial reporting, taxation, audits, and strategic planning to drive business success.</p>
-              <p> <IoArrowRedo /> <b>Company Secretaries:</b> Ensuring corporate compliance and governance, guiding businesses through regulatory complexities.</p>
-              <p> <IoArrowRedo /> <b>Executives (Non-CA):</b> Facilitating smooth client interactions and efficient project delivery with diverse management expertise.</p>
-              <p> <IoArrowRedo /> <b>Article Trainees:</b> The future of the profession, gaining hands-on experience under skilled mentorship.</p>
-              <p> <IoArrowRedo /> <b>Support Staff:</b> Providing essential administrative and technical support to keep operations running smoothly.</p>
+              <p> <IoArrowRedo className="icon" /> <b>Chartered Accountants:</b> Providing expert advice on financial reporting, taxation, audits, and strategic planning to drive business success.</p>
+              <p> <IoArrowRedo className="icon" /> <b>Company Secretaries:</b> Ensuring corporate compliance and governance, guiding businesses through regulatory complexities.</p>
+              <p> <IoArrowRedo className="icon" /> <b>Executives (Non-CA):</b> Facilitating smooth client interactions and efficient project delivery with diverse management expertise.</p>
+              <p> <IoArrowRedo className="icon" /> <b>Article Trainees:</b> The future of the profession, gaining hands-on experience under skilled mentorship.</p>
+              <p> <IoArrowRedo className="icon" /> <b>Support Staff:</b> Providing essential administrative and technical support to keep operations running smoothly.</p>
             </ul>
           </div>
         </div>
@@ -419,7 +372,7 @@ const Home = () => {
       <h3 className=" main-title text-center py-3">Client Testimonial's</h3>
 
       <div className="slider-container pb-4" style={{ position: 'relative' }}>
-        <Slider {...testimonialSetting}>
+        <Slider {...testimonialSetting} className="pb-3">
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className=" client-testimonial d-flex justify-content-center pb-5">
               <div className=" testimonial-card p-5">

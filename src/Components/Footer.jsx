@@ -25,10 +25,10 @@ const Footer = () => {
                                 <img src={logo} alt="Company Logo" width={40} className=" " />
                                 <h6 className="" >CHITHIRAI PANDIAN & CO </h6>
                             </div>
-                            <h3 className="">We're here to help You</h3>
+                            <h3 className="">We're here to help you</h3>
                             <div className="info-title">We'd Love</div>
                             <h2 className="info-subTitle">TO HEAR FROM YOU</h2>
-                            <div>Schedule time to talk with an expert matched to your Accounting and taxation needs.</div>
+                            <div>Schedule time to talk with an expert matched to your accounting and taxation needs.</div>
                         </div>
                     </div>
                     <div className="col-md-6 p-2">
@@ -37,36 +37,34 @@ const Footer = () => {
                             <input type="email" name="email" value={enquiryData.email} className="footer-input" placeholder="Email Address*" required />
                             <input type="text" name="phone" value={enquiryData.phone} className="footer-input" placeholder="Phone*" required />
                             <input type="text" name="company" className="footer-input" placeholder="Company" />
-                            <input type="text" name="Services" className="footer-input" placeholder="Services You Are Intersted In*" required />
-                            <textarea name="help" id="help" className="footer-input" placeholder="How can we help you?*" rows={4} required></textarea>
+                            <input type="text" name="Services" className="footer-input" placeholder="Services You Are Intrested In*" required />
+                            <textarea name="help" id="help" className="footer-input" placeholder="How Can We Help You?*" rows={4} required></textarea>
                             <button type="submit" className="footer-btn">Submit</button>
                         </form>
                     </div>
                 </div>
-                <hr className="mx-5" />
+                <hr className="" />
 
-                <div className="row d-flex justify-content-center align-items-start g-3">
-                    <div className="col-12 col-sm-6 col-md-3">
+                <div className="row d-flex justify-content-between align-items-start g-3">
+                    <div className="col-12 col-sm-6 col-md-4">
                         <div>
                             <h6><FaLocationDot size={20} className="me-1" /> Head Office</h6>
-                            <p className="text-wrap"> No.14/6M, Hospital Road, Sulur,<br /> Coimbatore -641 402. </p>
+                            <p className="text-wrap"> No:14/6M, Hospital Road, Sulur,<br /> Coimbatore - 641 402. </p>
                         </div>
-                    </div>
-                    <div className="col-12 col-sm-6 col-md-3  ">
+                    
                         <div>
                             <h6><FaPhone size={18} className="me-1" />Contact Us</h6>
                             <span>+91 94425 80495</span>
                             <p className="">+91 94879 80495</p>
                         </div>
                     </div>
-                    <div className="col-12 col-sm-6 col-md-3 ">
-                        <div>
+                    
+                    <div className="col-12 col-sm-6 col-md-3  ">
+                        <div className="mb-3">
                             <h6> <FaTelegramPlane size={20} className="me-1" />Mail Us</h6>
                             <a href="mailto:capandian1971@gmail.com" className="link">capandian1971@gmail.com</a>
                         </div>
-                    </div>
-
-                    <div className="col-12 col-sm-6 col-md-3 ">
+                    
                         <div>
                             <h6> <GiShadowFollower size={20} className="me-1" />Follow Us</h6>
                             <div className="d-flex  gap-3">
@@ -77,11 +75,11 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <hr className="mx-5 " />
-            </div>
 
-            <div className="text-center pb-2 text-wrap">
-                Copyright &#169; 2024 chithiraipandian&co.com All rights reserved
+            </div>
+            <hr className="mx-5 " />
+            <div className="text-center pb-2 text-wrap ">
+                Copyright &#169; 2024 &nbsp; | &nbsp; chithiraipandian&co.com &nbsp; | &nbsp; All rights reserved
             </div>
 
         </div>

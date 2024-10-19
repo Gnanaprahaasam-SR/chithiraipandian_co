@@ -12,8 +12,6 @@ import Respect from "../../images/Respect.png";
 import Transformation from "../../images/Transformation.png";
 import Service from "../../images/ServicePortfolio.png";
 import Integrity from "../../images/Integrity.png";
-import OurFirm from "../../images/OurFirm.jpg";
-import OurValue from "../../images/OurValue.jpg";
 import AboutUs from "../../images/AboutUs.jpg"
 
 const AboutUsData = {
@@ -59,7 +57,7 @@ const AboutUsData = {
          {
             title:"Integrity",
             icon: <VerifiedUser />,
-            description: "Commitment to honesty, transparency, and ethical practices in all aspects of our work.",
+            description: "We are committed to transparency, ensuring openness and clarity in everything we do. Our ethical practices guide us to act with fairness and responsibility.Through integrity, we build trust and uphold the highest standards in our work.",
             image: Integrity
         },
         {
