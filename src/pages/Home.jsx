@@ -249,8 +249,8 @@ const Home = () => {
   return (
     <div className="home container-fluid overflow-hidden ">
 
-      <div className="row container-fluid hero-section d-flex  g-2">
-        <div className="col-md-6 col-12 p-5">
+      <div className="row container-fluid hero-section d-flex  d-flex align-items-center  g-2">
+        <div className="col-md-6 col-12 px-5">
           <div className="pb-2">
             <h2 className="d-inline main-title">Manage Your </h2>
             <TextTypingAnimation
@@ -280,8 +280,8 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className="col-md-6 col-12 " >
-          <img src={require("../images/indomay19.jpg")} alt="hero section" width="100%" />
+        <div className="col-md-6 col-12  d-flex justify-content-center " >
+          <img src={require("../images/indomay19.jpg")} alt="hero section" width="80%"  /> 
         </div>
       </div>
 
@@ -398,18 +398,17 @@ const Home = () => {
         </div>
         <div className="col-md-6 px-5 ">
           <div style={{ textAlign: 'justify' }}>
-            <b>A Blend of Expertise and Innovation </b>
-            At the heart of our firm is a dynamic team of professionals, each bringing specialized skills and a commitment to excellence. From our seasoned Chartered Accountants and Company Secretaries to our dedicated Executives and Article Trainees, every member plays a critical role in delivering exceptional service to our clients.
+            <p>
+              Our firm is powered by a dynamic team of experts dedicated to delivering top-tier service. Led by our experienced Proprietor, we uphold the highest standards of quality and integrity.
+            </p>
           </div>
           <div className="py-3">
             <ul>
-              <p> <IoArrowRedo /> <b>Proprietor:</b> Leading our firm with years of industry experience, our Proprietor ensures that we maintain the highest standards of quality and integrity.</p>
-              <p> <IoArrowRedo /> <b>Chartered Accountants:</b> Our CAs offer expert guidance on financial reporting, taxation, audits, and strategic financial planning, providing clients with insights to drive business success.</p>
-              <p> <IoArrowRedo /> <b>Company Secretaries:</b> Ensuring corporate compliance and governance, our Company Secretaries help businesses navigate complex regulatory frameworks efficiently.</p>
-              <p> <IoArrowRedo /> <b>Executives (Non-CA):</b>  With diverse expertise in management and operations, our Executives facilitate seamless client interactions and ensure efficient project delivery.</p>
-              <p> <IoArrowRedo /> <b>Article Trainees:</b> Our trainees, the future of the profession, work under the guidance of experienced professionals, gaining hands-on experience in all facets of accounting and finance.</p>
-              <p> <IoArrowRedo /> <b>Support Staff:</b> Behind the scenes, our support team ensures smooth operations, providing vital administrative and technical assistance to the entire firm.</p>
-
+              <p> <IoArrowRedo /> <b>Chartered Accountants:</b> Providing expert advice on financial reporting, taxation, audits, and strategic planning to drive business success.</p>
+              <p> <IoArrowRedo /> <b>Company Secretaries:</b> Ensuring corporate compliance and governance, guiding businesses through regulatory complexities.</p>
+              <p> <IoArrowRedo /> <b>Executives (Non-CA):</b> Facilitating smooth client interactions and efficient project delivery with diverse management expertise.</p>
+              <p> <IoArrowRedo /> <b>Article Trainees:</b> The future of the profession, gaining hands-on experience under skilled mentorship.</p>
+              <p> <IoArrowRedo /> <b>Support Staff:</b> Providing essential administrative and technical support to keep operations running smoothly.</p>
             </ul>
           </div>
         </div>

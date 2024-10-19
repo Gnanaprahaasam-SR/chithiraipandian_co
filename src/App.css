@@ -447,7 +447,7 @@ h6 {
 }
 
 .footer .info-box {
-  border: 5px solid white;
+  border: 5px solid rgb(89, 89, 221, 0.5);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -457,6 +457,11 @@ h6 {
 
 .footer h6 {
   color: var(--primary-green);
+}
+
+.info-box-content{
+  background-color: rgb(89, 89, 221, 0.5) ;
+  color: white;
 }
 
 .footer .info-title {
@@ -710,13 +715,12 @@ h6 {
 
 .our-team .team-carosal {
   position: relative;
-  padding-left: 4%;
-  padding-bottom: 3%;
 }
 
 .our-team .slider-image {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .our-team ul {
@@ -728,7 +732,7 @@ h6 {
 /* testimonial */
 
 .testimonial-card {
-  background: rgba(122, 236, 193, 0.433);
+  background: rgb(82, 224, 82);
   border: 1px solid transparent;
   border-radius: 20px;
   width: 75%;
@@ -751,4 +755,3 @@ h6 {
 .list-title {
   color: var(--primary-blue);
 }
-

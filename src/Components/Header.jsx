@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import logo from "../images/CALogo1.png";
+import logo from "../images/CA1.png";
 import servicesData from '../pages/Services/ServiceData';
 import "../App.css";
 
@@ -15,7 +15,7 @@ function NavBar() {
     <Navbar collapseOnSelect expand="lg" className="shadow-sm">
       <Container fluid>
         <Navbar.Brand as={NavLink} onClick={handleChange} to="/" className="d-flex flex-column align-items-center" >
-          <img src={logo} alt="Company Logo" width={40} className=" " />
+          <img src={logo} alt="Company Logo" width={50} className=" " />
           <h6 className="" style={{ color: "#116391" }}>CHITHIRAI PANDIAN & CO </h6>
         </Navbar.Brand>
 

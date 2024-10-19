@@ -19,11 +19,11 @@ const Footer = () => {
         <div className="footer  bg-light" >
             <div className="container pt-5">
                 <div className="row  info-box ">
-                    <div className="col-md-6 p-5 bg-white">
+                    <div className="col-md-6 p-5 info-box-content">
                         <div className="d-flex flex-column align-items-start ">
                             <div className="pb-3 ">
                                 <img src={logo} alt="Company Logo" width={40} className=" " />
-                                <h6 className="" style={{ color: "#116391" }}>CHITHIRAI PANDIAN & CO </h6>
+                                <h6 className="" >CHITHIRAI PANDIAN & CO </h6>
                             </div>
                             <h3 className="">We're here to help You</h3>
                             <div className="info-title">We'd Love</div>
