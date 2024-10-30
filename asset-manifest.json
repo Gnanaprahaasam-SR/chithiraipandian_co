@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/chithiraipandian_co/static/css/main.c520a16f.css",
-    "main.js": "/chithiraipandian_co/static/js/main.72f242f1.js",
+    "main.css": "/chithiraipandian_co/static/css/main.8a00bea1.css",
+    "main.js": "/chithiraipandian_co/static/js/main.40012cbb.js",
     "static/media/CA-11.png": "/chithiraipandian_co/static/media/CA-11.5ec859329043e61b768d.png",
     "static/media/CA-13.png": "/chithiraipandian_co/static/media/CA-13.f28b9dfc9a60603f118b.png",
     "static/media/CA-6.png": "/chithiraipandian_co/static/media/CA-6.5444c148f0f4b93dc6e9.png",
@@ -11,11 +11,11 @@
     "static/media/Secretarial.jpg": "/chithiraipandian_co/static/media/Secretarial.9eeb59ed69ad2f44e2df.jpg",
     "static/media/CA-8.png": "/chithiraipandian_co/static/media/CA-8.22a6375f01b4dc177cf5.png",
     "static/media/CA-18.png": "/chithiraipandian_co/static/media/CA-18.66637f6a9c5d5cff5944.png",
+    "static/media/CAOffice.jpg": "/chithiraipandian_co/static/media/CAOffice.0dfdfc8f86d7b013eeaf.jpg",
     "static/media/service.jpg": "/chithiraipandian_co/static/media/service.9778b1507ee8999256bc.jpg",
     "static/media/Advisory.png": "/chithiraipandian_co/static/media/Advisory.741ada6eca0fdbfe19c7.png",
     "static/media/Banking-Finance.png": "/chithiraipandian_co/static/media/Banking-Finance.b32ea447e16952b79a18.png",
     "static/media/AboutUs.jpg": "/chithiraipandian_co/static/media/AboutUs.dfd5393b094b6f8fc053.jpg",
-    "static/media/indomay19.jpg": "/chithiraipandian_co/static/media/indomay19.9924d11c468d43330d3a.jpg",
     "static/media/Indirect_Tax.jpg": "/chithiraipandian_co/static/media/Indirect_Tax.d6a769bb38df2a43f5c7.jpg",
     "static/media/Direct_Tax.jpg": "/chithiraipandian_co/static/media/Direct_Tax.6479270485473116220e.jpg",
     "static/media/Audit_And_Assurenece.jpg": "/chithiraipandian_co/static/media/Audit_And_Assurenece.80cf929629931a723621.jpg",
@@ -32,9 +32,12 @@
     "static/media/Healthcare.png": "/chithiraipandian_co/static/media/Healthcare.94490cfcf1fd7bbac737.png",
     "static/media/Hospitality-Entertainment.png": "/chithiraipandian_co/static/media/Hospitality-Entertainment.0339fe7d77eca738f11e.png",
     "static/media/workingHour.png": "/chithiraipandian_co/static/media/workingHour.18902172de4b288851b4.png",
+    "static/media/ContactUsImage.jpg": "/chithiraipandian_co/static/media/ContactUsImage.856e878d8b48104fe112.jpg",
+    "static/media/Home-heroSection.png": "/chithiraipandian_co/static/media/Home-heroSection.668827ec38579ff75c43.png",
     "static/media/Education.jpg": "/chithiraipandian_co/static/media/Education.c7cb93443305f6f943e6.jpg",
     "static/media/Infrastructure.png": "/chithiraipandian_co/static/media/Infrastructure.1ba6eebd25132052a338.png",
     "static/media/PowerGeneration.svg": "/chithiraipandian_co/static/media/PowerGeneration.695b06a7cf052713df54f550832bfcaf.svg",
+    "static/media/CA-22.jpeg": "/chithiraipandian_co/static/media/CA-22.71d19d4a4e017f506be0.jpeg",
     "static/media/legalcomplain.png": "/chithiraipandian_co/static/media/legalcomplain.de878c0c6479dc4edd6d.png",
     "static/media/community_contribution.png": "/chithiraipandian_co/static/media/community_contribution.9e5d3fb3f782f144439d.png",
     "static/media/Experience.png": "/chithiraipandian_co/static/media/Experience.c0fe0ac463f7f96e1367.png",
@@ -65,11 +68,11 @@
     "static/media/slick.ttf": "/chithiraipandian_co/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/chithiraipandian_co/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/chithiraipandian_co/index.html",
-    "main.c520a16f.css.map": "/chithiraipandian_co/static/css/main.c520a16f.css.map",
-    "main.72f242f1.js.map": "/chithiraipandian_co/static/js/main.72f242f1.js.map"
+    "main.8a00bea1.css.map": "/chithiraipandian_co/static/css/main.8a00bea1.css.map",
+    "main.40012cbb.js.map": "/chithiraipandian_co/static/js/main.40012cbb.js.map"
   },
   "entrypoints": [
-    "static/css/main.c520a16f.css",
-    "static/js/main.72f242f1.js"
+    "static/css/main.8a00bea1.css",
+    "static/js/main.40012cbb.js"
   ]
 }
