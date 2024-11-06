@@ -5,14 +5,14 @@ const Contact = () => {
         <div className="contact overflow-hidden">
             <div className="row d-flex flex-sm-row-reverse align-items-center justify-content-center">
                 <div className="col-md-6 col-12 d-flex justify-content-center">
-                    <div>
-                        <img src={contact} alt="contact" width="90%" />
-                    </div>
+
+                    <img src={contact} alt="contact" width="90%" />
+
                 </div>
                 <div className="col-md-6 col-12 px-5">
                     <div>
                         <h3 className='main-title text-center pb-3'>Contact Us</h3>
-                        <p className="px-5">If you have any questions, concerns, or need assistance with any of our services, please don't hesitate to contact us. We are here to help.</p>
+                        <p className="px-lg-5">If you have any questions, concerns, or need assistance with any of our services, please don't hesitate to contact us. We are here to help.</p>
                         <br />
                         <div className="text-center">
                             <a href="mailto:info@chithirapandian.com" className="text-decoration-none ">

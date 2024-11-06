@@ -16,8 +16,8 @@ export default function AboutUs_OurValue() {
             <div className='row d-flex justify-content-around  g-md-5 g-3 px-md-5 px-2  pb-3' >
                 <div className='col-md-6 col-12  '>
                     <div className='shadow rounded-4 ourValue-card'>
-                        <div className=' px-4 d-flex justify-content-center ourValue-image'>
-                            <img src={ourValueData.categories[0].image} alt="title" width="100%"  />
+                        <div className=' px-4 d-flex justify-content-center '>
+                            <img src={ourValueData.categories[0].image} alt="title" width="100%" className='ourValue-image' />
                         </div>
                         <div className=' ourValue-content'>
                             <h3 className='main-title text-center pb-3'>{ourValueData.categories[0].title}</h3>
@@ -27,8 +27,8 @@ export default function AboutUs_OurValue() {
                 </div>
                 <div className='col-md-6 col-12'>
                     <div className='shadow rounded-4 ourValue-card'>
-                        <div className='px-2 d-flex justify-content-center ourValue-image'>
-                            <img src={ourValueData.categories[2].image} alt="title" width="100%"  />
+                        <div className='px-2 d-flex justify-content-center '>
+                            <img src={ourValueData.categories[2].image} alt="title" width="100%" className='ourValue-image' />
                         </div>
                         <div className=' ourValue-content'>
                             <h3 className='main-title text-center pb-3'>{ourValueData.categories[2].title}</h3>
@@ -38,8 +38,8 @@ export default function AboutUs_OurValue() {
                 </div>
                 <div className='col-md-6 col-12 '>
                     <div className='shadow rounded-4 ourValue-card'>
-                        <div className=' px-4  d-flex justify-content-center ourValue-image'>
-                            <img src={ourValueData.categories[1].image} alt="title" width="100%" />
+                        <div className=' px-4  d-flex justify-content-center '>
+                            <img src={ourValueData.categories[1].image} alt="title" width="100%" className='ourValue-image' />
                         </div>
                         <div className='ourValue-content'>
                             <h3 className='main-title text-center pb-3'>{ourValueData.categories[1].title}</h3>
@@ -51,8 +51,8 @@ export default function AboutUs_OurValue() {
 
                 <div className='col-md-6 col-12'>
                     <div className='shadow rounded-4 ourValue-card'>
-                        <div className='px-2 d-flex justify-content-center ourValue-image '>
-                            <img src={ourValueData.categories[3].image} alt="title" width="100%" />
+                        <div className='px-2 d-flex justify-content-center  '>
+                            <img src={ourValueData.categories[3].image} alt="title" width="100%" className='ourValue-image'/>
                         </div>
                         <div className='ourValue-content'>
                             <h3 className='main-title text-center pb-3'>{ourValueData.categories[3].title}</h3>
@@ -62,8 +62,8 @@ export default function AboutUs_OurValue() {
                 </div>
                 <div className='col-md-6 col-12'>
                     <div className='shadow rounded-4 ourValue-card'>
-                        <div className=' px-2 d-flex justify-content-center ourValue-image'>
-                            <img src={ourValueData.categories[4].image} alt="title" width="100%" />
+                        <div className=' px-2 d-flex justify-content-center '>
+                            <img src={ourValueData.categories[4].image} alt="title" width="100%"  className='ourValue-image'/>
                         </div>
                         <div className='ourValue-content'>
                             <h3 className='main-title text-center pb-3'>{ourValueData.categories[4].title}</h3>

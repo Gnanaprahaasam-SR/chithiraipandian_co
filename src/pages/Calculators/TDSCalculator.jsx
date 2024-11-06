@@ -218,7 +218,7 @@ export default function TDSCalculator() {
     };
 
     calculateTDS();
-  }, [section, pan, amount,recipientType]);
+  }, [section, pan, amount, recipientType]);
 
   const FinalCalculation = (Rate, Amount) => {
     const final = Amount * (Rate / 100);
@@ -227,14 +227,14 @@ export default function TDSCalculator() {
   };
 
   return (
-    <div className='container rounded px-4 mb-5' style={{ borderRadius: "10px" }}>
-      <div className='row mt-3'>
-        <div className='col-md-12 border mt-5' style={{ background: "linear-gradient(rgb(152, 189, 223),rgb(134, 209, 134))", position: 'relative', zIndex: '99' }}>
-          <div className='text-center mb-4' style={{ marginTop: '-20px' }}>
-            <button className='btn btn-primary' style={{ borderRadius: "10px", top: '50%' }}>TDS Calculator</button>
-          </div>
-          <div className='row mt-3'>
-            <div className='col-md-9'>
+    <div className='container px-4 mb-5' >
+      <div className='row border mt-5 table_background py-4' >
+        <div className='calculator-heading' >
+          TDS Calculator
+        </div>
+        <div className='row mt-3'>
+          <div className='col-md-9 '>
+            <div className='d-flex align-items-center'>
               <label>Section</label>
               <select className='form-select mx-4 form-control' style={{ width: "60%" }} onChange={(e) => setSection(e.target.value)}>
                 <option>Select</option>
@@ -261,67 +261,67 @@ export default function TDSCalculator() {
               </select>
             </div>
           </div>
-          <div className='row mt-3'>
-            <div className='col-md-9'>
-              <label className='me-2' style={{ display: 'inline-block' }}>PAN quoted by deductee</label>
-              <select className='form-select' style={{ display: 'inline-block', width: 'auto' }} onChange={(e) => setPanQuote(e.target.value === "true")}>
-                <option value="true" >Yes</option>
-                <option value="false" >No</option>
-              </select>
-            </div>
-          </div>
-          <div className='row mt-3'>
-            <label>Recipient Type:</label>
-            <div className=''>
-              <input
-                type="radio"
-                id="individualHUFSOLEPROP"
-                name="recipientType"
-                value="individualHUFSOLEPROP"
-                className="form-check-input"
-                checked={recipientType === "individualHUFSOLEPROP"}
-                onChange={(e) => setRecipientType(e.target.value)}
-              />
-              <label htmlFor="individualHUFSOLEPROP"> Individual/HUF/Sole Proprietor</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                id="other"
-                name="recipientType"
-                value="other"
-                className="form-check-input"
-                checked={recipientType === "other"}
-                onChange={(e) => setRecipientType(e.target.value)}
-              />
-              <label htmlFor="other"> Other</label>
-            </div>
-          </div>
-          <div className='row mt-3'>
-            <div className='col-md-9 d-flex align-items-center'>
-              <label className='me-2'>Rate</label>
-              <input type='text' value={`${rate}%`} readOnly className='form-control mx-2' />
-              <input type='range' min='0' max='100' value={rate} onChange={(e) => setRate(parseInt(e.target.value, 10))} className='form-range mx-2' style={{ color: "black" }} />
-            </div>
-          </div>
-          <div className='row mt-3'>
-            <div className='col-md-9 d-flex align-items-center'>
-              <label className='me-2'>Amount</label>
-              <input type='text' value={amount} onChange={(e) => setAmount(parseInt(e.target.value, 10))} className='form-control mx-2' />
-              <input type='range' min='0' max='100000' value={amount} onChange={(e) => setAmount(parseInt(e.target.value, 10))} className='form-range mx-2' />
-            </div>
-          </div>
-          <hr className='mt-4' style={{ width: "100%" }} />
-          {/* Display TDS */}
-          <div className='row mt-3' style={{ padding: '10px' }}>
-            <div className='col-md-9 d-flex align-items-center'>
-              <label className='me-2'>Tax</label>
-              <input type='text' value={`${TDS}`} className='form-control mx-2' readOnly style={{ width: '100px' }} />
-            </div>
-            {!pan?<span>In case Pan is not available TDS will be applicable at higher rates</span>:""}
-          </div>
-          <hr className='mt-4' style={{ width: "100%" }} />
         </div>
+        <div className='row my-3'>
+          <div className='col-md-9'>
+            <label className='me-2' style={{ display: 'inline-block' }}>PAN quoted by deductee</label>
+            <select className='form-select' style={{ display: 'inline-block', width: 'auto' }} onChange={(e) => setPanQuote(e.target.value === "true")}>
+              <option value="true" >Yes</option>
+              <option value="false" >No</option>
+            </select>
+          </div>
+        </div>
+        <div className='d-flex align-items-center gap-2 flex-wrap'>
+          <label>Recipient Type:</label>
+          <div className='gap-2 d-flex flex-nowrap'>
+            <input
+              type="radio"
+              id="individualHUFSOLEPROP"
+              name="recipientType"
+              value="individualHUFSOLEPROP"
+              className="form-check-input"
+              checked={recipientType === "individualHUFSOLEPROP"}
+              onChange={(e) => setRecipientType(e.target.value)}
+            />
+            <label htmlFor="individualHUFSOLEPROP"> Individual/HUF/Sole Proprietor</label>
+          </div>
+          <div className='gap-2 d-flex flex-nowrap'>
+            <input
+              type="radio"
+              id="other"
+              name="recipientType"
+              value="other"
+              className="form-check-input"
+              checked={recipientType === "other"}
+              onChange={(e) => setRecipientType(e.target.value)}
+            />
+            <label htmlFor="other"> Other</label>
+          </div>
+        </div>
+        <div className='row mt-3'>
+          <div className='col-md-9 d-flex align-items-center'>
+            <label className='me-2'>Rate</label>
+            <input type='text' value={`${rate}%`} readOnly className='form-control mx-2' />
+            <input type='range' min='0' max='100' value={rate} onChange={(e) => setRate(parseInt(e.target.value, 10))} className='form-range mx-2' style={{ color: "black" }} />
+          </div>
+        </div>
+        <div className='row mt-3'>
+          <div className='col-md-9 d-flex align-items-center'>
+            <label className='me-2'>Amount</label>
+            <input type='text' value={amount} onChange={(e) => setAmount(parseInt(e.target.value, 10))} className='form-control mx-2' />
+            <input type='range' min='0' max='100000' value={amount} onChange={(e) => setAmount(parseInt(e.target.value, 10))} className='form-range mx-2' />
+          </div>
+        </div>
+       
+        {/* Display TDS */}
+        <div className='row mt-3' style={{ padding: '10px' }}>
+          <div className='col-md-9 d-flex align-items-center'>
+            <label className='me-2'>Tax</label>
+            <input type='text' value={`${TDS}`} className='form-control mx-2' readOnly  />
+          </div>
+          {!pan ? <span>In case Pan is not available TDS will be applicable at higher rates</span> : ""}
+        </div>
+        
       </div>
     </div>
   );

@@ -15,8 +15,8 @@ export default function AboutUs_TheFirm() {
             <div className='row d-flex justify-content-around  g-md-5 g-3 px-md-5 px-2  pb-3' >
                 <div className='col-md-6 col-12  '>
                     <div className='shadow rounded-4 ourValue-card'>
-                        <div className=' px-4 d-flex justify-content-center firmData-image'>
-                            <img src={firmData.categories[0].image} alt="title" width="100%" />
+                        <div className=' px-4 d-flex justify-content-center '>
+                            <img src={firmData.categories[0].image} alt="title"  className='firmData-image' />
                         </div>
                         <div className=' ourValue-content'>
                             <h3 className='main-title text-center pb-3'>{firmData.categories[0].title}</h3>
@@ -24,21 +24,10 @@ export default function AboutUs_TheFirm() {
                         </div>
                     </div>
                 </div>
-                <div className='col-md-6 col-12'>
-                    <div className='shadow rounded-4 ourValue-card'>
-                        <div className='px-2 d-flex justify-content-center firmData-image'>
-                            <img src={firmData.categories[2].image} alt="title" width="90%" />
-                        </div>
-                        <div className=' ourValue-content'>
-                            <h3 className='main-title text-center pb-3'>{firmData.categories[2].title}</h3>
-                            <p className='p-2'>{firmData.categories[2].description}</p>
-                        </div>
-                    </div>
-                </div>
                 <div className='col-md-6 col-12 '>
                     <div className='shadow rounded-4 ourValue-card'>
-                        <div className=' px-4  d-flex justify-content-center firmData-image'>
-                            <img src={firmData.categories[1].image} alt="title" width="100%" />
+                        <div className=' px-4  d-flex justify-content-center '>
+                            <img src={firmData.categories[1].image} alt="title" width="100%" className='firmData-image' />
                         </div>
                         <div className='ourValue-content'>
                             <h3 className='main-title text-center pb-3'>{firmData.categories[1].title}</h3>
@@ -46,12 +35,22 @@ export default function AboutUs_TheFirm() {
                         </div>
                     </div>
                 </div>
-
+                <div className='col-md-6 col-12'>
+                    <div className='shadow rounded-4 ourValue-card'>
+                        <div className='px-2 d-flex justify-content-center '>
+                            <img src={firmData.categories[2].image} alt="title"  className='firmData-image' />
+                        </div>
+                        <div className=' ourValue-content'>
+                            <h3 className='main-title text-center pb-3'>{firmData.categories[2].title}</h3>
+                            <p className='p-2'>{firmData.categories[2].description}</p>
+                        </div>
+                    </div>
+                </div>
 
                 <div className='col-md-6 col-12'>
                     <div className='shadow rounded-4 ourValue-card'>
-                        <div className='px-2 d-flex justify-content-center firmData-image '>
-                            <img src={firmData.categories[3].image} alt="title" width="95%" />
+                        <div className='px-2 d-flex justify-content-center '>
+                            <img src={firmData.categories[3].image} alt="title" width="95%" className='firmData-image ' />
                         </div>
                         <div className='ourValue-content'>
                             <h3 className='main-title text-center pb-3'>{firmData.categories[3].title}</h3>

@@ -11,6 +11,7 @@ import Secretarial from "../images/Secretarial.png";
 import DirectTax from "../images/DirectTax2.png";
 import { CiCircleCheck } from "react-icons/ci";
 // import { PiCloudSlash } from "react-icons/pi";
+import Herosection from "../images/Home-heroSection.png"
 import chithirapandian from "../images/TeamImage/CA-6.png";
 import Team from "../images/TeamImage/CA-13.png";
 import Team2 from "../images/TeamImage/CA-11.png";
@@ -19,14 +20,17 @@ import Team4 from "../images/TeamImage/CA-18.png";
 import Team5 from "../images/TeamImage/CA-14.png";
 import Team6 from "../images/TeamImage/CA-10.png";
 import Team7 from "../images/TeamImage/CA-8.png";
+import Team8 from "../images/TeamImage/CA-22.jpeg";
 import { IoArrowRedo } from "react-icons/io5";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+// import Carousel from "react-multi-carousel";
+// import "react-multi-carousel/lib/styles.css";
 
-const TeamImage = [Team, Team2, Team3, Team4, Team5, Team6, Team7];
+const TeamImage = [Team, Team2, Team3, Team4, Team5, Team6, Team7, Team8];
 const cardItems = [
   {
     id: 1,
@@ -155,8 +159,7 @@ const CustomLeftArrow = ({ onClick }) => {
         bottom: '5%',
         cursor: 'pointer',
         padding: '5px',
-        background: " rgba(122, 236, 193, 0.733)",
-        color: "black"
+        background: " rgba(122, 236, 193, 0.253)",
       }}
     >
       <IoIosArrowBack size={24} className="" />
@@ -177,7 +180,7 @@ const CustomRightArrow = ({ onClick }) => {
         bottom: '5%',
         cursor: 'pointer',
         padding: '5px',
-        background: " rgba(122, 236, 193, 0.733)",
+        background: " rgba(122, 236, 193, 0.253)",
       }}
     >
       <IoIosArrowForward size={24} className="" />
@@ -194,6 +197,7 @@ const TeamData = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2500,
+    pauseOnHover: true,
     nextArrow: <CustomRightArrow />,
     prevArrow: <CustomLeftArrow />,
   };
@@ -217,7 +221,8 @@ const TeamData = () => {
 
 const testimonials = [
   { id: 1, text: "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.", author: "George Adade" },
-  { id: 1, text: "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.", author: "Johna Adade" }
+  { id: 2, text: "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.", author: "Johna Adade" },
+  { id: 3, text: "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.", author: "Johna Adade" }
 
 ];
 
@@ -236,21 +241,20 @@ const Home = () => {
   }
 
 
-  const testimonialSetting = {
-    dots: false,
-    infinite: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    nextArrow: <CustomRightArrow />,
-    prevArrow: <CustomLeftArrow />,
-  };
 
   return (
     <div className="home container-fluid overflow-hidden ">
+      <div className="hero-section pb-3" style={{ position: "relative" }}>
+        <img src={Herosection} className="hero-image" alt="Herosection" width="100%" />
+        <div className="hero-title-container">
+          <div className="hero-title" >Welcome To <br /> Chithirai Pandian & Co</div>
+          <div className="d-flex flex-column align-items-center py-4">
+            <div className="hero-subtitle">We believe in Growing Together. We see our growth as a reflection of the success of our clients.</div>
+          </div>
+        </div>
+      </div>
 
-      <div className="row container-fluid hero-section d-flex  d-flex align-items-center  g-2">
+      <div className="row container-fluid hero-section d-flex  d-flex align-items-center  g-2 pb-5">
         <div className="col-md-6 col-12 px-5">
           <div className="pb-2">
             <h2 className="d-inline main-title">Manage Your </h2>
@@ -282,16 +286,16 @@ const Home = () => {
           </div>
         </div>
         <div className="col-md-6 col-12  d-flex justify-content-center " >
-          <img src={require("../images/indomay19.jpg")} alt="hero section" width="80%" />
+          <img src={require("../images/CAOffice.jpg")} alt="hero section" width="80%" className="rounded-4" />
         </div>
       </div>
 
 
       {/* About us */}
       <h3 className=" main-title text-center pb-3">About Us</h3>
-      <div className="row about-us py-5 d-flex flex-sm-row-reverse justify-content-center align-items-center">
+      <div className="row about-us py-2 d-flex justify-content-center align-items-center">
         <div className="col-md-6 col-12 px-5 d-flex justify-content-center pb-3">
-          <img src={chithirapandian} alt="chithirapandian" width="90%" />
+          <img src={chithirapandian} alt="chithirapandian" width="100%" className="rounded-4" />
         </div>
         <div className="col-md-6 col-12 px-5  pb-3">
           <p style={{ textAlign: "justify" }}> He has over 20 years of extensive experience in accountancy, auditing, and both domestic and international taxation. Throughout his career, he has earned a strong reputation as an advisor in these fields, including expertise in international taxation. He played a key role in transforming the firm's approach from traditional methods to more technology-driven practices. Under his leadership, the firm's services have expanded to include Knowledge Process Outsourcing (KPO) for clients both in India and abroad. Additionally, he has broadened the firm’s service portfolio from traditional auditing and taxation to a wide range of consultancy services. He has also developed expertise in indirect taxes like VAT, excise, and service tax, and is now exploring the area of GST. </p>
@@ -330,7 +334,7 @@ const Home = () => {
                 </div>
                 <Link to={item.link} onClick={handleChange} className="text-decoration-none">
                   <button className="serviceCard-button ">
-                    <FaArrowRight fontSize={23} className="me-3" />  Learn More
+                    <FaArrowRight size={20} className="me-3" />  Learn More
                   </button>
                 </Link>
               </div>
@@ -342,12 +346,12 @@ const Home = () => {
       {/* Our Team */}
       <h3 className=" main-title text-center py-2 ">Our Team</h3>
       <div className="row our-team d-flex align-items-center py-4 ">
-        <div className="col-md-6 px-5 ">
-          <div className="background-layer">
-            <div className=" team-carosal">
-              <TeamData />
-            </div>
+        <div className="col-md-6 px-4 ">
+
+          <div className=" team-carosal">
+            <TeamData />
           </div>
+
         </div>
         <div className="col-md-6 px-5 ">
           <div style={{ textAlign: 'justify' }}>
@@ -357,11 +361,11 @@ const Home = () => {
           </div>
           <div className="py-3">
             <ul>
-              <p> <IoArrowRedo className="icon" /> <b>Chartered Accountants:</b> Providing expert advice on financial reporting, taxation, audits, and strategic planning to drive business success.</p>
-              <p> <IoArrowRedo className="icon" /> <b>Company Secretaries:</b> Ensuring corporate compliance and governance, guiding businesses through regulatory complexities.</p>
-              <p> <IoArrowRedo className="icon" /> <b>Executives (Non-CA):</b> Facilitating smooth client interactions and efficient project delivery with diverse management expertise.</p>
-              <p> <IoArrowRedo className="icon" /> <b>Article Trainees:</b> The future of the profession, gaining hands-on experience under skilled mentorship.</p>
-              <p> <IoArrowRedo className="icon" /> <b>Support Staff:</b> Providing essential administrative and technical support to keep operations running smoothly.</p>
+              <li> <b>Chartered Accountants:</b> Providing expert advice on financial reporting, taxation, audits, and strategic planning to drive business success.</li>
+              <li>  <b>Company Secretaries:</b> Ensuring corporate compliance and governance, guiding businesses through regulatory complexities.</li>
+              <li>  <b>Executives (Non-CA):</b> Facilitating smooth client interactions and efficient project delivery with diverse management expertise.</li>
+              <li>  <b>Article Trainees:</b> The future of the profession, gaining hands-on experience under skilled mentorship.</li>
+              <li>  <b>Support Staff:</b> Providing essential administrative and technical support to keep operations running smoothly.</li>
             </ul>
           </div>
         </div>
@@ -369,20 +373,75 @@ const Home = () => {
       </div>
 
       {/* Client Testimonial's */}
-      <h3 className=" main-title text-center py-3">Client Testimonial's</h3>
-
-      <div className="slider-container pb-4" style={{ position: 'relative' }}>
-        <Slider {...testimonialSetting} className="pb-3">
-          {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className=" client-testimonial d-flex justify-content-center pb-5">
-              <div className=" testimonial-card p-5">
-                <div>{testimonial.text}</div>
-                <span className="testimonial-author">-{testimonial.author}</span>
-              </div>
+      {/* <h3 className=" main-title text-center py-3">Client Testimonial's</h3>
+      <div className="row mb-4">
+        <div className='col-md-3 mt-4 d-flex justify-content-center'>
+          <div className='border' >
+            <div className='mt-4'>
+              <p className='text-center p-4'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
             </div>
-          ))}
-        </Slider>
-      </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="50%" viewBox="0 0 50% 50%" fill="none" >
+              <path d="M330.006 16C188.003 149.5 69.0031 -56.4997 0 22V150.445H330.006V16Z" fill="#ED654C" />
+              <defs>
+                <clipPath id="circleClip">
+                  <circle cx="165" cy="50" r="50" />
+                </clipPath>
+              </defs>
+              <g clipPath="url(#circleClip)">
+                <rect x="116" y="0" width="100" height="100" fill="white" />
+                <image href={"http://localhost:3001/static/media/tnxt.0ab4d4e9a15219dbd492.png"} x="116" y="0" width="100" height="100" />
+              </g>
+              <circle cx="165" cy="50" r="50" fill="none" stroke="white" strokeWidth="3" />
+              <text x="50%" y="60%" dominantBaseline="middle" textAnchor="middle" fill="white" fontSize="25" fontWeight="bold">
+                Kids Qatar
+              </text>
+
+            </svg>
+          </div>
+
+        </div>
+        <div className="col-md-3 mt-4 d-flex justify-content-center">
+          <div className="border" >
+            <div className="mt-4">
+              <p className="text-center p-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+
+            
+            <div style={{ position: 'relative', width: '100%', height: '150px' }}>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50% 150" style={{ width: '100%', height: '150px' }}>
+                <path d="M330.006 16C188.003 149.5 69.0031 -56.4997 0 22V150.445H330.006V16Z" fill="#ED654C" />
+                <defs>
+                  <clipPath id="circleClip">
+                    <circle cx="165" cy="50" r="50" />
+                  </clipPath>
+                </defs>
+
+               
+                <g clipPath="url(#circleClip)">
+                  <rect x="115" y="0" width="100" height="100" fill="white" />
+                  <image href={"http://localhost:3001/static/media/tnxt.0ab4d4e9a15219dbd492.png"} x="115" y="0" width="100" height="100" />
+                </g>
+
+               
+                <circle cx="165" cy="50" r="50" fill="none" stroke="white" strokeWidth="3" />
+
+              
+                <text x="50%" y="80%" dominantBaseline="middle" textAnchor="middle" fill="white" fontSize="25" fontWeight="bold">
+                  Kids Qatar
+                </text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div> */}
+
+      {/* 
+       */}
 
     </div >
   );

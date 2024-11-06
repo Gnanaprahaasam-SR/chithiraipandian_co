@@ -1,5 +1,4 @@
 import React from 'react';
-
 import PowerGeneration from "../../images/PowerGeneration.svg";
 import Healthcare from "../../images/Healthcare.png";
 import TradeRetail from "../../images/Trade-Retail.png";
@@ -43,7 +42,7 @@ const ExperiencePage = () => {
       {/* Information Technology */}
       <div className="row d-flex justify-content-center align-items-center">
         <div className="col-md-6 col-12 px-3 px-md-4 d-flex justify-content-center">
-          <img src={IT} alt="IT" width="75%" />
+          <img src={IT} alt="IT" width="70%" />
         </div>
         <div className=" col-md-6 col-12 px-5 ">
           <h3 className='main-title text-center pb-3'>Information Technology / IT Enabled / Other Services</h3>
@@ -68,7 +67,7 @@ const ExperiencePage = () => {
       {/* Education */}
       <div className="row d-flex justify-content-center align-items-center">
         <div className="col-md-6 col-12 px-3 px-md-4 d-flex justify-content-center">
-          <img src={Education} alt="education" width="75%" />
+          <img src={Education} alt="education" width="70%" />
         </div>
         <div className=" col-md-6 col-12 px-5 ">
           <h3 className='main-title text-center pb-3'>Education</h3>
