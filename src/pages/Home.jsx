@@ -21,7 +21,7 @@ import Team5 from "../images/TeamImage/CA-14.png";
 import Team6 from "../images/TeamImage/CA-10.png";
 import Team7 from "../images/TeamImage/CA-8.png";
 import Team8 from "../images/TeamImage/CA-22.jpeg";
-import { IoArrowRedo } from "react-icons/io5";
+import Team9 from "../images/TeamImage/CA-25.png";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
 import Slider from 'react-slick';
@@ -30,7 +30,7 @@ import "slick-carousel/slick/slick-theme.css";
 // import Carousel from "react-multi-carousel";
 // import "react-multi-carousel/lib/styles.css";
 
-const TeamImage = [Team, Team2, Team3, Team4, Team5, Team6, Team7, Team8];
+const TeamImage = [Team, Team2, Team3, Team4, Team5, Team6, Team7, Team8, Team9];
 const cardItems = [
   {
     id: 1,
