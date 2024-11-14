@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b3d33b7f.css",
-    "main.js": "/static/js/main.deb2f37c.js",
+    "main.css": "/static/css/main.85bbd6ca.css",
+    "main.js": "/static/js/main.47dc14e5.js",
     "static/media/CA-11.png": "/static/media/CA-11.5ec859329043e61b768d.png",
     "static/media/CA-13.png": "/static/media/CA-13.f28b9dfc9a60603f118b.png",
     "static/media/CA-6.png": "/static/media/CA-6.5444c148f0f4b93dc6e9.png",
@@ -16,7 +16,6 @@
     "static/media/CA-25.png": "/static/media/CA-25.fe50e9f783bca3aca744.png",
     "static/media/Advisory.png": "/static/media/Advisory.741ada6eca0fdbfe19c7.png",
     "static/media/Banking-Finance.png": "/static/media/Banking-Finance.b32ea447e16952b79a18.png",
-    "static/media/AboutUs.jpg": "/static/media/AboutUs.dfd5393b094b6f8fc053.jpg",
     "static/media/Indirect_Tax.jpg": "/static/media/Indirect_Tax.d6a769bb38df2a43f5c7.jpg",
     "static/media/Direct_Tax.jpg": "/static/media/Direct_Tax.6479270485473116220e.jpg",
     "static/media/Audit_And_Assurenece.jpg": "/static/media/Audit_And_Assurenece.80cf929629931a723621.jpg",
@@ -24,8 +23,8 @@
     "static/media/Bookkeeping.jpg": "/static/media/Bookkeeping.cb7d202e637947e2bea3.jpg",
     "static/media/IT-Enable.png": "/static/media/IT-Enable.c824ff92f9b20286718e.png",
     "static/media/Advisory.jpg": "/static/media/Advisory.7a45284222274e59745a.jpg",
-    "static/media/AboutUs.png": "/static/media/AboutUs.7c7d8334845d80c6895d.png",
     "static/media/Trade-Retail.png": "/static/media/Trade-Retail.898a40c84c66386e1272.png",
+    "static/media/Education.png": "/static/media/Education.07a024f01dcf33d4770c.png",
     "static/media/auditing.png": "/static/media/auditing.a96be2222bef46320d68.png",
     "static/media/Respect.png": "/static/media/Respect.a17128bda7d1672cf8ba.png",
     "static/media/ProfitEntities.png": "/static/media/ProfitEntities.abde6653a354f93e7948.png",
@@ -33,9 +32,9 @@
     "static/media/Healthcare.png": "/static/media/Healthcare.94490cfcf1fd7bbac737.png",
     "static/media/Hospitality-Entertainment.png": "/static/media/Hospitality-Entertainment.0339fe7d77eca738f11e.png",
     "static/media/workingHour.png": "/static/media/workingHour.18902172de4b288851b4.png",
+    "static/media/AboutUs.jpg": "/static/media/AboutUs.6c4a89a981c9dfe155bb.jpg",
     "static/media/ContactUsImage.jpg": "/static/media/ContactUsImage.856e878d8b48104fe112.jpg",
     "static/media/Home-heroSection.png": "/static/media/Home-heroSection.3e7f62380a8fa5753385.png",
-    "static/media/Education.jpg": "/static/media/Education.c7cb93443305f6f943e6.jpg",
     "static/media/Infrastructure.png": "/static/media/Infrastructure.1ba6eebd25132052a338.png",
     "static/media/PowerGeneration.svg": "/static/media/PowerGeneration.695b06a7cf052713df54f550832bfcaf.svg",
     "static/media/CA-22.jpeg": "/static/media/CA-22.71d19d4a4e017f506be0.jpeg",
@@ -45,6 +44,7 @@
     "static/media/Integrity.png": "/static/media/Integrity.920f4637b8343b20f589.png",
     "static/media/nithya.png": "/static/media/nithya.bbd850b2f84be1785c34.png",
     "static/media/Excellence.png": "/static/media/Excellence.f718793b71c25d9c8eeb.png",
+    "static/media/AboutUs1.jpg": "/static/media/AboutUs1.c0915d54276fc4089841.jpg",
     "static/media/Bookkeeping.png": "/static/media/Bookkeeping.5f6a24e034d13f6e8350.png",
     "static/media/CA1.png": "/static/media/CA1.4a548b7070f5b8734346.png",
     "static/media/Manufacturing.png": "/static/media/Manufacturing.16b7e2ccf8ba91a95fc2.png",
@@ -54,6 +54,7 @@
     "static/media/Transformation.png": "/static/media/Transformation.a51e231e5e17ac29d5f0.png",
     "static/media/Leadership.png": "/static/media/Leadership.911f4812439d6f59b119.png",
     "static/media/DirectTax2.png": "/static/media/DirectTax2.4d67a29a5e0e9388d981.png",
+    "static/media/AboutUs.png": "/static/media/AboutUs.04a14e060967cc9721bb.png",
     "static/media/emergency.jpg": "/static/media/emergency.0875357ba490363c82e7.jpg",
     "static/media/ServicePortfolio.png": "/static/media/ServicePortfolio.a1c2b8775eb54ae9bb00.png",
     "static/media/slide2.webp": "/static/media/slide2.43cbc67fc4b6a4ce6641.webp",
@@ -68,11 +69,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.b3d33b7f.css.map": "/static/css/main.b3d33b7f.css.map",
-    "main.deb2f37c.js.map": "/static/js/main.deb2f37c.js.map"
+    "main.85bbd6ca.css.map": "/static/css/main.85bbd6ca.css.map",
+    "main.47dc14e5.js.map": "/static/js/main.47dc14e5.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3d33b7f.css",
-    "static/js/main.deb2f37c.js"
+    "static/css/main.85bbd6ca.css",
+    "static/js/main.47dc14e5.js"
   ]
 }
