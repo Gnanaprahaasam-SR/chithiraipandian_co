@@ -8,9 +8,15 @@ export default function AboutUs_OurValue() {
     return (
 
         <div className='overflow-hidden'>
-            <div className='position-relative p-3 p-md-5 d-flex justify-content-center' >
-                <img src={ourValueData.image} alt="ourValueData" width="100%" style={{ maxHeight: "600px", objectFit: "cover" }} className=' rounded-4 ' />
+            {/* <div className='position-relative pb-3 d-flex align-items-stretch' >
+                <img src={ourValueData.image} alt="ourValueData" width="100%" className=' rounded-4 ' />
                 <h1 className=' aboutus-heading pb-3'>{ourValueData.title}</h1>
+            </div> */}
+            <div className='row'>
+                <img src={require("../../images/AboutUs1.jpg")} alt="AboutUs" width="80%" className='' />
+                <div>
+                    <h1 className='text-center typing pb-3'>{ourValueData.title}</h1>
+                </div> 
             </div>
 
             <div className='row d-flex justify-content-around  g-md-5 g-3 px-md-5 px-2  pb-3' >

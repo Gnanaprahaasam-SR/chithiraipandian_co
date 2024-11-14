@@ -4,7 +4,7 @@ import Healthcare from "../../images/Healthcare.png";
 import TradeRetail from "../../images/Trade-Retail.png";
 import HospitalityEntertainment from "../../images/Hospitality-Entertainment.png";
 import BankingFinance from "../../images/Banking-Finance.png";
-import Education from "../../images/Education.jpg";
+import Education from "../../images/Education.png";
 import ProfitEntities from "../../images/ProfitEntities.png";
 import IT from "../../images/IT-Enable.png";
 import Infrastructure from "../../images/Infrastructure.png";
@@ -54,7 +54,7 @@ const ExperiencePage = () => {
       {/* Not for Profit Entities */}
       <div className="row d-flex flex-sm-row-reverse align-items-center justify-content-center">
         <div className="col-md-6 col-12 px-3 px-md-4 d-flex justify-content-center">
-          <img src={ProfitEntities} alt="ProfitEntities" width="70%" />
+          <img src={ProfitEntities} alt="ProfitEntities" width="65%" />
         </div>
         <div className=" col-md-6 col-12 px-5 ">
           <h3 className='main-title text-center pb-3'>Not for Profit Entities</h3>
@@ -67,7 +67,7 @@ const ExperiencePage = () => {
       {/* Education */}
       <div className="row d-flex justify-content-center align-items-center">
         <div className="col-md-6 col-12 px-3 px-md-4 d-flex justify-content-center">
-          <img src={Education} alt="education" width="70%" />
+          <img src={Education} alt="education" width="60%" />
         </div>
         <div className=" col-md-6 col-12 px-5 ">
           <h3 className='main-title text-center pb-3'>Education</h3>
