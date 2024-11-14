@@ -167,9 +167,10 @@ const Footer = () => {
 
                         <h6>Follow Us</h6>
                         <div className="d-flex gap-3">
-                            <SocialIcon network="facebook" style={{ height: 25, width: 25 }} />
-                            <SocialIcon network="linkedin" style={{ height: 25, width: 25 }} />
-                            <SocialIcon network="instagram" style={{ height: 25, width: 25 }} />
+                            <SocialIcon network="facebook" style={{ height: 25, width: 25 }} url='https://www.facebook.com/' />
+                            <SocialIcon network="linkedin" style={{ height: 25, width: 25 }} url='https://www.linkedin.com/' />
+                            <SocialIcon network="instagram" style={{ height: 25, width: 25 }} url='https://www.instagram.com/' />
+
                         </div>
                     </div>
                 </div>

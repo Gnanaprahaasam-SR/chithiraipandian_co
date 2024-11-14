@@ -295,7 +295,7 @@ const Home = () => {
 
         <img src={require("../images/CAOffice.jpg")} alt="hero section" width="95%" className="rounded-4 col-md-5 col-12 float-md-end mb-2 ms-md-3" />
         <div className="">
-          <div className="main-title text-center pt-2">
+          <div className="main-title text-center py-3">
             <h2>Welcome To</h2>
             <h2 className="typing">CHITHIRAIPANDIAN AND CO</h2>
             <h2>Chartered Accountants <br /> You Can Trust</h2>
