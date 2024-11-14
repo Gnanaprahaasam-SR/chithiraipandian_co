@@ -229,12 +229,12 @@ const testimonials = [
 const Home = () => {
   const home = Content.Home;
 
-  const [isExpanded, setIsExpanded] = useState(false);
+  // const [isExpanded, setIsExpanded] = useState(false);
 
-  // Function to toggle the expanded state
-  const toggleReadMore = () => {
-    setIsExpanded(!isExpanded);
-  };
+  // // Function to toggle the expanded state
+  // const toggleReadMore = () => {
+  //   setIsExpanded(!isExpanded);
+  // };
 
   const handleChange = () => {
     window.scroll(0, 0);
@@ -247,14 +247,15 @@ const Home = () => {
       <div className="hero-section pb-3" style={{ position: "relative" }}>
         <img src={Herosection} className="hero-image" alt="Herosection" width="100%" />
         <div className="hero-title-container">
-          <div className="hero-title" >Welcome To <br /> Chithirai Pandian & Co</div>
+          <div className="hero-title" >Mission</div>
           <div className="d-flex flex-column align-items-center py-4">
-            <div className="hero-subtitle">We believe in Growing Together. We see our growth as a reflection of the success of our clients.</div>
+            <div className="hero-subtitle">We believe in Growing Together.</div>
+            <div className="hero-subtitle">We see our growth as a reflection of the success of our clients.</div>
           </div>
         </div>
       </div>
 
-      <div className="row container-fluid hero-section d-flex  d-flex align-items-center  g-2 pb-5">
+      {/* <div className="row container-fluid hero-section d-flex  d-flex align-items-center  g-2 pb-5">
         <div className="col-md-6 col-12 px-5">
           <div className="pb-2">
             <h2 className="d-inline main-title">Manage Your </h2>
@@ -288,27 +289,47 @@ const Home = () => {
         <div className="col-md-6 col-12  d-flex justify-content-center " >
           <img src={require("../images/CAOffice.jpg")} alt="hero section" width="80%" className="rounded-4" />
         </div>
-      </div>
+      </div> */}
 
+      <div className=" container-fluid hero-section pb-5 clearfix ">
+
+        <img src={require("../images/CAOffice.jpg")} alt="hero section" width="95%" className="rounded-4 col-md-5 col-12 float-md-end mb-2 ms-md-3" />
+        <div className="">
+          <div className="main-title text-center pt-2">
+            <h2>Welcome To</h2>
+            <h2 className="typing">CHITHIRAIPANDIAN AND CO</h2>
+            <h2>Chartered Accountants <br /> You Can Trust</h2>
+          </div>
+          <div >
+            <p style={{ textAlign: "justify" }}>
+              At CHITHIRAIPANDIAN AND CO, we believe in building long-term relationships based on trust, integrity, and professionalism. Our mission is to deliver proactive, practical, and results-driven financial solutions that help our clients thrive in a dynamic marketplace.</p>
+            <p style={{ textAlign: "justify" }}>
+              At CHITHIRAIPANDIAN AND CO, we are dedicated to empowering businesses and individuals with expert financial and advisory services. With a legacy of more than two decades of experience, we specialize in providing Direct and Indirect Taxation, Business Taxation,  International Taxation, Auditing and Assurance service, Company formation, Corporate compliances, due diligence, transfer pricing, Virtual CFO Solutions,  and financial consulting solutions that are tailored to meet the specific needs of our clients.
+            </p>
+            <div style={{ textAlign: "justify" }}>
+              Our team of experienced Chartered Accountants and financial advisors is committed to delivering quality service and valuable insights. We work closely with businesses of all sizes, from startups and SMEs to large corporations. Under the leadership of our founder, we’ve transitioned to a technology-driven firm, consistently expanding our service offerings and fostering long-term client relationships
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* About us */}
       <h3 className=" main-title text-center pb-3">About Us</h3>
       <div className="row about-us py-2 d-flex justify-content-center align-items-center">
-        <div className="col-md-6 col-12 px-5 d-flex justify-content-center pb-3">
-          <img src={chithirapandian} alt="chithirapandian" width="100%" className="rounded-4" />
+        <div className="col-md-6 col-12 px-md-5 d-flex justify-content-center pb-3 ">
+          <img src={chithirapandian} alt="chithirapandian" width="90%" className="rounded-4" />
         </div>
         <div className="col-md-6 col-12 px-5  pb-3">
-          <p style={{ textAlign: "justify" }}> He has over 20 years of extensive experience in accountancy, auditing, and both domestic and international taxation. Throughout his career, he has earned a strong reputation as an advisor in these fields, including expertise in international taxation. He played a key role in transforming the firm's approach from traditional methods to more technology-driven practices. Under his leadership, the firm's services have expanded to include Knowledge Process Outsourcing (KPO) for clients both in India and abroad. Additionally, he has broadened the firm’s service portfolio from traditional auditing and taxation to a wide range of consultancy services. He has also developed expertise in indirect taxes like VAT, excise, and service tax, and is now exploring the area of GST. </p>
+          <p style={{ textAlign: "justify" }}> T.Chithirai Pandian, Chartered Accountant, has more than two decade of experience in various fields has earned very good reputation for excellence in Accountancy, Auditing, and Taxation. He is specialize in Project Financing, Venture Capital, Private Equity, Virtual CFO Consulting and the successful restructuring of stress industries. He is also recognized for his expertise in Indirect Taxes, GST, Company Law matters, and Knowledge Process Outsourcing (KPO), offering innovative solutions to clients both in India and overseas.  </p>
           <br />
 
-          {isExpanded ? (<span> Beyond his tax and auditing work, he has gained experience in company law matters and Limited Liability Partnerships (LLP).He has delivered several lectures on various professional topics at different forums and has held leadership roles at the Lions Club in Sulur, Coimbatore.
-          </span>) : ""}
 
-          <div className="d-flex justify-content-end">
+
+          {/* <div className="d-flex justify-content-end">
             <button onClick={toggleReadMore} className="readmore">
               {isExpanded ? 'Show Less' : 'Read More'}
             </button>
-          </div>
+          </div> */}
         </div>
 
       </div>

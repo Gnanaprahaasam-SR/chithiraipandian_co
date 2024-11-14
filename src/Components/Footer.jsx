@@ -7,9 +7,10 @@ import { SlSocialInstagram } from "react-icons/sl";
 import { SiFacebook } from "react-icons/si";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaLocationDot, FaPhone, FaLinkedin } from "react-icons/fa6";
-import { GiShadowFollower } from "react-icons/gi";
-import {  Bounce, ToastContainer, toast } from 'react-toastify';
+import { SocialIcon } from 'react-social-icons'
+import { Bounce, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -25,7 +26,7 @@ const Footer = () => {
     const TemplateId = "template_i5vl8el";
     const PublicKey = "cDIIOAgDFci-zUchB";
 
-    const SuccessToast =() =>{
+    const SuccessToast = () => {
         toast.success("Messge sent successfully", {
             position: "top-right",
             autoClose: 5000,
@@ -37,7 +38,7 @@ const Footer = () => {
             transition: Bounce,
         });
     }
-    const FailerToast =() =>{
+    const FailerToast = () => {
         toast.error("Oops! Something went wrong.", {
             position: "top-right",
             autoClose: 5000,
@@ -46,7 +47,7 @@ const Footer = () => {
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-            transition:Bounce,
+            transition: Bounce,
         });
     }
     const handleEnquiryChange = (e) => {
@@ -87,7 +88,7 @@ const Footer = () => {
 
     return (
         <div className="footer bg-light">
-            <ToastContainer/>
+            <ToastContainer />
             <div className="container pt-5">
                 <div className="row info-box">
                     <div className="col-md-6 col-12 info-box-content">
@@ -152,26 +153,32 @@ const Footer = () => {
                 <div className="row d-flex justify-content-between align-items-start g-3">
                     <div className="col-12 col-sm-6 col-md-4">
                         <h6><FaLocationDot size={20} className="me-1" /> Head Office</h6>
-                        <p>No:14/6M, Hospital Road, Sulur, Coimbatore - 641 402.</p>
-                        <h6><FaPhone size={18} className="me-1" />Contact Us</h6>
-                        <span>+91 94425 80495</span>
-                        <p>+91 94879 80495</p>
+                        <p>No:14/6M, Hospital Road, Sulur, <br />Coimbatore - 641 402.</p>
+                        <h6><FaLocationDot size={20} className="me-1" /> Branch Office</h6>
+                        <p>No: 21, Sankar Layout, Lakshmipuram, 5th Street, Peelamedu, <br /> Coimbatore - 641004. </p>
+
                     </div>
                     <div className="col-12 col-sm-6 col-md-3">
+                        <h6><FaPhone size={18} className="me-1" />Contact Us</h6>
+                        <span>+91 944 258 0495</span>
+                        <p>+91 948 798 0495</p>
                         <h6><FaTelegramPlane size={20} className="me-1" />Mail Us</h6>
-                        <a href="mailto:capandian1971@gmail.com" className="link">capandian1971@gmail.com</a>
-                        <h6><GiShadowFollower size={20} className="me-1" />Follow Us</h6>
+                        <div className='pb-2'> <a href="mailto:capandian1971@gmail.com" className="link">capandian1971@gmail.com</a></div>
+
+                        <h6>Follow Us</h6>
                         <div className="d-flex gap-3">
-                            <SiFacebook size={20} className="footer_icon" />
-                            <SlSocialInstagram size={20} className="footer_icon" />
-                            <FaLinkedin size={20} className="footer_icon" />
+                            <SocialIcon network="facebook" style={{ height: 25, width: 25 }} />
+                            <SocialIcon network="linkedin" style={{ height: 25, width: 25 }} />
+                            <SocialIcon network="instagram" style={{ height: 25, width: 25 }} />
                         </div>
                     </div>
                 </div>
                 <hr />
             </div>
-            <div className="text-center pb-2">
-                Copyright &#169; 2024 &nbsp; | &nbsp; chithiraipandian&co.com &nbsp; | &nbsp; All rights reserved
+            <div class="d-flex justify-content-center align-items-center flex-wrap pb-2">
+                <div>Copyright &#169; 2024 &nbsp; </div>
+                <div>| &nbsp;<Link to="https://chithiraipandianandco.com">www.chithiraipandianandco.com</Link> &nbsp; |</div>
+                <div>&nbsp; All rights reserved</div>
             </div>
         </div>
     );

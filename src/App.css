@@ -518,7 +518,7 @@ h6 {
 
 /* calculator table */
 .table_background {
-  background: #FFDDAE !important;
+  background: #adbcf8 !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
@@ -527,7 +527,7 @@ h6 {
   font-family: "EB Garamond", serif;
   font-size: 24px;
   text-align: center;
-  color: var(--primary-green);
+  color: white;
   margin-bottom: 3px;
 
 }
@@ -592,10 +592,10 @@ h6 {
   float: right;
 }
 
-.calculator-reset:hover {
+/* .calculator-reset:hover {
   background-color: rgba(181, 236, 165, 0.322);
   box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.479);
-}
+} */
 
 /* service cards */
 
@@ -816,10 +816,15 @@ h6 {
   color: var(--primary-blue);
 }
 
+
+.imageContainer {
+  height: 350px;
+  position: relative;
+}
+
 .ourValue-image,
 .firmData-image {
-  width: 70%;
-  height: 390px;
+  object-fit: cover !important;
 }
 
 .ourValue-card,
@@ -838,15 +843,25 @@ h6 {
 
 
 @media screen and (max-width:550px) {
+
+  .hero-title-container {
+    width: 100%;
+  }
+
   .ourValue-content {
     text-align: start;
+  }
+
+  .imageContainer {
+    height: auto;
   }
 
   .ourValue-image,
   .firmData-image {
     width: 100%;
-    height: auto;
+    object-fit: cover;
   }
+
 
   .ourValue-card,
   .firmData-card {
@@ -866,13 +881,20 @@ h6 {
   }
 }
 
-@media screen and (min-width:766px) and (max-width:1350px) {
+@media screen and (min-width:764px) and (max-width:1350px) {
+
+
+  .imageContainer {
+    height: 300px;
+    width: 100%;
+    padding: 4%;
+  }
 
   .ourValue-image,
   .firmData-image {
-    width: 80%;
-    height: 300px;
+    object-fit: cover;
   }
+
 
   .ourValue-card,
   .firmData-card {
@@ -883,9 +905,8 @@ h6 {
 
 @media screen and (min-width: 1440px) {
 
-  .ourValue-image,
-  .firmData-image {
-    width: 70%;
+  .hero-title-container {
+    width: 100%;
   }
 }
 
@@ -933,27 +954,27 @@ h6 {
 
 
 
-.hero-image{
+.hero-image {
   object-fit: cover;
 }
 
 @media screen and (max-width:768px) {
-  .hero-image{
+  .hero-image {
     object-fit: cover;
     height: 400px;
   }
-  
+
   .service-list {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .hero-title{
+  .hero-title {
     font-size: 28px;
     width: 100%;
-    
+
   }
-  
-  .hero-subtitle{
+
+  .hero-subtitle {
     font-size: 18px;
     width: 100%;
   }

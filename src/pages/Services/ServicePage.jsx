@@ -385,14 +385,14 @@ const ServicePage = () => {
               <div className='service-sub-card'>
                 <div className='service-card-title'>Domestic </div>
                 <ul className='service-list'>
-                  <li>  	Filling of Income Tax Returns of Corporate and Non Corporate Clients</li>
-                  <li>  	Tax Compliances which includes, Income Tax Assessments, Appeals before Commissioner (Appeals) and Income tax Appellate Tribunal</li>
                   <li>  	Filling of TDS Returns</li>
+                  <li>	  Management Audit</li>
+                  <li>  Calculation of AMT / MAT</li>
                   <li>  	All other matters related to TDS and Income Tax Matter</li>
                   <li>  	Dividend Distribution and calculation of Dividend Distribution Tax</li>
-                  <li>  Calculation of AMT / MAT</li>
                   <li>  	Compliance with Transfer Pricing Regulations including documentation</li>
-                  <li>	  Management Audit</li>
+                  <li>  	Filling of Income Tax Returns of Corporate and Non Corporate Clients</li>
+                  <li>  	Tax Compliances which includes, Income Tax Assessments, Appeals before Commissioner (Appeals) and Income tax Appellate Tribunal</li>
                 </ul>
                 <div className='service-card-title'>International </div>
                 <ul className='service-list'>
@@ -419,11 +419,13 @@ const ServicePage = () => {
               <div className='service-sub-card'>
                 <div className='service-card-title'>GST</div>
                 <ul className='service-list'>
+                  <li>  	GST Compliances</li>
+                  <li>  	GST Audit</li>
                   <li> 	Filling of Monthly, Quarterly and
                     Annual Returns under GST</li>
-                  <li>  	GST Compliances</li>
+
                   <li>  	Filling of GST Returns and refund</li>
-                  <li>  	GST Audit</li>
+
                 </ul>
               </div>
             </div>
@@ -447,21 +449,24 @@ const ServicePage = () => {
                   <li> 		Preparing Business Plans</li>
                   <li>  	Share Valuation</li>
                   <li>  	Budget and Forecast</li>
+                  <li>  	Certification</li>
                   <li>  	Corporate Restructuring</li>
                   <li>  	Conduct a feasibility study of the project</li>
                   <li>  	Consultation for Public Issue Matters</li>
-                  <li>  	Prepare	a	project	report	along	with liaison with Bank</li>
+                  <li>  	Wills and Partnership Deeds</li>
                   <li> 		Consultation for Private Equity matters</li>
+                  <li>  	Advisory in the Company Law Matters.</li>
                   <li>  	Preparing	application	and	arranging Term loan with Bank</li>
                   <li>  	Personal financial investment planning and family settlement issues</li>
                   <li>  	Preparing	application	and	arranging working capital loan with Bank</li>
-                  <li>  	Wills and Partnership Deeds</li>
+
+                  <li>  	Prepare	a	project	report	along	with liaison with Bank</li>
                   <li>  	Design, Implementation and Review of Accounting manuals</li>
-                  <li>  	Certification</li>
+
                   <li>  	Advice on various accounting and accounting standard issues including IFRS</li>
                   <li>  	All the advisory in relation to Income tax, VAT, Service Tax, GST, International Taxation.</li>
                   <li>  	Consultation and Advice in matters relating to Business set up and Business structuring of foreign clients.</li>
-                  <li>  	Advisory in the Company Law Matters.</li>
+
                 </ul>
               </div>
             </div>
@@ -482,23 +487,25 @@ const ServicePage = () => {
               <div className='service-sub-card'>
                 <div className='service-card-title'>Company Law</div>
                 <ul className='service-list'>
-                  <li> 	Formation of Indian Private / Public / Section 8 Companies / 100% subsidiary /
-                    Branch office / Liaison Office/SPV</li>
-                  <li> 	Drafting Memorandum and Article of Association of Company</li>
-                  <li> 	Conversion from Private to Public Limited Company and Company into LLP and vice versa</li>
-                  <li> 	Filling of various Returns with ROC</li>
-                  <li> 	Filling of Annual Return in XBRL environment of the company</li>
+                  <li> 	Drafting Memorandum </li>
+                  <li> Article of Association of Company</li>
                   <li> 	Conversion from firm to company</li>
                   <li> 	Consultation on Buyback of Shares</li>
+                  <li> 	Filling of various Returns with ROC</li>
+                  <li> 	Filling of Annual Return in XBRL environment of the company</li>
+                  <li> 	Formation of Indian Private / Public / Section 8 Companies / 100% subsidiary /
+                    Branch office / Liaison Office/SPV</li>
+                  <li> 	Conversion from Private to Public Limited Company and Company into LLP and vice versa</li>
+
                 </ul>
                 <div className='service-card-title'>Limited Liability Partnership</div>
                 <ul className='service-list'>
+                  <li> 	Exit from LLP</li>
                   <li> 	Formation of LLP</li>
+                  <li>  Modification in LLP</li>
                   <li> 	Drafting of LLP Agreement</li>
                   <li> 	Conversion of firm into LLP and vice versa</li>
-                  <li>  Modification in LLP</li>
                   <li> 	Filling Annual Return of LLP</li>
-                  <li> 	Exit from LLP</li>
                   <li> 	Consultation on Buyback of Shares</li>
                 </ul>
               </div>
@@ -521,14 +528,16 @@ const ServicePage = () => {
               <div className='service-sub-card'>
                 <div className='service-card-description'>We are providing outsourcing services for Domestic as well as international clients, which includes:</div>
                 <ul className='service-list'>
-                  <li> 	In-house accounting, compliant with local accounting acts</li>
-                  <li> 	Financial statements, compliant with local accounting acts</li>
+
                   <li> 	Management reports</li>
                   <li> 	Filing of Statutory Returns</li>
                   <li> 	Accounting supervision</li>
+                  <li>	 Preparation of MIS Reports</li>
                   <li>  Accounting record review for past reporting periods</li>
                   <li>  Tax accounting and compliance (income tax, indirect tax and others)</li>
-                  <li>	 Preparation of MIS Reports</li>
+
+                  <li> 	In-house accounting, compliant with local accounting acts</li>
+                  <li> 	Financial statements, compliant with local accounting acts</li>
                 </ul>
               </div>
             </div>
