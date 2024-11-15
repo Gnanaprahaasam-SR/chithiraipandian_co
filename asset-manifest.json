@@ -1,20 +1,19 @@
 {
   "files": {
     "main.css": "/chithiraipandian_co/static/css/main.813d3636.css",
-    "main.js": "/chithiraipandian_co/static/js/main.d033f08a.js",
+    "main.js": "/chithiraipandian_co/static/js/main.47c719b7.js",
     "static/media/CA-11.png": "/chithiraipandian_co/static/media/CA-11.5ec859329043e61b768d.png",
     "static/media/CA-13.png": "/chithiraipandian_co/static/media/CA-13.f28b9dfc9a60603f118b.png",
     "static/media/CA-6.png": "/chithiraipandian_co/static/media/CA-6.5444c148f0f4b93dc6e9.png",
     "static/media/CA-17.png": "/chithiraipandian_co/static/media/CA-17.68652ebdd105b4d9f806.png",
     "static/media/CA-10.png": "/chithiraipandian_co/static/media/CA-10.d6aac4947b5395ec6769.png",
     "static/media/CA-14.png": "/chithiraipandian_co/static/media/CA-14.e26fec329049885cfc6b.png",
-    "static/media/Secretarial.jpg": "/chithiraipandian_co/static/media/Secretarial.9eeb59ed69ad2f44e2df.jpg",
     "static/media/CA-8.png": "/chithiraipandian_co/static/media/CA-8.22a6375f01b4dc177cf5.png",
     "static/media/CA-18.png": "/chithiraipandian_co/static/media/CA-18.66637f6a9c5d5cff5944.png",
+    "static/media/Secretarial1.png": "/chithiraipandian_co/static/media/Secretarial1.5868180d77e04d2a5b1b.png",
     "static/media/CAOffice.jpg": "/chithiraipandian_co/static/media/CAOffice.0dfdfc8f86d7b013eeaf.jpg",
     "static/media/service.jpg": "/chithiraipandian_co/static/media/service.9778b1507ee8999256bc.jpg",
     "static/media/CA-25.png": "/chithiraipandian_co/static/media/CA-25.fe50e9f783bca3aca744.png",
-    "static/media/Secretarial.svg": "/chithiraipandian_co/static/media/Secretarial.90f7622ed82d7d26c67f20f2f4a2d09b.svg",
     "static/media/Advisory.png": "/chithiraipandian_co/static/media/Advisory.741ada6eca0fdbfe19c7.png",
     "static/media/Banking-Finance.png": "/chithiraipandian_co/static/media/Banking-Finance.b32ea447e16952b79a18.png",
     "static/media/Indirect_Tax.jpg": "/chithiraipandian_co/static/media/Indirect_Tax.d6a769bb38df2a43f5c7.jpg",
@@ -70,10 +69,10 @@
     "static/media/slick.woff": "/chithiraipandian_co/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/chithiraipandian_co/index.html",
     "main.813d3636.css.map": "/chithiraipandian_co/static/css/main.813d3636.css.map",
-    "main.d033f08a.js.map": "/chithiraipandian_co/static/js/main.d033f08a.js.map"
+    "main.47c719b7.js.map": "/chithiraipandian_co/static/js/main.47c719b7.js.map"
   },
   "entrypoints": [
     "static/css/main.813d3636.css",
-    "static/js/main.d033f08a.js"
+    "static/js/main.47c719b7.js"
   ]
 }
