@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/chithiraipandian_co/static/css/main.813d3636.css",
-    "main.js": "/chithiraipandian_co/static/js/main.42c9d2f9.js",
+    "main.js": "/chithiraipandian_co/static/js/main.d033f08a.js",
     "static/media/CA-11.png": "/chithiraipandian_co/static/media/CA-11.5ec859329043e61b768d.png",
     "static/media/CA-13.png": "/chithiraipandian_co/static/media/CA-13.f28b9dfc9a60603f118b.png",
     "static/media/CA-6.png": "/chithiraipandian_co/static/media/CA-6.5444c148f0f4b93dc6e9.png",
@@ -14,6 +14,7 @@
     "static/media/CAOffice.jpg": "/chithiraipandian_co/static/media/CAOffice.0dfdfc8f86d7b013eeaf.jpg",
     "static/media/service.jpg": "/chithiraipandian_co/static/media/service.9778b1507ee8999256bc.jpg",
     "static/media/CA-25.png": "/chithiraipandian_co/static/media/CA-25.fe50e9f783bca3aca744.png",
+    "static/media/Secretarial.svg": "/chithiraipandian_co/static/media/Secretarial.90f7622ed82d7d26c67f20f2f4a2d09b.svg",
     "static/media/Advisory.png": "/chithiraipandian_co/static/media/Advisory.741ada6eca0fdbfe19c7.png",
     "static/media/Banking-Finance.png": "/chithiraipandian_co/static/media/Banking-Finance.b32ea447e16952b79a18.png",
     "static/media/Indirect_Tax.jpg": "/chithiraipandian_co/static/media/Indirect_Tax.d6a769bb38df2a43f5c7.jpg",
@@ -49,11 +50,10 @@
     "static/media/CA1.png": "/chithiraipandian_co/static/media/CA1.4a548b7070f5b8734346.png",
     "static/media/Manufacturing.png": "/chithiraipandian_co/static/media/Manufacturing.16b7e2ccf8ba91a95fc2.png",
     "static/media/IndirectTax.png": "/chithiraipandian_co/static/media/IndirectTax.34808fc4106bdf64ac1d.png",
-    "static/media/Audit&Assurance.png": "/chithiraipandian_co/static/media/Audit&Assurance.3ac55860d747c3aae720.png",
-    "static/media/Secretarial.png": "/chithiraipandian_co/static/media/Secretarial.24a8d6129cba73d1b3f2.png",
     "static/media/Transformation.png": "/chithiraipandian_co/static/media/Transformation.a51e231e5e17ac29d5f0.png",
     "static/media/Leadership.png": "/chithiraipandian_co/static/media/Leadership.911f4812439d6f59b119.png",
     "static/media/DirectTax2.png": "/chithiraipandian_co/static/media/DirectTax2.4d67a29a5e0e9388d981.png",
+    "static/media/Audit&Assurance.svg": "/chithiraipandian_co/static/media/Audit&Assurance.d0a9febbb31c1631edfcdd91c06b6d63.svg",
     "static/media/AboutUs.png": "/chithiraipandian_co/static/media/AboutUs.04a14e060967cc9721bb.png",
     "static/media/emergency.jpg": "/chithiraipandian_co/static/media/emergency.0875357ba490363c82e7.jpg",
     "static/media/ServicePortfolio.png": "/chithiraipandian_co/static/media/ServicePortfolio.a1c2b8775eb54ae9bb00.png",
@@ -70,10 +70,10 @@
     "static/media/slick.woff": "/chithiraipandian_co/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/chithiraipandian_co/index.html",
     "main.813d3636.css.map": "/chithiraipandian_co/static/css/main.813d3636.css.map",
-    "main.42c9d2f9.js.map": "/chithiraipandian_co/static/js/main.42c9d2f9.js.map"
+    "main.d033f08a.js.map": "/chithiraipandian_co/static/js/main.d033f08a.js.map"
   },
   "entrypoints": [
     "static/css/main.813d3636.css",
-    "static/js/main.42c9d2f9.js"
+    "static/js/main.d033f08a.js"
   ]
 }
