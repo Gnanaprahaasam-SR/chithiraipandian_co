@@ -3,8 +3,6 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import ContactUsImage from "../images/ContactUsImage.jpg"
 
-import { SlSocialInstagram } from "react-icons/sl";
-import { SiFacebook } from "react-icons/si";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaLocationDot, FaPhone, FaLinkedin } from "react-icons/fa6";
 import { SocialIcon } from 'react-social-icons'
@@ -93,7 +91,7 @@ const Footer = () => {
                 <div className="row info-box">
                     <div className="col-md-6 col-12 info-box-content">
                         <h3>Contact Us</h3>
-                        <p>We're open for any suggestion or just to have a chat</p>
+                        <p>We're here to help you</p>
 
                         <form className="footer-form p-3" ref={form} onSubmit={handleSubmit}>
                             <input
@@ -132,7 +130,7 @@ const Footer = () => {
                                 name="message"
                                 id="message"
                                 className="footer-input"
-                                placeholder="Type a message here?*"
+                                placeholder="Type a message here*"
                                 value={enquiryData.message}
                                 rows={4}
                                 onChange={handleEnquiryChange}
@@ -155,7 +153,7 @@ const Footer = () => {
                         <h6><FaLocationDot size={20} className="me-1" /> Head Office</h6>
                         <p>No:14/6M, Hospital Road, Sulur, <br />Coimbatore - 641 402.</p>
                         <h6><FaLocationDot size={20} className="me-1" /> Branch Office</h6>
-                        <p>No: 21, Sankar Layout, Lakshmipuram, 5th Street, Peelamedu, <br /> Coimbatore - 641004. </p>
+                        <p>No: 21, 5th Street, Sankar Layout,<br /> Lakshmipuram, Peelamedu, <br /> Coimbatore - 641004. </p>
 
                     </div>
                     <div className="col-12 col-sm-6 col-md-3">
@@ -165,7 +163,7 @@ const Footer = () => {
                         <h6><FaTelegramPlane size={20} className="me-1" />Mail Us</h6>
                         <div className='pb-2'> <a href="mailto:capandian1971@gmail.com" className="link">capandian1971@gmail.com</a></div>
 
-                        <h6>Follow Us</h6>
+                        <h6>Follow Us On</h6>
                         <div className="d-flex gap-3">
                             <SocialIcon network="facebook" style={{ height: 25, width: 25 }} url='https://www.facebook.com/' />
                             <SocialIcon network="linkedin" style={{ height: 25, width: 25 }} url='https://www.linkedin.com/' />

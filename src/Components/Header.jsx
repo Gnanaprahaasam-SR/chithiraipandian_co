@@ -16,7 +16,7 @@ function NavBar() {
       <Container fluid>
         <Navbar.Brand as={NavLink} onClick={handleChange} to="/" className="d-flex flex-column align-items-center" >
           <img src={logo} alt="Company Logo" width={50} className=" " />
-          <h6 className="" style={{ color: "#116391" }}>CHITHIRAI PANDIAN & CO </h6>
+          <h6 className="" style={{ color: "#116391" }}>CHITHIRAIPANDIAN & CO </h6>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbarScroll" />

@@ -4,7 +4,7 @@ import Audit_And_Assurenece from "../../images/Audit_And_Assurenece.jpg";
 import Direct_Tax from "../../images/Direct_Tax.jpg";
 import Indirect_Tax from "../../images/Indirect_Tax.jpg";
 import Advisory from "../../images/Advisory.jpg";
-import Secretarial from "../../images/Secretarial.jpg";
+// import Secretarial from "../../images/Secretarial.jpg";
 import Bookkeeping from "../../images/Bookkeeping.jpg";
 
 
@@ -87,7 +87,7 @@ const servicesData = [
     title: "Secretarial",
     imageSrc: Service,
     servicesKey: "secretarial",
-    subImage:Secretarial,
+    // subImage:Secretarial,
     services: [
       "Formation of Indian Private / Public/ Section & Companies/100% Subsidiary/ Branch Office/ Liaison Office/SPV.",
       "Drafting Memorandum and Article of Association of Company.",
