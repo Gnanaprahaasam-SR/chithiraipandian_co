@@ -1,12 +1,12 @@
 import React from 'react';
 // import Service from "../../images/service.jpg";
 // import { CiCircleCheck } from "react-icons/io5";
-import Audit from "../../images/Audit&Assurance.svg";
-import Bookkeeper from "../../images/Bookkeeping.png";
-import Advisory from "../../images/Advisory.png";
-import Indirect from "../../images/IndirectTax.png";
+import Audit from "../../images/Audit&Assurance1.png";
+import Bookkeeper from "../../images/Bookkeeping1.jpg";
+import Advisory from "../../images/Advisory1.png";
+import Indirect from "../../images/IndirectTax1.png";
 import Secretarial from "../../images/Secretarial1.png";
-import DirectTax from "../../images/DirectTax2.png";
+import DirectTax from "../../images/DirectTax1.png";
 
 
 

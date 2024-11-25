@@ -3,12 +3,12 @@ import Content from "./Content";
 import { Employee } from "./AboutUs/AboutUs_OurTeam";
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import audit from "../images/Audit&Assurance.svg";
-import bookkeeper from "../images/Bookkeeping.png";
-import Advisory from "../images/Advisory.png";
-import indirect from "../images/IndirectTax.png";
+import audit from "../images/Audit&Assurance1.png";
+import bookkeeper from "../images/Bookkeeping1.jpg";
+import Advisory from "../images/Advisory1.png";
+import indirect from "../images/IndirectTax1.png";
 import Secretarial from "../images/Secretarial1.png";
-import DirectTax from "../images/DirectTax2.png";
+import DirectTax from "../images/DirectTax1.png";
 import { CiCircleCheck } from "react-icons/ci";
 // import { PiCloudSlash } from "react-icons/pi";
 import Herosection from "../images/Home-heroSection.png"
@@ -302,12 +302,12 @@ const Home = () => {
           </div>
           <div >
             <p style={{ textAlign: "justify" }}>
-              At CHITHIRAIPANDIAN AND CO, We believe in building long-term relationships based on Trust, Integrity, and Professionalism. Our mission is to deliver Proactive, Practical, and Results-driven Financial Solutions that help our clients thrive in a Dynamic marketplace.</p>
+              At <b>Chithiraipandian and Co</b>, we believe in building long-term relationships based on trust, integrity, and professionalism. Our mission is to deliver proactive, practical, and results-driven financial solutions that help our clients thrive in a dynamic marketplace.</p>
             <p style={{ textAlign: "justify" }}>
-              At CHITHIRAIPANDIAN AND CO, We are dedicated to empowering businesses and individuals with expert financial and advisory services. With a legacy of more than two decades of experience, we specialize in providing Direct and Indirect Taxation, Business Taxation, International Taxation, Auditing and Assurance service, Company Formation, Corporate Compliances, Due diligence, Transfer Pricing, Virtual CFO Solutions,  and Financial Consulting Solutions that are tailored to meet the specific needs of our clients.
+              At <b>Chithiraipandian and Co</b>, we are dedicated to empowering businesses and individuals with expert financial and advisory services. With a legacy of more than two decades of experience, we specialize in providing direct and indirect taxation, business taxation, international taxation, auditing and assurance services, company formation, corporate compliances, due diligence, transfer pricing, virtual CFO solutions, and financial consulting solutions that are tailored to meet the specific needs of our clients.
             </p>
             <div style={{ textAlign: "justify" }}>
-              Our team of experienced Chartered Accountants and Financial Advisors is committed to delivering quality service and valuable insights. We work closely with businesses of all sizes, from startups and SMEs to large corporations. Under the leadership of our founder, We’ve transitioned to a technology-driven firm, Consistently expanding our service offerings and fostering long-term client relationships
+              Our team of experienced Chartered Accountants and financial advisors is committed to delivering quality service and valuable insights. We work closely with businesses of all sizes, from startups and SMEs to large corporations. Under the leadership of our founder, we’ve transitioned to a technology-driven firm, consistently expanding our service offerings and fostering long-term client relationships.
             </div>
           </div>
         </div>

@@ -19,7 +19,8 @@ h6 {
   --primary-blue: #083D5F;
   --primary-text: #141414;
   --background-color: #ffffff;
-  --card-color: #8DA3FF;
+  /* --card-color: #8DA3FF; */
+  --card-color: #375C69;
 
 }
 
@@ -522,7 +523,7 @@ h6 {
 
 /* calculator table */
 .table_background {
-  background: #adbcf8 !important;
+  background: #EDE8C1 !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
@@ -531,7 +532,7 @@ h6 {
   font-family: "EB Garamond", serif;
   font-size: 24px;
   text-align: center;
-  color: white;
+  color: black;
   margin-bottom: 3px;
 
 }
@@ -588,7 +589,7 @@ h6 {
 .calculator-reset {
   border-radius: 50px;
   border: 2px solid transparent;
-  background-color: rgba(255, 255, 255, 0.514);
+  background-color: rgba(138, 136, 136, 0.514);
   box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.479);
   outline: none;
   padding: 5px 15px;
@@ -652,9 +653,8 @@ h6 {
 .serviceCard-button {
   border: none;
   padding: 5px 20px;
-  border-radius: 5px 20px;
-  background: linear-gradient(to right, rgb(47, 50, 248) 25%, rgba(139, 168, 221, 0.751) 75%);
-  background-size: 100% 99%;
+  border-radius: 5px;
+  background: rgb(47, 50, 248);
   background-position: right bottom;
   color: var(--white-color);
   cursor: pointer;

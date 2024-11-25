@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import logo from "../images/CA1.png";
-import servicesData from '../pages/Services/ServiceData';
+
 import "../App.css";
 
 function NavBar() {
